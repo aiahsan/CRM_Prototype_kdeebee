@@ -1,25 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
+import Expand from './pages/Dashboard/expand'
+import Directory from './pages/M_Opp/Directory'
+import TimeLine from './pages/M_Opp/Io/timeline'
+import People from './pages/M_contaacts/people'
+import AllocateToNew from './pages/M_contaacts/reconcile/item/allocatetonew'
+import Profile from './pages/M_contaacts/UserProfile/Profile/profile'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <Profile/>
+  </>
   );
 }
 
