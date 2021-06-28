@@ -67,7 +67,7 @@ export default () => {
     <>
       <TopBar />
       <Breadcrumb
-        list={["Opportunities", "Directory", "Project Fluid"]}
+        list={["Contacts", "People", "Lucy Granger"]}
         activeIndex={2}
       />
       <Tabs activeTab={1} />
