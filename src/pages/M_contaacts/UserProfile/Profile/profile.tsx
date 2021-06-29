@@ -11,7 +11,152 @@ import avt from "../../../../images/1.png";
 import avt1 from "../../../../images/coverprofile.png";
 import rothschild from "../../../../images/Rothschild.png";
 import image14 from "../../../../images/image14.png";
+import {Card,Accordion,Button} from 'react-bootstrap';
+const paraText=css`
+font-family: Lucida Grande;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.06em;
+    color: #586069;
+    max-width: 558px;
+`
+const baseText = css`
+font-family: Lucida Grande;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.06em;
+    color: #586069;
+    margin: 0px;
+`
+interface BoxProps {
+  title: string;
+  values:BoxTextProps[]
+}
+interface BoxTextProps {
 
+  key1: string,
+  value1: string,
+  key2: string,
+  value2: string,
+  index?:number
+  value1Active:boolean;
+  value2Active:boolean;
+}
+const ViewBoxText = (props: BoxTextProps) => {
+  const {
+
+      key1, key2, value1, value2,index,value1Active,value2Active
+  } = props;
+  return <div
+      className={css`
+
+${index==0?"border-bottom: 1px solid #E1E4E8;":"border-top: 1px solid #E1E4E8;border-bottom: 1px solid #E1E4E8;"}
+
+`}
+  >
+
+      <div className={css`
+ `}><div className={css`
+  display: flex;
+  margin-left: 10px;
+  min-width: 700px;
+  justify-content: space-between;
+  height: 32px;
+`}>
+              <div className={css`
+  display: flex;
+  max-width: 329px;
+  `}>
+                  <p className={css`${baseText}
+         width: 76px;
+         display: flex;
+         justify-content: flex-end;
+         margin-right:26.73px;
+      `}>{key1}</p>
+                  <p className={css`${baseText}
+       ${value1Active==true?"color:#1269D3":""}
+      `}>{value1}</p>
+              </div>
+             
+             <div className={css`display: flex;
+  width: 313px;
+ margin-right:50px; 
+  `}>
+                 <p className={css`
+                 ${baseText}
+                 margin-right: 27.7px;
+                 width: 317px;
+                 display: flex;
+    justify-content: flex-end;
+                 `}>{key2}</p>
+                 <p className={css`
+                   ${baseText}
+                     width: 304px;
+                     margin: 0px;
+                     ${value2Active==true?"color:#1269D3":""}
+
+                 `}>{value2}</p>
+             </div>
+            
+             
+               </div>
+      </div>
+  </div>
+
+}
+const ViewBox = (props: BoxProps) => {
+  const {
+      title,
+     values,
+  } = props;
+
+  return (
+      <div className={css`
+  display: flex;
+  padding: 16px 16px 0px 16px;
+  `}>
+      
+          <div className={css`
+        margin-left: 40px;
+        margin-top: 23px;
+    `}>
+              <div className={css`
+          display: flex;
+      `}>
+                  <p className={css`    font-family: Lucida Grande;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.06em;
+    color: #586069;
+    
+    margin:0px`}>{title}</p>
+                 <div className={css`
+                 margin-left:10px
+                 `} ><Icon icon="pencil"/></div>
+              </div>
+
+
+              <div className={css`
+              margin-top:11px;
+          `}>
+          {values.map((x,i)=>                  <ViewBoxText value1Active={x.value1Active} value2Active={x.value2Active} key={i} index={i} key1={x.key1} value1={x.value1} key2={x.key2} value2={x.value2} />
+)}                  
+              </div>
+          </div>
+      </div>
+  );
+};
 const BaseMoreText = css`
   font-family: Lucida Grande;
   font-style: normal;
@@ -466,7 +611,138 @@ export default () => {
                     </p>
                   </div>
                 </div>
+                <Accordion className="jasdnfsdj22-23" defaultActiveKey="0">
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle  as={Button} variant="link" eventKey="0">
+      <Icon icon="cross"/> <p>PROFILE</p>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="0">
+      <>
+      <ViewBox title="Contact Details"
+  values={[{key1:"First Name",value1:"Lucy",key2:"Relationship Manager",value2:"Joern Czech",value1Active:false,value2Active:true},
+  {key1:"Last Name",value1:"Granger",key2:"Phone",value2:"+44 208 876 1357",value1Active:false,value2Active:false},
+  {key1:"Title",value1:"Mrs",key2:"Mobile",value2:"+44 777 567 8762",value1Active:false,value2Active:false},
+  {key1:"Organisation",value1:"Blu Family Office",key2:"Email",value2:"lucy@blu-fo.com",value1Active:true,value2Active:true},
+  
+  ]}
+/>
 
+<ViewBox title="Address Information"
+  values={[{key1:"Street",value1:"16 Water Lane",key2:"Postal Code",value2:"TW9 1TJ",value1Active:false,value2Active:false},
+  {key1:"City",value1:"Richmond, London",key2:"Country",value2:"United Kingdom",value1Active:false,value2Active:false},
+  
+  ]}
+/>
+
+
+<ViewBox title="Compliance Information"
+  values={[{key1:"Nationality",value1:"Dutch",key2:"Date of Birth",value2:"28th February 1984",value1Active:false,value2Active:false},
+  {key1:"Tax Residency",value1:"UK",key2:"",value2:"",value1Active:false,value2Active:false},
+  
+  ]}
+/>
+
+
+<ViewBox title="Additional Links"
+  values={[{key1:"LinkedIn URL",value1:"https://linkedin.com/in/lucygranger4",key2:"Email 2",value2:"lucy_granger@outlook.com",value1Active:true,value2Active:true},
+  {key1:"Instagram URL",value1:"https://www.instagram.com/lucygranger4/",key2:"Email 3",value2:"lucy@granger.me",value1Active:true,value2Active:true},
+  
+  ]}
+/>
+
+<div className={css`
+      margin-left: 54px;
+      margin-top: 23px;
+      
+  `}>
+  <div className={css`
+      display: flex;
+      align-items: center;
+  `} >
+    <p className={css`
+    font-family: Lucida Grande;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px;
+    margin-right: 7.45px;
+    margin-bottom:16px;
+    `}>
+    Background Info
+    </p>
+    <Icon icon="pencil"/>
+  </div>
+  <p className={css`
+  ${paraText}
+  `}>
+  Lucy is the founder of Granger Innovation LLC, a positioning and branding firm that helps consultants and other thought leaders increase their fees by up to 2,000%. 
+
+  </p>
+  <p className={css`
+  ${paraText}
+  `}>
+  
+Before devoting her work fulltime to Granger Innovation LLC, Lucy served as Chief Marketing Officer at an Inc. 5,000 experiential branding organisation whose clients include Bank of America, Goldman Sachs, Samsung, Apple and Harvard and Stanford Universities.
+
+  </p>
+<p className={css`
+  ${paraText}
+  `}>
+  
+Lucy has written for the New York Times, and has written or co-created five books. Her last book, “Accidental Genius” has been published in ten languages. 
+
+
+</p>
+<p className={css`
+  ${paraText}
+  `}>Lucy has also taught research writing at Harvard business school. </p>
+</div>
+
+      </>
+   
+    </Accordion.Collapse>
+  </Card>
+ 
+
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle  as={Button} variant="link" eventKey="1">
+      <Icon icon="cross"/> <p>ACCOUNT</p>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="1">
+    <></>
+    </Accordion.Collapse>
+  </Card>
+ 
+
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle  as={Button} variant="link" eventKey="2">
+      <Icon icon="cross"/> <p>LEGAL</p>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="2">
+    <></>
+    </Accordion.Collapse>
+  </Card>
+ 
+
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle  as={Button} variant="link" eventKey="3">
+      <Icon icon="cross"/> <p>COMMUNICATIONS</p>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="3">
+    <></>
+    </Accordion.Collapse>
+  </Card>
+ 
+ </Accordion>
              
             
               </div>

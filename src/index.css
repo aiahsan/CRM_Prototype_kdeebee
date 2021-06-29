@@ -102,3 +102,26 @@ p,h1,h2,h3,h4,h5,h6{
 	border-radius: 50%;
 	background: white;
 }
+.jasdnfsdj22-23 .card-header button p {
+margin: 0px;
+margin-left: 7.48px;
+
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: -0.06em;
+
+color: #586069;
+}
+.jasdnfsdj22-23 .card-header button {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.jasdnfsdj22-23 >.card>.card-header {
+  height: 48px;
+  background-color: transparent!important;
+  border-bottom: 1px solid #E1E4E8!important;
+  
+}
