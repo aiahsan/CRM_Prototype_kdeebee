@@ -7,16 +7,42 @@ import People from './pages/M_contaacts/people'
 import AllocateToNew from './pages/M_contaacts/reconcile/item/allocatetonew'
 import Profile from './pages/M_contaacts/UserProfile/Profile/profile'
 import Footer from './components/footer'
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
-  <>
-  <AllocateToNew/>
-        <Footer/>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Expand />
+          </Route>
+          <Route exact path="/directory">
+            <Directory />
+          </Route>
 
-  </>
+          <Route exact path="/timeLine">
+            <TimeLine />
+          </Route>
+          <Route exact path="/people">
+            <People />
+          </Route>
+          <Route exact path="/allocateToNew">
+            <AllocateToNew />
+          </Route>
+          <Route exact path="/profile">
+            <Profile />
+          </Route>
+
+        </Switch></Router>
+      <Footer />
+
+    </>
   );
 }
 
