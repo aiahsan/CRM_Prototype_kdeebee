@@ -25,6 +25,14 @@ export default ()=>{
            margin: auto;
            display: flex;
            justify-content: space-between;
+           @media (max-width:1024px) {
+            max-width: 700px;
+          }
+           @media (max-width:1024px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
         `}>
             <div><p className={css`
             ${baseText}
@@ -38,6 +46,15 @@ export default ()=>{
             width:100%;
             display: flex;
     justify-content: space-between;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+        justify:content:center;
+        align-items:center;
+        a{
+           margin-top:10px; 
+        }
+      }
             `}>
                 <a className={css`
             ${baseText}

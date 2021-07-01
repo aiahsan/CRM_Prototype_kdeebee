@@ -96,6 +96,7 @@ const ViewBox = (props: BoxProps) => {
       <div
         className={css`
           margin-left: 40px;
+          margin-right: 40px;
           margin-top: 23px;
         `}
       >
@@ -685,6 +686,11 @@ const Style = {
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
+
+
+    @media (max-width:1089px) {
+      min-width: 100%;
+    }
   `,
   prfcst30: css`
     display: flex;
@@ -747,8 +753,8 @@ const Style = {
   `,
   prfcst39: css`
     display: flex;
-    width: 313px;
-    margin-right: 50px;
+    width: 314px;
+    margin-right: 57px;
   `,
   prfcst40: css`
     margin-right: 27.7px;

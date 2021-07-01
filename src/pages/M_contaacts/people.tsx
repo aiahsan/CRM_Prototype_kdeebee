@@ -7,19 +7,7 @@ import Dropdown from '../../components/dropdown'
 import Icon from '../../icons/icons'
 import Activity from '../../components/M_Contacts/activity'
 import avt from '../../images/1.png'
-interface SideMenuProps {
-    title: string,
-    isActive: Boolean
-}
-const SideMenu = (props: SideMenuProps) => {
-    const { title, isActive } = props;
-    return <div className={css`
-  ${Style.hajksdghks}
-${isActive == true ? "border-left:2.03px solid #B6AF9D" : ""}
-    `}>
-        {title}
-    </div>
-}
+
 export default () => {
     return <>
         <TopBar />
