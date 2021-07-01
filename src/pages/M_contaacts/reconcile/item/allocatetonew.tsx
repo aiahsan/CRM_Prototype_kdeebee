@@ -354,6 +354,10 @@ letter-spacing: -0.05em;
 color: #000000;
 margin-top:25px;
 margin-bottom:31.7px;
+
+@media (max-width:1024px) {
+    margin-left:10px;
+  }
 `,
 alloc3:css`
 border: 1px solid #E7EBF0;
@@ -362,6 +366,11 @@ border: 1px solid #E7EBF0;
 alloc4:css`
 display: flex;
 margin: 18px;
+
+@media (max-width:1024px) {
+    flex-direction: column;
+  }
+
 `,
 alloc5:css`
 width: 56px;
@@ -371,6 +380,10 @@ margin-right: 28px;
 alloc6:css`
 margin-top:-24px;
 min-width:840px;
+
+@media (max-width:1024px) {
+    min-width:100%;
+}
 `,
 alloc7:css`
 position: relative;
@@ -423,11 +436,18 @@ height:55px;
 width:1px;
 background-color:#E1E4E8;
 position: absolute;
-top: 19px
+top: 19px;
+@media (max-width:1024px) {
+    left:-20px
+  }
 `,
 allsd5:css`
 display: flex;
 margin: 55px 18px;
+
+@media (max-width:1024px) {
+    flex-direction: column;
+  }
 `,
 allsd6:css`
 width: 56px;
@@ -437,6 +457,9 @@ margin-right: 28px;
 allsd7:css`
 margin-top:-24px;
 min-width:840px;
+@media (max-width:1024px) {
+    min-width:100%;
+}
 `,
 allsd8:css`
 position: relative;
@@ -460,6 +483,13 @@ display: flex;
 max-width: 616px;
 margin: auto;
 justify-content: space-between;
+
+@media (max-width:768px) {
+    flex-direction: column;
+}
+@media (max-width:1024px) {
+    margin-left: 5px;
+  }
 `,
 akshdkas231:css`
 width: 139px;
@@ -470,7 +500,11 @@ margin-right: 26px;
 akshdkas23:css`display:flex;align-items: center;`,
 ssncakser1:css`
 border: 1px solid #E1E4E8;
-padding:16px 56px 18px 56px
+padding:16px 56px 18px 56px;
+
+@media (max-width:1024px) {
+    padding:16px 5px 18px 5px;
+}
 `,
 ssncakser:css`
 margin: 0px;

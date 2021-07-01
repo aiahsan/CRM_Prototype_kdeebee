@@ -93,6 +93,10 @@ letter-spacing: -0.07em;
   }
 `,
     kasndfnjkff: css`
+
+    @media (max-width:425px) {
+        display:none;
+      }
 margin:0px;
 background: #E8E9EB;
 width:24px;

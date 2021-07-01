@@ -38,7 +38,9 @@ line-height: 18px;
 letter-spacing: -0.07em;
 ${isActive?"color: #000000;":"color: #586069;"}
 
-
+@media (max-width:534px) {
+    display:none;
+  }
         `}>{title}</p>
         {subtitle!=""?<p className={css`
         margin:0px;

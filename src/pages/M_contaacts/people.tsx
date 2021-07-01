@@ -143,6 +143,9 @@ display:flex;
 kandsfjsdneR:css`
 margin-top:24px;
 margin-left:29.04px
+@media (max-width:425) {
+    margin-left:0px
+  }
 
 `,
 aknsdlsereT:css`

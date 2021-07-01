@@ -38,15 +38,20 @@ export default () => {
 
       <div className={Style.askfklasf}>
         <div className={Style.asjdkasjfwer}>
+          <div>
           <img src={avt1} className={Style.kasjfkrnf} />
 
-          <h1 className={Style.kasdjaklds}>Project Fluid</h1>
-          <h2 className={Style.kashdklasasewe}>
-            Equity Investment in a Biotech Start-Up
-          </h2>
+<h1 className={Style.kasdjaklds}>Project Fluid</h1>
+<h2 className={Style.kashdklasasewe}>
+  Equity Investment in a Biotech Start-Up
+</h2>
+          </div>
           <div className={Style.kasjhlrer}></div>
 
-          <div className={`d-flex ml-2 align-items-center ${Style.ksahdks31}`}>
+         <div className={css`
+         ${Style.kasdfjersajdk2}
+         `}>
+         <div className={`d-flex ml-2 align-items-center ${Style.ksahdks31}`}>
             <Icon icon="light" />
             <p
               className={css`
@@ -68,6 +73,7 @@ export default () => {
             </p>
           </div>
 
+         </div>
           <div className={Style.skajdklnwe}></div>
 
           <div className={Style.cbjasbjkwew}>
@@ -138,7 +144,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="w-100">
           <div className={Style.askjdkls2}>
             <div className={Style.askjdkls3}>
               <div className={Style.askjdkls4}>
@@ -405,19 +411,45 @@ const Style = {
     max-width: 1119px;
     margin: auto;
     display: flex;
+    @media (max-width:1024px) {
+      flex-direction: column;
+    }
   `,
   asjdkasjfwer: css`
     margin-right: 28px;
     max-width: 224px;
     position: relative;
     bottom: 29px;
+    @media (max-width:1024px) {
+      bottom: 0px;
+      margin-top:10px;
+
+      display: flex;
+      flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    }
+    @media (max-width:425px) {
+      display:block;
+      padding:10px;
+    }
+  `,
+  kasdfjersajdk2:css`
+  @media (max-width:1024px) {
+    margin-right: 15px;
+  }
+  @media (max-width:425px) {
+    margin: 0;
+  }
   `,
   kasjfkrnf: css`
     width: 224px;
     height: 224px;
     border-radius: 224px;
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.16));
-  `,
+  
+    `,
   kasdjaklds: css`
     font-family: Lucida Grande;
     font-style: normal;
@@ -478,6 +510,10 @@ const Style = {
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
+
+    @media (max-width:768px) {
+      min-width:100%;
+    }
   `,
   askjdkls7: css`
     background-color: transparent;
@@ -490,6 +526,10 @@ const Style = {
   askjdkls5: css`
     padding: 8px 9.5px 8px 17px;
     border-right: 1px solid #e1e4e8;
+
+    @media (max-width:534px) {
+      border: none;
+    }
   `,
   askjdkls4: css`
     background: #fafbfc;
@@ -501,6 +541,14 @@ const Style = {
     justify-content: flex-start;
     align-items: center;
     width: 560px;
+    @media (max-width:1024px) {
+      width: 100%;
+    }
+    @media (max-width:1024px) {
+      flex-direction: column;
+    align-items: flex-start;
+    }
+    
   `,
   askjdkls3: css`
     margin-top: 24px;
@@ -515,6 +563,7 @@ const Style = {
   askjdkls1: css`
     margin-top: 10px;
     margin-bottom: 22px;
+    
   `,
   a233ksldnasdasd: css`
     border-bottom: 1px solid #e1e4e8;
@@ -529,6 +578,9 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
+    @media (max-width:534px) {
+      flex-wrap:wrap;
+    }
   `,
   cdjasbere: css`
     display: flex;
@@ -552,6 +604,10 @@ const Style = {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width:534px) {
+      margin-top:10px
+    }
   `,
   cansjkebwr: css`
     margin-left: 59px;

@@ -5,9 +5,6 @@ import Tabs from "../../../../components/M_Contacts/profile/tabs";
 import { css, cx } from "@emotion/css";
 import Dropdown from "../../../../components/dropdown";
 import Icon from "../../../../icons/icons";
-import Activity from "../../../../components/dashboard/expanded/activity";
-import ActivitySub from "../../../../components/dashboard/expanded/activitysub";
-import avt from "../../../../images/1.png";
 import avt1 from "../../../../images/coverprofile.png";
 import rothschild from "../../../../images/Rothschild.png";
 import image14 from "../../../../images/image14.png";
@@ -426,7 +423,7 @@ export default () => {
                             `}
                           >
                             Lucy has also taught research writing at Harvard
-                            business school.{" "}
+                            business school.
                           </p>
                         </div>
                       </>
