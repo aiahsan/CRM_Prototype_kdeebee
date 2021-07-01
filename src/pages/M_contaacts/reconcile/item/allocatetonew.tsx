@@ -12,157 +12,47 @@ interface SideMenuProps {
     isActive: Boolean
 }
 
-const TextInputp = css`
-font-family: Lucida Grande;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-align-items: center;
-text-align: right;
-letter-spacing: -0.06em;
-color: #586069;
-margin: 0px;
-`
-const TextInput = css`
-background: linear-gradient(
-    180deg
-    , #FAFBFC 0%, #F9FAFB 100%);
-        border: 1px solid #E1E4E7;
-        box-sizing: border-box;
-        border-radius: 3px;
-        height:18px;
-        width: 140px;
-        &::placeholder{
-            font-family: Lucida Grande;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-display: flex;
-align-items: center;
-padding-left:8px;
-color: #AEB2B8;
-        }
-`
 export default () => {
     return <>
         <TopBar />
         <Breadcrumb list={["Contacts", "Reconcile", "IANUA Anchor Social Housing"]} activeIndex={2} />
         <Tabs activeTab={3} />
-        <div className={css`
-  max-width: 1078px;
-  width: 100%;
-  margin: auto;
-  margin-bottom: -1px;
-  `}>
-            <h1 className={css`
-        font-family: Lucida Grande;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 29px;
-        line-height: 37px;
-        letter-spacing: -0.05em;
-        color: #000000;
-        margin-top:25px;
-        margin-bottom:31.7px;
-        `}>IANUA Anchor Social Housing
+        <div className={Style.alloc1}>
+            <h1 className={Style.alloc2}>IANUA Anchor Social Housing
             </h1>
-            <div className={css`
-    border: 1px solid #E7EBF0;
-
-    `}>
+            <div className={Style.alloc3}>
 
             </div>
 
             <div>
-                <div className={css`
-                    display: flex;
-                    margin: 18px;
-                `}>
-                    <img className={css`
-                        width: 56px;
-                        height: 56px;
-                        margin-right: 28px;
-                    `} src={avt} alt="" />
-                    <div className={css`
-                    margin-top:-24px;
-                    min-width:840px;
-                    `}>
-                        <div className={css`
-                        position: relative;
-                        left: -7px;
-                        z-index: -1;
-                        top: 37px;
-                        `}>
+                <div className={Style.alloc4}>
+                    <img className={Style.alloc5} src={avt} alt="" />
+                    <div className={Style.alloc6}>
+                        <div className={Style.alloc7}>
                             <Icon icon="leftchev" />
 
                         </div>
 
-                        <div className={css`
-                            background: #F6F8FA;
-                            height: 56px;
-                            display: flex;
-                            align-items: center;
-                            padding-left: 29px;
-                            border-radius: 3px 3px 0px 0px;
-
-                        `}>
-                            <p className={css`
-                                margin: 0px;
-                                font-family: Lucida Grande;
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 14px;
-                                line-height: 16px;
-                                display: flex;
-                                align-items: center;
-                                letter-spacing: -0.03em;
-                            `}>George Bitsonis <span className={css`font-weight:normal`}> &thinsp; sent message 44m ago</span></p>
+                        <div className={Style.alloc8}>
+                            <p className={Style.alloc9}>George Bitsonis <span className={css`font-weight:normal`}> &thinsp; sent message 44m ago</span></p>
 
                         </div>
 
-                        <div className={css`
-                        border: 1px solid #E1E4E8;
-                        padding:16px 56px 18px 56px
-                        `}>
-                            <p className={css`
-                        font-family: Lucida Grande;
-                        font-style: normal;
-                        font-size: 15px;
-                        line-height: 22px;
-                        letter-spacing: -0.03em;
-                        
-                        color: #000000;
-                        `}>
-                                <span className={css`
-                                                    font-weight: bold;
-
-                            `}>From:</span> George Bitsonis {`<george@ianua.market>`}
+                        <div className={Style.allsd}>
+                            <p className={Style.allsd1}>
+                                <span className={Style.allsd2}>From:</span> George Bitsonis {`<george@ianua.market>`}
                                 <br></br>
                                 <br></br>
-                                <span className={css`
-                                                    font-weight: bold;
-
-                            `}>Sent:</span> 23 April 2021 14:06
+                                <span className={Style.allsd2}>Sent:</span> 23 April 2021 14:06
                                 <br></br>
 
-                                <span className={css`
-                                                    font-weight: bold;
-
-                            `}>To:</span> Myriam Tandia {`<polelrealestate@gmail.com>`}
+                                <span className={Style.allsd2}>To:</span> Myriam Tandia {`<polelrealestate@gmail.com>`}
                                 <br></br>
 
-                                <span className={css`
-                                                    font-weight: bold;
-
-                            `}>Cc:</span> Business Development {`<bd@ianua.market>`}
+                                <span className={Style.allsd2}>Cc:</span> Business Development {`<bd@ianua.market>`}
                                 <br></br>
 
-                                <span className={css`
-                                                    font-weight: bold;
-
-                            `}>Subject:</span> IANUA Anchor Social Housing - latest developments
+                                <span className={Style.allsd2}>Subject:</span> IANUA Anchor Social Housing - latest developments
 
                                 <br></br>
                                 <br></br>
@@ -181,72 +71,28 @@ export default () => {
                                 - HoldCo already incorporated (see here)
                                 <br></br>
                             </p>
-                            <div className={css`
-                            position: relative;
-                        `}>
-                                <div className={css`
-                        height:55px;
-                        width:1px;
-                        background-color:#E1E4E8;
-                        position: absolute;
-                        top: 19px
-                        `}></div>
+                            <div className={Style.allsd3}>
+                                <div className={Style.allsd4}></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div className={css`
-                    display: flex;
-                    margin: 55px 18px;
-                `}>
-                    <img className={css`
-                        width: 56px;
-                        height: 56px;
-                        margin-right: 28px;
-                    `} src={avt} alt="" />
-                    <div className={css`
-                    margin-top:-24px;
-                    min-width:840px;
-                    `}>
-                        <div className={css`
-                        position: relative;
-                        left: -7px;
-                        z-index: -1;
-                        top: 37px;
-                        `}>
+                <div className={Style.allsd5}>
+                    <img className={Style.allsd6} src={avt} alt="" />
+                    <div className={Style.allsd7}>
+                        <div className={Style.allsd8}>
                             <Icon icon="leftchev" />
 
                         </div>
 
-                        <div className={css`
-                            background: #F6F8FA;
-                            height: 56px;
-                            display: flex;
-                            align-items: center;
-                            padding-left: 29px;
-                            border-radius: 3px 3px 0px 0px;
-
-                        `}>
-                            <p className={css`
-                                margin: 0px;
-                                font-family: Lucida Grande;
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 14px;
-                                line-height: 16px;
-                                display: flex;
-                                align-items: center;
-                                letter-spacing: -0.03em;
-                            `}>Process Message</p>
+                        <div className={Style.allsd9}>
+                            <p className={Style.ssncakser}>Process Message</p>
 
                         </div>
 
-                        <div className={css`
-                        border: 1px solid #E1E4E8;
-                        padding:16px 56px 18px 56px
-                        `}>
+                        <div className={Style.ssncakser1}>
 
                             <p>Allocate or remove message</p>
 
@@ -265,49 +111,32 @@ export default () => {
                             </div>
 
                             <div
-                                className={css`
-                            margin-top: 20px;
-    margin-left: 56px;
-    display: flex;
-    max-width: 616px;
-    margin: auto;
-    justify-content: space-between;
-                            `}
+                                className={Style.akshdkas232}
                             >
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>First Name</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="First Name" />
                                     </div>
                                 </div>
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>Relationship Manager</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="Relationship Manager" />
                                     </div>
@@ -316,49 +145,32 @@ export default () => {
 
 
                             <div
-                                className={css`
-                            margin-top: 20px;
-    margin-left: 56px;
-    display: flex;
-    max-width: 616px;
-    margin: auto;
-    justify-content: space-between;
-                            `}
+                                className={Style.akshdkas232}
                             >
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>Last Name</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="Last Name" />
                                     </div>
                                 </div>
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>Phone</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="Phone" />
                                     </div>
@@ -368,49 +180,32 @@ export default () => {
 
 
                             <div
-                                className={css`
-                            margin-top: 20px;
-    margin-left: 56px;
-    display: flex;
-    max-width: 616px;
-    margin: auto;
-    justify-content: space-between;
-                            `}
+                                className={Style.akshdkas232}
                             >
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>Title</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="Title" />
                                     </div>
                                 </div>
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>Mobile</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="Mobile" />
                                     </div>
@@ -421,49 +216,32 @@ export default () => {
 
 
                             <div
-                                className={css`
-                            margin-top: 20px;
-    margin-left: 56px;
-    display: flex;
-    max-width: 616px;
-    margin: auto;
-    justify-content: space-between;
-                            `}
+                                className={Style.akshdkas232}
                             >
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>Organisation</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="Organisation" />
                                     </div>
                                 </div>
-                                <div className={css`display:flex;align-items: center;`}>
-                                    <div className={css`
-                                width: 139px;
-                                display: flex;
-                                justify-content: flex-end;
-                                margin-right: 26px;
-                                `}>
+                                <div className={Style.akshdkas23}>
+                                    <div className={Style.akshdkas231}>
                                         <p className={css`
-                                      ${TextInputp}
+                                      ${Style.TextInputp}
                                     `}>Email</p>
                                     </div>
                                     <div>
                                         <input className={css`
                                 
-                                ${TextInput}
+                                ${Style.TextInput}
 
                                 `} placeholder="Email" />
                                     </div>
@@ -523,4 +301,186 @@ color: #E7F3E9;
             </div>
         </div>
     </>
+}
+
+const Style={
+    
+TextInputp : css`
+font-family: Lucida Grande;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+align-items: center;
+text-align: right;
+letter-spacing: -0.06em;
+color: #586069;
+margin: 0px;
+`
+, TextInput : css`
+background: linear-gradient(
+    180deg
+    , #FAFBFC 0%, #F9FAFB 100%);
+        border: 1px solid #E1E4E7;
+        box-sizing: border-box;
+        border-radius: 3px;
+        height:18px;
+        width: 140px;
+        &::placeholder{
+            font-family: Lucida Grande;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+padding-left:8px;
+color: #AEB2B8;
+        }
+`,
+alloc1:css`
+max-width: 1078px;
+width: 100%;
+margin: auto;
+margin-bottom: -1px;
+`,
+alloc2:css`
+font-family: Lucida Grande;
+font-style: normal;
+font-weight: normal;
+font-size: 29px;
+line-height: 37px;
+letter-spacing: -0.05em;
+color: #000000;
+margin-top:25px;
+margin-bottom:31.7px;
+`,
+alloc3:css`
+border: 1px solid #E7EBF0;
+
+`,
+alloc4:css`
+display: flex;
+margin: 18px;
+`,
+alloc5:css`
+width: 56px;
+height: 56px;
+margin-right: 28px;
+`,
+alloc6:css`
+margin-top:-24px;
+min-width:840px;
+`,
+alloc7:css`
+position: relative;
+left: -7px;
+z-index: -1;
+top: 37px;
+`,
+alloc8:css`
+background: #F6F8FA;
+height: 56px;
+display: flex;
+align-items: center;
+padding-left: 29px;
+border-radius: 3px 3px 0px 0px;
+
+`,
+alloc9:css`
+margin: 0px;
+font-family: Lucida Grande;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+`,
+allsd:css`
+border: 1px solid #E1E4E8;
+padding:16px 56px 18px 56px
+`,
+allsd1:css`
+font-family: Lucida Grande;
+font-style: normal;
+font-size: 15px;
+line-height: 22px;
+letter-spacing: -0.03em;
+
+color: #000000;
+`,
+allsd2:css`
+font-weight: bold;
+
+`,
+allsd3:css`
+position: relative;
+`,
+allsd4:css`
+height:55px;
+width:1px;
+background-color:#E1E4E8;
+position: absolute;
+top: 19px
+`,
+allsd5:css`
+display: flex;
+margin: 55px 18px;
+`,
+allsd6:css`
+width: 56px;
+height: 56px;
+margin-right: 28px;
+`,
+allsd7:css`
+margin-top:-24px;
+min-width:840px;
+`,
+allsd8:css`
+position: relative;
+left: -7px;
+z-index: -1;
+top: 37px;
+`,
+allsd9:css`
+background: #F6F8FA;
+height: 56px;
+display: flex;
+align-items: center;
+padding-left: 29px;
+border-radius: 3px 3px 0px 0px;
+
+`,
+akshdkas232:css`
+margin-top: 20px;
+margin-left: 56px;
+display: flex;
+max-width: 616px;
+margin: auto;
+justify-content: space-between;
+`,
+akshdkas231:css`
+width: 139px;
+display: flex;
+justify-content: flex-end;
+margin-right: 26px;
+`,
+akshdkas23:css`display:flex;align-items: center;`,
+ssncakser1:css`
+border: 1px solid #E1E4E8;
+padding:16px 56px 18px 56px
+`,
+ssncakser:css`
+margin: 0px;
+font-family: Lucida Grande;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+`
 }
