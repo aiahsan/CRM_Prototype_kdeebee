@@ -36,6 +36,9 @@ font-weight: bold;
 font-size: 15px;
 line-height: 18px;
 letter-spacing: -0.07em;
+@media (max-width:535px) {
+    display:none;
+   }
 ${isActive?"color: #000000;":"color: #586069;"}
 
 
@@ -54,6 +57,9 @@ line-height: 14px;
 border-radius: 7px;
     padding-left: 4px;
     padding-top: 1px;
+    @media (max-width:535px) {
+        display:none;
+       }
 
         `}>{subtitle}</p>:<></>}
    </div>

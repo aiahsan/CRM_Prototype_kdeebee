@@ -88,22 +88,13 @@ const ViewBox = (props: BoxProps) => {
 
   return (
     <div
-      className={css`
-        display: flex;
-        padding: 16px 16px 0px 16px;
-      `}
+      className={Style.viewBoxstl}
     >
       <div
-        className={css`
-          margin-left: 40px;
-          margin-right: 40px;
-          margin-top: 23px;
-        `}
+        className={Style.viewBoxstl1}
       >
         <div
-          className={css`
-            display: flex;
-          `}
+          className={Style.viewBoxstl2}
         >
           <p className={Style.prfcst42}>{title}</p>
           <div
@@ -116,9 +107,7 @@ const ViewBox = (props: BoxProps) => {
         </div>
 
         <div
-          className={css`
-            margin-top: 11px;
-          `}
+          className={Style.viewBoxstl3}
         >
           {values.map((x, i) => (
             <ViewBoxText
@@ -166,16 +155,21 @@ export default () => {
       <Tabs activeTab={1} />
 
       <div className={Style.prfcst1}>
-        <div className={Style.prfcst2}>
-          <img src={avt1} className={Style.prfcst3} />
+        <div className={Style.asjdkasjfwer}>
+          <div>
+            <img src={avt1} className={Style.kasjfkrnf} />
 
-          <h1 className={Style.prfcst4}>Lucy Granger</h1>
+            <h1 className={Style.kasdjaklds}>Lucy Granger</h1>
 
-          <div className={Style.prfcst5}></div>
+          </div>
+          <div className={Style.kasjhlrer}></div>
 
-          <div className={Style.prfcst6}>
-            <h2 className={Style.prfcst7}>Highlights</h2>
-            <div className={`d-flex ml-2 align-items-center ${Style.prfcst8}`}>
+
+          <div className={Style.cbjasbjkwew}>
+            <h2 className={Style.ksajkfasnfa}>Highlights</h2>
+            <div
+              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
+            >
               <Icon icon="email" />
               <p
                 className={css`
@@ -186,7 +180,9 @@ export default () => {
               </p>
             </div>
 
-            <div className={`d-flex ml-2 align-items-center ${Style.prfcst8}`}>
+            <div
+              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
+            >
               <Icon icon="landline" />
               <p
                 className={css`
@@ -197,7 +193,9 @@ export default () => {
               </p>
             </div>
 
-            <div className={`d-flex ml-2 align-items-center ${Style.prfcst8}`}>
+            <div
+              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
+            >
               <Icon icon="phone" />
               <p
                 className={css`
@@ -208,7 +206,9 @@ export default () => {
               </p>
             </div>
 
-            <div className={`d-flex ml-2 align-items-center ${Style.prfcst8}`}>
+            <div
+              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
+            >
               <Icon icon="stage" />
               <p
                 className={css`
@@ -219,45 +219,57 @@ export default () => {
               </p>
             </div>
 
-            <div className={`d-flex ml-2 align-items-center ${Style.prfcst9}`}>
-              <Icon icon="sales" />
+            <div
+              className={`d-flex ml-2 align-items-center ${Style.askjdkls1}`}
+            >
+              <Icon icon="user" />
               <p
                 className={css`
                   ${Style.BaseHighlightText}
                 `}
-              >
-                Joern Czech
+              >Joern Czech
               </p>
             </div>
-            <div className={Style.prfcst10}></div>
+          </div>
+          <div className={Style.kasjhlrer}></div>
+
+          <div className={css`margin-bottom:22px`}>
             <h2 className={Style.prfcst11}>Investment preferences</h2>
+
             <div className={Style.prfcst12}>
               <div className={Style.prfcst13}></div>
+
               <div className={Style.prfcst14}>
                 <div className={Style.prfcst15}>
                   <p className={Style.prfcst16}>40%</p>
                 </div>
               </div>
 
-              <div className={Style.prfcst17}></div>
-
-              <h2 className={Style.prfcst18}>Organisations</h2>
-              <div className={Style.prfcst19}>
-                <img className={Style.prfcst20} src={image14} alt="" />
-                <p className={Style.prfcst21}>Blu Family Office</p>
-              </div>
-
-              <div className={Style.prfcst22}></div>
-              <h2 className={Style.prfcst23}>BD Partner</h2>
-              <div className={Style.prfcst24}>
-                <img className={Style.prfcst25} src={rothschild} alt="" />
-                <p className={Style.prfcst26}>Rothschild & Co.</p>
-              </div>
-
-              <div></div>
             </div>
           </div>
+
+          <div className={Style.kasjhlrer}></div>
+
+          <div className={css`margin-top:17px;margin-bottom:17px`}>
+            <h2 className={Style.prfcst18}>Organisations</h2>
+            <div className={Style.prfcst19}>
+              <img className={Style.prfcst20} src={image14} alt="" />
+              <p className={Style.prfcst21}>Blu Family Office</p>
+            </div>
+          </div>
+          <div className={Style.kasjhlrer}></div>
+          <div className={css`margin-top:17px;margin-bottom:17px`}>
+            <h2 className={Style.prfcst18}>BD Partner</h2>
+            <div className={Style.prfcst19}>
+              <img className={Style.prfcst20} src={rothschild} alt="" />
+              <p className={Style.prfcst21}>Rothschild & Co.</p>
+            </div>
+          </div>
+
         </div>
+
+
+
         <div>
           <div className={Style.prfcst27}>
             <div className={Style.prfcst28}>
@@ -467,6 +479,7 @@ export default () => {
               </div>
             </div>
           </div>
+       
         </div>
       </div>
     </>
@@ -492,12 +505,35 @@ const Style = {
     max-width: 1119px;
     margin: auto;
     display: flex;
+
+    @media (max-width:1024px) {
+      flex-direction: column;
+    }
+    
+    @media (max-width:425px) {
+      align-items: center;
+    }
   `,
   prfcst2: css`
     margin-right: 28px;
     max-width: 224px;
     position: relative;
     bottom: 29px;
+
+    @media (max-width:1024px) {
+      bottom: 0px;
+      margin-top:10px;
+
+      display: flex;
+      flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    }
+    @media (max-width:425px) {
+      display:block;
+      padding:10px;
+    }
   `,
   prfcst3: css`
     width: 224px;
@@ -559,6 +595,8 @@ const Style = {
     align-items: center;
     letter-spacing: -0.07em;
     color: #000000;
+    margin-top:17px;
+    margin-bottom:26px;
   `,
   prfcst12: css`
     background: linear-gradient(
@@ -678,6 +716,19 @@ const Style = {
     margin: auto;
     margin-bottom: -1px;
     display: flex;
+
+
+
+
+
+
+    @media (max-width:1024px) {
+      justify-content: center;
+    }
+
+
+
+
   `,
   prfcst28: css`
     margin-top: 24px;
@@ -697,6 +748,9 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
+    @media (max-width:534px) {
+      flex-wrap:wrap;
+    }
   `,
   prfcst31: css`
     display: flex;
@@ -718,6 +772,12 @@ const Style = {
   prfcst33: css`
     margin-left: 54px;
     margin-top: 23px;
+    @media(max-width:639px)
+    {
+      margin:23px 12px;
+      margin-bottom:0px;
+      
+    }
   `,
   prfcst34: css`
     display: flex;
@@ -779,7 +839,7 @@ const Style = {
 
     margin: 0px;
   `,
-  BaseMoreText : css`
+  BaseMoreText: css`
   font-family: Lucida Grande;
   font-style: normal;
   font-weight: normal;
@@ -788,7 +848,7 @@ const Style = {
   color: #1269d3;
   margin-top: 7px;
 `,
- BaseHighlightText : css`
+  BaseHighlightText: css`
   font-family: Lucida Grande;
   font-style: normal;
   font-weight: normal;
@@ -800,7 +860,7 @@ const Style = {
   margin: 0px;
   margin-left: 6px;
 `,
-paraText : css`
+  paraText: css`
   font-family: Lucida Grande;
   font-style: normal;
   font-weight: normal;
@@ -810,7 +870,7 @@ paraText : css`
   color: #586069;
   max-width: 558px;
 `,
-baseText : css`
+  baseText: css`
   font-family: Lucida Grande;
   font-style: normal;
   font-weight: normal;
@@ -823,4 +883,153 @@ baseText : css`
   color: #586069;
   margin: 0px;
 `,
+  viewBoxstl: css`
+        display: flex;
+        padding: 16px 16px 0px 16px;
+      `,
+  viewBoxstl1: css`
+          margin-left: 40px;
+          margin-right: 40px;
+          margin-top: 23px;
+
+          @media(max-width:639px)
+          {
+            margin:23px 0px;
+            margin-bottom:0px;
+            
+          }
+        `,
+  viewBoxstl2: css`
+            display: flex;
+          `,
+  viewBoxstl3: css`
+            margin-top: 11px;
+
+            @media(max-width:1440px)
+            {
+              max-width: 900px;
+              overflow: auto;
+            }
+            @media(max-width:820px)
+            {
+              max-width: 650px;
+              
+            }
+            @media(max-width:639px)
+            {
+              max-width: 525px;
+              
+            }
+            
+            @media(max-width:556px)
+            {
+              max-width: 425px;
+              
+            }
+            @media(max-width:425px)
+            {
+              max-width: 280px;
+            }
+            
+          `,
+  kasdfjersajdk2: css`
+          @media (max-width:1024px) {
+            margin-right: 15px;
+          }
+          @media (max-width:425px) {
+            margin: 0;
+          }
+          `,
+
+  asjdkasjfwer: css`
+          margin-right: 28px;
+          max-width: 224px;
+          position: relative;
+          bottom: 29px;
+          @media (max-width:1024px) {
+            bottom: 0px;
+            margin-top:10px;
+      
+            display: flex;
+            flex-wrap:wrap;
+          justify-content: center;
+          align-items: center;
+          max-width: 100%;
+          }
+          @media (max-width:425px) {
+            display:block;
+            padding:10px;
+          }
+        `,
+
+  kasjfkrnf: css`
+          width: 224px;
+          height: 224px;
+          border-radius: 224px;
+          filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.16));
+        
+          `,
+  kasdjaklds: css`
+          font-family: Lucida Grande;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 29px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.07em;
+          color: #000000;
+          margin: 0px;
+          margin-top: 22px;
+          margin-bottom:22px;
+        `,
+  kashdklasasewe: css`
+          font-family: Lucida Grande;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.07em;
+          color: #000000;
+          margin: 22px 0px;
+        `,
+  kasjhlrer: css`
+          border: 1px solid #e1e4e8;
+        `,
+  ksahdks31: css`
+          margin-top: 22px;
+        `,
+  xznfzsff: css`
+          margin-top: 10px;
+          margin-bottom: 22px;
+        `,
+  skajdklnwe: css`
+          border: 1px solid #e1e4e8;
+        `,
+  cbjasbjkwew: css`
+          margin-top: 17.51px;
+          margin-bottom: 18.49px;
+        `,
+  ksajkfasnfa: css`
+          font-family: Lucida Grande;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.07em;
+          color: #000000;
+          margin-bottom:18px;
+        `,
+  snkaknkdad: css`
+          margin-top: 10px;
+        `,
+  askjdkls1: css`
+    margin-top: 10px;
+    margin-bottom: 22px;
+    
+  `,
 };
