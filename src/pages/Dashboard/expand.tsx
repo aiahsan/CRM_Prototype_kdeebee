@@ -8,6 +8,7 @@ import Icon from "../../icons/icons";
 import Activity from "../../components/dashboard/expanded/activity";
 import ActivitySub from "../../components/dashboard/expanded/activitysub";
 import avt from "../../images/1.png";
+import Pagination from '../../components/pagination'
 interface SideMenuProps {
   title: string;
   isActive: boolean;
@@ -43,6 +44,8 @@ export default () => {
           <SideMenu isActive={false}  islast={false} title="Dashboard 3" />
           <SideMenu isActive={false} islast={true} title="Dashboard 4" />
         </div>
+
+
         <div className={Style.ijddwewe}>
           <div className={Style.an2ieaeesd}>
             <div className={Style.nxznksoddfw}>
@@ -242,7 +245,22 @@ export default () => {
               </div>
             </div>
           </div>
+          
+        
         </div>
+      </div>
+      <div className={css`
+          max-width: 978.98px;
+          margin: auto;
+          margin-top:32px;
+      `}>
+      <div className={css`
+      display:flex;
+          justify-content: center;
+          margin-left: 35%;
+      `}>
+          <Pagination/>
+          </div>
       </div>
     </>
   );

@@ -9,6 +9,7 @@ import Activity from "../../../components/dashboard/expanded/activity";
 import ActivitySub from "../../../components/dashboard/expanded/activitysub";
 import avt from "../../../images/1.png";
 import avt1 from "../../../images/pc1.png";
+import Pagination from '../../../components/pagination'
 interface SideMenuProps {
   title: string;
   isActive: Boolean;
@@ -366,6 +367,20 @@ export default () => {
           </div>
         </div>
       </div>
+  
+      <div className={css`
+max-width: 978.98px;
+margin: auto;
+margin-top:32px;
+`}>
+<div className={css`
+display:flex;
+justify-content: center;
+margin-left: 3%;
+`}>
+<Pagination/>
+</div>
+</div>
     </>
   );
 };

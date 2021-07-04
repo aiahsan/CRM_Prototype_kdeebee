@@ -136,3 +136,20 @@ color: #586069;
 .card{
   border:none!important;
 }
+.page-link{
+  border-color: #B6AF9D!important;
+  color: #B6AF9D!important;
+  font-weight: bold;
+font-size: 13px;
+line-height: 15px;
+display: flex;
+align-items: center;
+letter-spacing: -0.03em;
+font-family: Lucida Grande;
+
+}
+
+.page-item.active .page-link,.page-link:hover{
+  background-color: #B6AF9D!important;
+  color: white!important;
+}

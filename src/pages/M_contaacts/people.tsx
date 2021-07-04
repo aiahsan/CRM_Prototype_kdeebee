@@ -7,6 +7,7 @@ import Dropdown from '../../components/dropdown'
 import Icon from '../../icons/icons'
 import Activity from '../../components/M_Contacts/activity'
 import avt from '../../images/1.png'
+import Pagination from '../../components/pagination'
 
 export default () => {
     return <>
@@ -101,6 +102,19 @@ export default () => {
                 </div>
             </div>
         </div>
+        <div className={css`
+max-width: 978.98px;
+margin: auto;
+margin-top:32px;
+`}>
+<div className={css`
+display:flex;
+justify-content: center;
+margin-left: 3%;
+`}>
+<Pagination/>
+</div>
+</div>
     </>
 }
 
