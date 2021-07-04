@@ -122,7 +122,7 @@ cursor:pointer;
 `,
 
 akdshgksdhner:css`
-max-width: 1124px;
+max-width: 978.98px;
 width: 100%;
 margin: auto;
 margin-bottom: -1px;
@@ -181,6 +181,8 @@ ajkhsdfjksde:css`
 border: 1px solid #E1E4E8;
 margin-top:24px;
 min-width: 980px;
+border-radius:3px;
+
 @media (max-width:1024px) {
     min-width:100%;
 
@@ -190,6 +192,7 @@ asdkfnkdsfner:css`
 display:flex;
 justify-content:space-between;
 padding:14px 5px 14px 19.15px;
+border-bottom: 1px solid #e1e4e8;
 background: #F6F8FA;
 flex-wrap:wrap;
 `,

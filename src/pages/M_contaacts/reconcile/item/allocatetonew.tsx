@@ -339,10 +339,10 @@ color: #AEB2B8;
         }
 `,
 alloc1:css`
-max-width: 1078px;
+max-width: 930.98px;
+margin-bottom: -1px;
 width: 100%;
 margin: auto;
-margin-bottom: -1px;
 `,
 alloc2:css`
 font-family: Lucida Grande;
@@ -398,7 +398,8 @@ display: flex;
 align-items: center;
 padding-left: 29px;
 border-radius: 3px 3px 0px 0px;
-
+border: 1px solid #E1E4E8;
+border-bottom: 0px;
 `,
 alloc9:css`
 margin: 0px;

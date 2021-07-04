@@ -266,6 +266,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
+    border-bottom: 1px solid #e1e4e8;
     background: #f6f8fa;
     @media (max-width:768px) {
         justify-content: flex-start;
@@ -278,6 +279,7 @@ const Style = {
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
+    border-radius: 3px;
     @media (max-width:768px) {
         min-width: 98%;    
         margin:0px 1%;
@@ -342,7 +344,7 @@ const Style = {
       }
   `,
   cxnfjerwr: css`
-    max-width: 980px;
+    max-width: 926px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;

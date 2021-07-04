@@ -10,15 +10,17 @@ import ActivitySub from "../../components/dashboard/expanded/activitysub";
 import avt from "../../images/1.png";
 interface SideMenuProps {
   title: string;
-  isActive: Boolean;
+  isActive: boolean;
+  islast:boolean;
 }
 const SideMenu = (props: SideMenuProps) => {
-  const { title, isActive } = props;
+  const { title, isActive,islast } = props;
   return (
     <div
       className={css`
         ${Style.expandParent}
         ${isActive == true ? "border-left:2.03px solid #B6AF9D" : ""}
+        ${islast==true?"border-bottom: 1px solid #e1e4e8;":""}
       `}
     >
       {title}
@@ -36,10 +38,10 @@ export default () => {
       <Tabs activeTab={0} />
       <div className={Style.jdsf0saewaew}>
         <div className={Style.isdfisdhf}>
-          <SideMenu isActive={true} title="Activity" />
-          <SideMenu isActive={false} title="Dashboard 2" />
-          <SideMenu isActive={false} title="Dashboard 3" />
-          <SideMenu isActive={false} title="Dashboard 4" />
+          <SideMenu isActive={true} islast={false} title="Activity" />
+          <SideMenu isActive={false} islast={false} title="Dashboard 2" />
+          <SideMenu isActive={false}  islast={false} title="Dashboard 3" />
+          <SideMenu isActive={false} islast={true} title="Dashboard 4" />
         </div>
         <div className={Style.ijddwewe}>
           <div className={Style.an2ieaeesd}>
@@ -249,7 +251,9 @@ export default () => {
 const Style = {
   expandParent: css`
     background: #ffffff;
-    border: 1px solid #e1e4e8;
+    border-top: 1px solid #e1e4e8;
+    border-left: 1px solid #e1e4e8;
+    border-right: 1px solid #e1e4e8;
     padding: 10px 0px 11px 9.12px;
     font-family: Lucida Grande;
     font-style: normal;
@@ -259,7 +263,7 @@ const Style = {
     letter-spacing: -0.03em;
     color: #000000;
     width: 224px;
-    border-bottom: 0.5px solid #e1e4e8;
+    // border-bottom: 0.5px solid #e1e4e8;
     cursor: pointer;
     @media (max-width:768px) {
         width: 98%;    
@@ -268,7 +272,7 @@ const Style = {
       }
   `,
   jdsf0saewaew: css`
-    max-width: 1124px;
+  max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -329,6 +333,7 @@ const Style = {
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
+    border-radius: 3px;
     @media (max-width:982px) {
         min-width: 100%;
       }
@@ -338,7 +343,7 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
-
+    border-bottom: 1px solid #e1e4e8;
     @media (max-width:535px) {
         flex-direction: column;
         justify-content: flex-start;

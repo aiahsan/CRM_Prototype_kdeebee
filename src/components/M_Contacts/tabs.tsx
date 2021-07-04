@@ -49,7 +49,7 @@ const Style = {
  
      `,
     kahsndfiore: css`
-max-width: 1124px;
+max-width: 978.98px;
 width: 100%;
 margin: auto;
 margin-bottom: -1px;
@@ -66,7 +66,8 @@ margin-bottom: -1px;
     activeCss: css`
 background-color: white;
 border-top: 3px solid #B6AF9D;
-
+border-left: 1px solid #E1E4E8;
+    border-right: 1px solid #E1E4E8;
 `,
     akdsjfasdasd: css`
 display:flex;

@@ -510,7 +510,7 @@ const Style = {
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
-
+    border-radius:3px;
     @media (max-width:768px) {
       min-width:100%;
     }
@@ -554,7 +554,7 @@ const Style = {
     margin-top: 24px;
   `,
   askjdkls2: css`
-    max-width: 1124px;
+    max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -578,6 +578,7 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
+    border-bottom: 1px solid #e1e4e8;
     @media (max-width:534px) {
       flex-wrap:wrap;
     }

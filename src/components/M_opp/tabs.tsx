@@ -4,7 +4,8 @@ import { css, cx } from '@emotion/css'
 const activeCss = css`
 background-color: white;
 border-top: 3px solid #B6AF9D;
-
+border-left: 1px solid #E1E4E8;
+    border-right: 1px solid #E1E4E8;
 `
 interface Propos
 {

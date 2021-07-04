@@ -125,3 +125,14 @@ color: #586069;
   border-bottom: 1px solid #E1E4E8!important;
   
 }
+
+.bg-dark{
+  background-color: #b6af9d!important;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white!important;
+}
+
+.card{
+  border:none!important;
+}

@@ -29,9 +29,7 @@ const ViewBoxText = (props: BoxTextProps) => {
   return (
     <div
       className={css`
-        ${index == 0
-          ? "border-bottom: 1px solid #E1E4E8;"
-          : "border-top: 1px solid #E1E4E8;border-bottom: 1px solid #E1E4E8;"}
+      border-bottom: 1px solid #E1E4E8;
       `}
     >
       <div className={css``}>
@@ -145,6 +143,17 @@ const SideMenu = (props: SideMenuProps) => {
   );
 };
 export default () => {
+  const [activeeventkey,setactiveeventkey]=React.useState([{id:0,isactive:true},{id:1,isactive:false},{id:2,isactive:false},{id:3,isactive:false}]);
+  const handleClicktoggle=(id:number)=>
+  {
+    const obj=activeeventkey.find(x=>x.id==id);
+    if(obj)
+    {
+      obj.isactive=!obj.isactive
+    }
+
+    setactiveeventkey([...activeeventkey]);
+  }
   return (
     <>
       <TopBar />
@@ -280,11 +289,11 @@ export default () => {
                     <p className={Style.prfcst32}>Profile Items</p>
                   </div>
                 </div>
-                <Accordion className="jasdnfsdj22-23" defaultActiveKey="0">
+                <Accordion  className="jasdnfsdj22-23" defaultActiveKey="0">
                   <Card>
                     <Card.Header>
-                      <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                        <Icon icon="cross" /> <p>PROFILE</p>
+                      <Accordion.Toggle  as={Button} onClick={()=>handleClicktoggle(0)}  variant="link" eventKey="0">
+                        <Icon icon={activeeventkey[0].isactive==true?"cross":"plus2"} /> <p>PROFILE</p>
                       </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
@@ -445,19 +454,19 @@ export default () => {
 
                   <Card>
                     <Card.Header>
-                      <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                        <Icon icon="cross" /> <p>ACCOUNT</p>
+                      <Accordion.Toggle   as={Button} onClick={()=>handleClicktoggle(1)} variant="link" eventKey="1">
+                        <Icon icon={activeeventkey[1].isactive==true?"cross":"plus2"} /> <p>ACCOUNT</p>
                       </Accordion.Toggle>
                     </Card.Header>
-                    <Accordion.Collapse eventKey="1">
+                    <Accordion.Collapse  eventKey="1">
                       <></>
                     </Accordion.Collapse>
                   </Card>
 
                   <Card>
                     <Card.Header>
-                      <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                        <Icon icon="cross" /> <p>LEGAL</p>
+                      <Accordion.Toggle  as={Button} onClick={()=>handleClicktoggle(2)} variant="link" eventKey="2">
+                        <Icon icon={activeeventkey[2].isactive==true?"cross":"plus2"} /> <p>LEGAL</p>
                       </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="2">
@@ -467,8 +476,8 @@ export default () => {
 
                   <Card>
                     <Card.Header>
-                      <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                        <Icon icon="cross" /> <p>COMMUNICATIONS</p>
+                      <Accordion.Toggle  as={Button} onClick={()=>handleClicktoggle(3)} variant="link" eventKey="3">
+                        <Icon icon={activeeventkey[3].isactive==true?"cross":"plus2"} /> <p>COMMUNICATIONS</p>
                       </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="3">
@@ -711,7 +720,7 @@ const Style = {
     margin: 0px;
   `,
   prfcst27: css`
-    max-width: 1124px;
+    max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -737,7 +746,7 @@ const Style = {
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
-
+    border-radius:3px;
 
     @media (max-width:1089px) {
       min-width: 100%;
@@ -748,6 +757,8 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
+    border-bottom: 1px solid #e1e4e8;
+
     @media (max-width:534px) {
       flex-wrap:wrap;
     }
@@ -1005,9 +1016,7 @@ const Style = {
           margin-top: 10px;
           margin-bottom: 22px;
         `,
-  skajdklnwe: css`
-          border: 1px solid #e1e4e8;
-        `,
+ 
   cbjasbjkwew: css`
           margin-top: 17.51px;
           margin-bottom: 18.49px;
