@@ -7,7 +7,7 @@ import {Style} from '../components/topBar'
 import avt from '../images/image 10.png'
 
 export default ()=>{
-    return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    return <Navbar collapseOnSelect expand="lg" className="bg-dark1" variant="dark">
     <Navbar.Brand href="#home"> <img src={logo} alt="" /></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">

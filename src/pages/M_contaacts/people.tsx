@@ -7,6 +7,7 @@ import Dropdown from '../../components/dropdown'
 import Icon from '../../icons/icons'
 import Activity from '../../components/M_Contacts/activity'
 import avt from '../../images/1.png'
+import UserImg from '../../images/User.png'
 import Pagination from '../../components/pagination'
 
 export default () => {
@@ -29,13 +30,84 @@ export default () => {
                             <input className={Style.ks2asdjfkfnre} placeholder="search" />
                         </div>
                     </div>
+                    <div className={css`
+                        display:flex;
+                        @media (max-width:768px) {
+                        margin-top:20px;
+                        }
+                    `}>
+                        <button className={css`
+                            border: 1px solid #E1E4E8;
+                            box-sizing: border-box;
+                            border-radius: 2px;
+                            width: 138px;
+                            height: 40px;
+                            margin-right:11px;
+                            background-color:white;
+                            
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+                        `}>
+
+                            <Icon icon="label"/>
+                            <p className={css`
+                            margin:0px 4px;
+                            letter-spacing: -0.07em;
+
+color: #586069;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+                            `}>Tags</p>
+                            <div className={css`
+                            width:24px;
+                            height:15px;
+                            background: #E8E9EB;
+                            border-radius: 7px;
+                            `}><p className={css`
+                            align-items: center;
+letter-spacing: -0.07em;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+color: #586069;
+                            `}>41</p></div>
+                        </button>
+                        <button className={
+                            css`
+                            width: 111px;
+                            height: 34px;
+                            background: #B6AF9D;
+                            border: 1px solid #B6AF9D;
+                            box-sizing: border-box;
+                            border-radius: 2px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            `
+                        }>
+
+                            <Icon icon="userwhite" />
+                            < p className={css`     
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.1em;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    margin-left:4.25px;
+                            `}>Add Contact</p>
+                        </button>
+                    </div>
                 </div>
                 <div className={Style.ajkhsdfjksde}>
                     <div className={Style.asdkfnkdsfner}>
                         <div className={Style.aklsdfnkser}>
                             <input className={Style.kdsanfjlsdner} type="checkbox" />
-                            <Icon icon="user" />
+                            <img src={UserImg}/>
                             <p className={Style.vkasdnjffsf}>87 People</p>
                         </div>
                         <div className={Style.jsdabfjsdfser}>
@@ -156,6 +228,10 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 max-width: 980px;
+@media (max-width:768px) {
+    flex-direction:column;
+    align-items: flex-start;
+  }
 `,
 
 dnkavksdernkiser:css`

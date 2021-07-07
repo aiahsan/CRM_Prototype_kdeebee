@@ -126,7 +126,7 @@ color: #586069;
   
 }
 
-.bg-dark{
+.bg-dark1{
   background-color: #b6af9d!important;
 }
 .navbar-dark .navbar-nav .nav-link{
@@ -135,6 +135,7 @@ color: #586069;
 
 .card{
   border:none!important;
+  border-bottom: 1px solid #e1e4e8!important;
 }
 .page-link{
   border-color: #B6AF9D!important;
