@@ -539,7 +539,7 @@ const Style = {
     align-items: center;
     max-width: 100%;
     }
-    @media (max-width:425px) {
+    @media (max-width:532px) {
       display:block;
       padding:10px;
     }

@@ -365,7 +365,7 @@ border: 1px solid #E7EBF0;
 `,
 alloc4:css`
 display: flex;
-margin: 18px;
+margin: 18px 18px 18px 0px;
 
 @media (max-width:1024px) {
     flex-direction: column;
@@ -379,7 +379,7 @@ margin-right: 28px;
 `,
 alloc6:css`
 margin-top:-24px;
-min-width:840px;
+min-width:791px;
 
 @media (max-width:1024px) {
     min-width:100%;
@@ -388,7 +388,7 @@ min-width:840px;
 alloc7:css`
 position: relative;
 left: -7px;
-z-index: -1;
+z-index: 2;
 top: 37px;
 `,
 alloc8:css`
@@ -444,7 +444,7 @@ top: 19px;
 `,
 allsd5:css`
 display: flex;
-margin: 55px 18px;
+margin: 55px 18px 55px 0px;
 
 @media (max-width:1024px) {
     flex-direction: column;
@@ -457,14 +457,14 @@ margin-right: 28px;
 `,
 allsd7:css`
 margin-top:-24px;
-min-width:840px;
+min-width:791px;
 @media (max-width:1024px) {
     min-width:100%;
 }
 `,
 allsd8:css`
 position: relative;
-left: -7px;
+left: -6.7px;
 z-index: -1;
 top: 37px;
 `,

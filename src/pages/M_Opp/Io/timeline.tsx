@@ -445,7 +445,7 @@ const Style = {
     align-items: center;
     max-width: 100%;
     }
-    @media (max-width:425px) {
+    @media (max-width:532px) {
       display:block;
       padding:10px;
     }
@@ -454,7 +454,7 @@ const Style = {
   @media (max-width:1024px) {
     margin-right: 15px;
   }
-  @media (max-width:425px) {
+  @media (max-width:532px) {
     margin: 0;
   }
   `,
@@ -567,6 +567,9 @@ const Style = {
   `,
   askjdkls3: css`
     margin-top: 24px;
+    @media (max-width:532px) {
+     width:100%;
+    }
   `,
   askjdkls2: css`
     max-width: 978.98px;
