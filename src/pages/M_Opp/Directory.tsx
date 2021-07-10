@@ -7,6 +7,7 @@ import Dropdown from "../../components/dropdown";
 import Icon from "../../icons/icons";
 import avt from "../../images/pc1.png";
 import Pagination from '../../components/pagination'
+import {useMediaQuery} from 'react-responsive'
 interface BoxProps {
   title: string;
   image: string;
@@ -25,12 +26,78 @@ interface BoxTextProps {
   value1: string;
   key2: string;
   value2: string;
+  isLast?:boolean;
 }
 
 const ViewBoxText = (props: BoxTextProps) => {
   const { key1, key2, value1, value2 } = props;
+  const isMobile = useMediaQuery({
+    query: '(max-width: 535px)'
+  })
   return (
-    <div className={Style.nfas2331sd}>
+    isMobile?<>
+    <div className={css`
+      display:flex;
+      padding: 6px 0px;
+    border-top: 1px solid #E1E4E8;
+    border-bottom:${props.isLast&&props.isLast==true?"1px solid #e1e4e8":"0px"}}
+    `}>
+
+<p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width:82px;
+              `}
+            >
+              {key1}
+            </p>
+
+            <p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width: 109px;
+                `}
+            >
+              {value1}
+            </p>
+    </div>
+    <div className={css`
+      display:flex;
+      padding: 6px 0px;
+    border-top: 1px solid #E1E4E8;
+    border-bottom:${props.isLast&&props.isLast==true?"1px solid #e1e4e8":"0px"}}
+    `}>
+
+<p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width:82px;
+              `}
+            >
+              {key2}
+            </p>
+
+            <p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width: 109px;
+                `}
+            >
+              {value2}
+            </p>
+    </div>
+
+    </>:
+    <div className={css`
+    ${
+      Style.nfas2331sd
+    }
+    border-bottom:${props.isLast&&props.isLast==true?"1px solid #e1e4e8":"0px"}}
+    `}>
       <div className={css``}>
         <div className={Style.mxnixewawerw}>
           <div className={Style.kscsaje344}>
@@ -85,14 +152,20 @@ const ViewBox = (props: BoxProps) => {
       <div className={Style.soajdmdsfsd}>
         <div className={Style.skanasdcder}>
           <p className={Style.vnbhy75tiu}>{title}</p>
-          <p className={Style.nfntfd646}>&thinsp;- {subtitle}</p>
+          <p className={css`
+            margin:0px 9.5px;
+          `}>-</p>
+          <p className={Style.nfntfd646}>{subtitle}</p>
         </div>
+
+
 
         <div
           className={css`
             margin-top: 27px;
           `}
         >
+          
           <ViewBoxText
             key1="Type"
             value1="Equity"
@@ -116,6 +189,7 @@ const ViewBox = (props: BoxProps) => {
             value1="USD 2.8m"
             key2="Introduced by"
             value2="Strategic Partner"
+            isLast={true}
           />
         </div>
       </div>
@@ -293,7 +367,7 @@ const Style = {
   ncjase43asdw: css`
     border: 1px solid #e1e4e8;
     margin-top: 24px;
-    min-width: 728px;
+    min-width: 980px;
     border-radius: 3px;
     @media (max-width:768px) {
         min-width: 98%;    
@@ -359,7 +433,7 @@ const Style = {
       }
   `,
   cxnfjerwr: css`
-    max-width: 926px;
+    max-width: 980px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -375,11 +449,16 @@ const Style = {
   `,
   vbdsnerver: css`
     display: flex;
-    padding: 16px;
+    padding: 16px 0px 16px 16px;
     border-bottom: 1px solid #e1e4e8;
     @media (max-width:881px) {
         overflow: scroll;
 
+      }
+      @media (max-width:535px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
   `,
   skanasdcder: css`
@@ -410,9 +489,10 @@ const Style = {
     margin: 0px;
   `,
   nfas2331sd: css`
-    margin-left: 52px;
+    margin-left: 56px;
     border-top: 1px solid #e1e4e8;
     border-bottom: 1px solid #e1e4e8;
+    min-width: 588px;
   `,
   mxnixewawerw: css`
     display: flex;
