@@ -11,7 +11,10 @@ interface SideMenuProps {
     title: string,
     isActive: Boolean
 }
+const Header=({title,desc}:{title:string,desc?:string})=><div className={Style.alloc8}>
+<p className={Style.alloc9}>{title} <span className={css`font-weight:normal`}> &thinsp; {desc?desc:""}</span></p>
 
+</div>
 export default () => {
     return <>
         <TopBar />
@@ -33,10 +36,8 @@ export default () => {
 
                         </div>
 
-                        <div className={Style.alloc8}>
-                            <p className={Style.alloc9}>George Bitsonis <span className={css`font-weight:normal`}> &thinsp; sent message 44m ago</span></p>
-
-                        </div>
+                    <Header title="George Bitsonis" desc="sent message 44m ago"/>
+                        
 
                         <div className={Style.allsd}>
                             <p className={Style.allsd1}>
@@ -87,10 +88,8 @@ export default () => {
 
                         </div>
 
-                        <div className={Style.allsd9}>
-                            <p className={Style.ssncakser}>Process Message</p>
+                        <Header title="Process Message" />
 
-                        </div>
 
                         <div className={Style.ssncakser1}>
 
@@ -360,8 +359,8 @@ margin-bottom:31.7px;
   }
 `,
 alloc3:css`
-border: 1px solid #E7EBF0;
-
+height: 0.1px;
+    background-color: #e1e4e8;
 `,
 alloc4:css`
 display: flex;

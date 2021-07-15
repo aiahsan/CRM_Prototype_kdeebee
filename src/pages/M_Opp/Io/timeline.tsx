@@ -491,8 +491,8 @@ const Style = {
     margin: 22px 0px;
   `,
   kasjhlrer: css`
-    border: 1px solid #e1e4e8;
-  `,
+  height: 0.1px;
+  background-color: #e1e4e8;  `,
   ksahdks31: css`
     margin-top: 22px;
   `,

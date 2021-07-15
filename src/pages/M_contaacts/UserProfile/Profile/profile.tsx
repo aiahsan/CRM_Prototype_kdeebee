@@ -9,6 +9,7 @@ import avt1 from "../../../../images/coverprofile.png";
 import rothschild from "../../../../images/Rothschild.png";
 import image14 from "../../../../images/image14.png";
 import { Card, Accordion, Button } from "react-bootstrap";
+import {useMediaQuery} from 'react-responsive'
 
 interface BoxProps {
   title: string;
@@ -22,11 +23,75 @@ interface BoxTextProps {
   index?: number;
   value1Active: boolean;
   value2Active: boolean;
+  isLast?:boolean;
+
 }
 const ViewBoxText = (props: BoxTextProps) => {
   const { key1, key2, value1, value2, index, value1Active, value2Active } =
     props;
+    const isMobile = useMediaQuery({
+      query: '(max-width: 535px)'
+    })
   return (
+    isMobile?<>
+    <div className={css`
+      display:flex;
+      padding: 6px 0px;
+    border-top: 1px solid #E1E4E8;
+    justify-content: center;
+    align-items: center;
+    border-bottom:${props.isLast&&props.isLast==true?"1px solid #e1e4e8":"0px"}}
+    `}>
+
+<p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width:82px;
+              `}
+            >
+              {key1}
+            </p>
+
+            <p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width: 109px;
+                `}
+            >
+              {value1}
+            </p>
+    </div>
+    <div className={css`
+      display:flex;
+      padding: 6px 0px;
+    border-top: 1px solid #E1E4E8;
+    border-bottom:${props.isLast&&props.isLast==true?"1px solid #e1e4e8":"0px"}}
+    `}>
+
+<p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width:82px;
+              `}
+            >
+              {key2}
+            </p>
+
+            <p
+              className={css`
+                ${Style.baseText}
+                ${Style.dsvjbvresre}
+                width: 109px;
+                `}
+            >
+              {value2}
+            </p>
+    </div>
+
+    </>:
     <div
       className={css`
       border-bottom: 1px solid #E1E4E8;
@@ -117,6 +182,7 @@ const ViewBox = (props: BoxProps) => {
               value1={x.value1}
               key2={x.key2}
               value2={x.value2}
+              isLast={i==values.length?true:false}
             />
           ))}
         </div>
@@ -519,7 +585,7 @@ const Style = {
       flex-direction: column;
     }
     
-    @media (max-width:425px) {
+    @media (max-width:556px) {
       align-items: center;
     }
   `,
@@ -871,6 +937,12 @@ const Style = {
   margin: 0px;
   margin-left: 6px;
 `,
+dsvjbvresre: css`
+width: 67px;
+display: flex;
+justify-content: flex-end;
+margin-right: 26.73px;
+`,
   paraText: css`
   font-family: Lucida Grande;
   font-style: normal;
@@ -937,9 +1009,9 @@ const Style = {
               max-width: 425px;
               
             }
-            @media(max-width:425px)
+            @media(max-width:556px)
             {
-              max-width: 280px;
+              max-width: 100%;
             }
             
           `,
@@ -947,7 +1019,7 @@ const Style = {
           @media (max-width:1024px) {
             margin-right: 15px;
           }
-          @media (max-width:425px) {
+          @media (max-width:556px) {
             margin: 0;
           }
           `,
@@ -967,7 +1039,7 @@ const Style = {
           align-items: center;
           max-width: 100%;
           }
-          @media (max-width:425px) {
+          @media (max-width:556px) {
             display:block;
             padding:10px;
           }
@@ -1007,8 +1079,8 @@ const Style = {
           margin: 22px 0px;
         `,
   kasjhlrer: css`
-          border: 1px solid #e1e4e8;
-        `,
+  height: 0.1px;
+  background-color: #e1e4e8;        `,
   ksahdks31: css`
           margin-top: 22px;
         `,
