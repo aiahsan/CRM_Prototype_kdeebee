@@ -11,7 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-p,h1,h2,h3,h4,h5,h6{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
   padding: 0px;
 }
@@ -28,10 +34,12 @@ p,h1,h2,h3,h4,h5,h6{
   font-weight: bold;
   src: local('Lucida Grande'), url(./fonts/LucidaGrandeBold.ttf) format('woff');
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-  background-color: transparent!important;
-  border: none!important;
-  box-shadow: none!important;
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 .container1 {
   display: block;
@@ -44,14 +52,14 @@ p,h1,h2,h3,h4,h5,h6{
   -ms-user-select: none;
   user-select: none;
   font-family: Lucida Grande;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: -0.03em;
-    color: #000000;
-    margin: 0px;
-    margin-bottom: 17px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin: 0px;
+  margin-bottom: 17px;
 }
 
 /* Hide the browser's default radio button */
@@ -79,12 +87,12 @@ p,h1,h2,h3,h4,h5,h6{
 
 /* When the radio button is checked, add a blue background */
 .container1 input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -95,23 +103,23 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 .container1 .checkmark:after {
- 	top: 3px;
-	left: 3px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 .jasdnfsdj22-23 .card-header button p {
-margin: 0px;
-margin-left: 7.48px;
+  margin: 0px;
+  margin-left: 7.48px;
 
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: -0.06em;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.06em;
 
-color: #586069;
+  color: #586069;
 }
 .jasdnfsdj22-23 .card-header button {
   padding: 0px;
@@ -119,38 +127,37 @@ color: #586069;
   align-items: center;
   height: 100%;
 }
-.jasdnfsdj22-23 >.card>.card-header {
+.jasdnfsdj22-23 > .card > .card-header {
   height: 48px;
-  background-color: transparent!important;
-  border-bottom: 1px solid #E1E4E8!important;
-  
+  background-color: transparent !important;
+  border-bottom: 1px solid #e1e4e8 !important;
 }
 
-.bg-dark1{
-  background-color: #b6af9d!important;
+.bg-dark1 {
+  background-color: #b6af9d !important;
 }
-.navbar-dark .navbar-nav .nav-link{
-  color: white!important;
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
 }
 
-.card{
-  border:none!important;
-  border-bottom: 1px solid #e1e4e8!important;
+.card {
+  border: none !important;
+  border-bottom: 1px solid #e1e4e8 !important;
 }
-.page-link{
-  border-color: #B6AF9D!important;
-  color: #B6AF9D!important;
+.page-link {
+  border-color: #b6af9d !important;
+  color: #b6af9d !important;
   font-weight: bold;
-font-size: 13px;
-line-height: 15px;
-display: flex;
-align-items: center;
-letter-spacing: -0.03em;
-font-family: Lucida Grande;
-
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  font-family: Lucida Grande;
 }
 
-.page-item.active .page-link,.page-link:hover{
-  background-color: #B6AF9D!important;
-  color: white!important;
+.page-item.active .page-link,
+.page-link:hover {
+  background-color: #b6af9d !important;
+  color: white !important;
 }

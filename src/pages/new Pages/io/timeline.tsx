@@ -1,191 +1,70 @@
-import React from "react";
-import Breadcrumb from "../../../components/crumbread";
-import TopBar from "../../../components/topBar";
-import Tabs from "../../../components/M_opp/tabs";
-import { css, cx } from "@emotion/css";
-import Dropdown from "../../../components/dropdown";
-import Icon from "../../../icons/icons";
-import Activity from "../../../components/dashboard/expanded/activity";
-import ActivitySub from "../../../components/dashboard/expanded/activitysub";
-import avt from "../../../images/1.png";
-import avt1 from "../../../images/pc1.png";
-import Pagination from '../../../components/pagination'
-interface SideMenuProps {
-  title: string;
-  isActive: Boolean;
-}
-const SideMenu = (props: SideMenuProps) => {
-  const { title, isActive } = props;
-  return (
-    <div
-      className={css`
-        ${Style.askjkflsf}
-        ${isActive == true ? "border-left:2.03px solid #B6AF9D" : ""}
-      `}
-    >
-      {title}
-    </div>
-  );
-};
+import React from 'react';
+import Breadcrumb from '../../../components/crumbread';
+import TopBar from '../../../components/topBar';
+import Tabs from '../../../components/newComponents/io/tabs';
+import { css, cx } from '@emotion/css';
+import Dropdown from '../../../components/dropdown';
+import Icon from '../../../icons/icons';
+import Activity from '../../../components/dashboard/expanded/activity';
+import ActivitySub from '../../../components/dashboard/expanded/activitysub';
+import avt from '../../../images/1.png';
+import avt1 from '../../../images/pc1.png';
+import Pagination from '../../../components/pagination';
+import LeftBar from '../../../components/newComponents/io/leftBar';
+
 export default () => {
   return (
     <>
       <TopBar />
       <Breadcrumb
-        list={["Opportunities", "Directory", "Project Fluid"]}
+        list={['Opportunities', 'Directory', 'Project Fluid']}
         activeIndex={2}
       />
       <Tabs activeTab={0} />
 
       <div className={Style.askfklasf}>
-        <div className={Style.asjdkasjfwer}>
-          <div>
-          <img src={avt1} className={Style.kasjfkrnf} />
-
-<h1 className={Style.kasdjaklds}>Project Fluid</h1>
-<h2 className={Style.kashdklasasewe}>
-  Equity Investment in a Biotech Start-Up
-</h2>
-          </div>
-          <div className={Style.kasjhlrer}></div>
-
-         <div className={css`
-         ${Style.kasdfjersajdk2}
-         `}>
-         <div className={`d-flex ml-2 align-items-center ${Style.ksahdks31}`}>
-            <Icon icon="light" />
-            <p
-              className={css`
-                ${Style.BaseHighlightText}
-              `}
-            >
-              Open in Knowledge Center
-            </p>
-          </div>
-
-          <div className={`d-flex ml-2 align-items-center ${Style.xznfzsff}`}>
-            <Icon icon="glasses" />
-            <p
-              className={css`
-                ${Style.BaseHighlightText}
-              `}
-            >
-              Add to Watchlist
-            </p>
-          </div>
-
-         </div>
-          <div className={Style.skajdklnwe}></div>
-
-          <div className={Style.cbjasbjkwew}>
-            <h2 className={Style.ksajkfasnfa}>Highlights</h2>
-            <div
-              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
-            >
-              <Icon icon="eql" />
-              <p
-                className={css`
-                  ${Style.BaseHighlightText}
-                `}
-              >
-                Equity
-              </p>
-            </div>
-
-            <div
-              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
-            >
-              <Icon icon="sector" />
-              <p
-                className={css`
-                  ${Style.BaseHighlightText}
-                `}
-              >
-                Healthcare & Pharma
-              </p>
-            </div>
-
-            <div
-              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
-            >
-              <Icon icon="earth" />
-              <p
-                className={css`
-                  ${Style.BaseHighlightText}
-                `}
-              >
-                United States
-              </p>
-            </div>
-
-            <div
-              className={`d-flex ml-2 align-items-center ${Style.snkaknkdad}`}
-            >
-              <Icon icon="clock" />
-              <p
-                className={css`
-                  ${Style.BaseHighlightText}
-                `}
-              >
-                4 Years Investment Horizon
-              </p>
-            </div>
-
-            <div
-              className={`d-flex ml-2 align-items-center ${Style.askjdkls1}`}
-            >
-              <Icon icon="dollar" />
-              <p
-                className={css`
-                  ${Style.BaseHighlightText}
-                `}
-              >
-                USD 2.8m Target Raise
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-100">
+        <LeftBar />
+        <div className='w-100'>
           <div className={Style.askjdkls2}>
             <div className={Style.askjdkls3}>
               <div className={Style.askjdkls4}>
                 <div className={Style.askjdkls5}>
-                  <Dropdown title="All activity" />
+                  <Dropdown title='All activity' />
                 </div>
                 <div className={Style.askjdkls6}>
-                  <Icon icon="search" />
-                  <input className={Style.askjdkls7} placeholder="search" />
+                  <Icon icon='search' />
+                  <input className={Style.askjdkls7} placeholder='search' />
                 </div>
               </div>
 
               <div className={Style.askjdkls8}>
                 <div className={Style.askjdkslenwe}>
                   <div className={Style.cdjasbere}>
-                    <Icon icon="chain" />
+                    <Icon icon='chain' />
                     <p className={Style.cnajenrek}>IO Activity Summary</p>
                   </div>
                   <div className={Style.asdbjrerer}>
-                    <Dropdown title="Actor" />
-                    <Dropdown title="Activity Type" />
+                    <Dropdown title='Actor' />
+                    <Dropdown title='Activity Type' />
                   </div>
                 </div>
 
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Mary Ek"
-                    date=" 8 minutes ago"
-                    status=" logged in"
-                    subtitle=""
+                    title='Mary Ek'
+                    date=' 8 minutes ago'
+                    status=' logged in'
+                    subtitle=''
                   />
                   <div className={Style.cansjkebwr}>
                     <ActivitySub
-                      icon="eye"
-                      title="viewed"
-                      midtitle="Project Fluid"
-                      nextTitle="for 23m"
+                      icon='eye'
+                      title='viewed'
+                      midtitle='Project Fluid'
+                      nextTitle='for 23m'
                     />
-                    <ActivitySub icon="glasses" title="41m session length" />
+                    <ActivitySub icon='glasses' title='41m session length' />
                     <p
                       className={css`
                         ${Style.BaseMoreText}
@@ -199,14 +78,14 @@ export default () => {
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Mike Johnson"
-                    date=" 3 hours ago"
-                    status=" logged in"
-                    subtitle=""
+                    title='Mike Johnson'
+                    date=' 3 hours ago'
+                    status=' logged in'
+                    subtitle=''
                   />
                   <div className={Style.askbdjwbe34l}>
-                    <ActivitySub icon="eye" title="3 pages viewed" />
-                    <ActivitySub icon="clock" title="7m session length" />
+                    <ActivitySub icon='eye' title='3 pages viewed' />
+                    <ActivitySub icon='clock' title='7m session length' />
                     <p
                       className={css`
                         ${Style.BaseMoreText}
@@ -220,53 +99,53 @@ export default () => {
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Lucy Granger"
-                    date=" 26 Apr ‘21"
-                    status="completed"
-                    subtitle=" Additional NDA Project SWF"
+                    title='Lucy Granger'
+                    date=' 26 Apr ‘21'
+                    status='completed'
+                    subtitle=' Additional NDA Project SWF'
                   />
                 </div>
 
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Lucy Granger"
-                    date=" 26 Apr ‘21"
-                    status="completed"
-                    subtitle=" Additional NDA Project SWF"
+                    title='Lucy Granger'
+                    date=' 26 Apr ‘21'
+                    status='completed'
+                    subtitle=' Additional NDA Project SWF'
                   />
                 </div>
 
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Deanne Phillips"
-                    status="sent out"
-                    subtitle="Additional NDA Project SWF"
-                    date="25 Apr ‘21"
+                    title='Deanne Phillips'
+                    status='sent out'
+                    subtitle='Additional NDA Project SWF'
+                    date='25 Apr ‘21'
                   />
                 </div>
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Sergio Scalzi"
-                    status="added new Investment Opportunity"
-                    subtitle="  Project Mahal"
-                    date="24 Apr ‘21"
+                    title='Sergio Scalzi'
+                    status='added new Investment Opportunity'
+                    subtitle='  Project Mahal'
+                    date='24 Apr ‘21'
                   />
                 </div>
 
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Paul Jones"
-                    date="21 Mar ‘21"
-                    status=" logged in"
-                    subtitle=""
+                    title='Paul Jones'
+                    date='21 Mar ‘21'
+                    status=' logged in'
+                    subtitle=''
                   />
                   <div className={Style.khasdkhasdeWR23}>
-                    <ActivitySub icon="eye" title="7 pages viewed" />
-                    <ActivitySub icon="clock" title="12m session length" />
+                    <ActivitySub icon='eye' title='7 pages viewed' />
+                    <ActivitySub icon='clock' title='12m session length' />
 
                     <p
                       className={css`
@@ -280,14 +159,14 @@ export default () => {
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Sara Bell"
-                    date="28 Mar ‘21"
-                    status=" logged in"
-                    subtitle=""
+                    title='Sara Bell'
+                    date='28 Mar ‘21'
+                    status=' logged in'
+                    subtitle=''
                   />
                   <div className={Style.khasdkhasdeWR23}>
-                    <ActivitySub icon="eye" title="34 pages viewed" />
-                    <ActivitySub icon="clock" title="86m session length" />
+                    <ActivitySub icon='eye' title='34 pages viewed' />
+                    <ActivitySub icon='clock' title='86m session length' />
 
                     <p
                       className={css`
@@ -301,14 +180,14 @@ export default () => {
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Tom Gill"
-                    date="28 Mar ‘21"
-                    status=" logged in"
-                    subtitle=""
+                    title='Tom Gill'
+                    date='28 Mar ‘21'
+                    status=' logged in'
+                    subtitle=''
                   />
                   <div className={Style.khasdkhasdeWR23}>
-                    <ActivitySub icon="eye" title="9 pages viewed" />
-                    <ActivitySub icon="clock" title="24m session length" />
+                    <ActivitySub icon='eye' title='9 pages viewed' />
+                    <ActivitySub icon='clock' title='24m session length' />
 
                     <p
                       className={css`
@@ -323,14 +202,14 @@ export default () => {
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Lucy Granger"
-                    date="28 Mar ‘21"
-                    status=" logged in"
-                    subtitle=""
+                    title='Lucy Granger'
+                    date='28 Mar ‘21'
+                    status=' logged in'
+                    subtitle=''
                   />
                   <div className={Style.khasdkhasdeWR23}>
-                    <ActivitySub icon="eye" title="14 pages viewed" />
-                    <ActivitySub icon="clock" title="37m session length" />
+                    <ActivitySub icon='eye' title='14 pages viewed' />
+                    <ActivitySub icon='clock' title='37m session length' />
 
                     <p
                       className={css`
@@ -344,14 +223,14 @@ export default () => {
                 <div className={Style.a233ksldnasdasd}>
                   <Activity
                     image={avt}
-                    title="Chris Reed"
-                    date="28 Mar ‘21"
-                    status=" logged in"
-                    subtitle=""
+                    title='Chris Reed'
+                    date='28 Mar ‘21'
+                    status=' logged in'
+                    subtitle=''
                   />
                   <div className={Style.khasdkhasdeWR23}>
-                    <ActivitySub icon="eye" title="2 pages viewed" />
-                    <ActivitySub icon="clock" title="3m session length" />
+                    <ActivitySub icon='eye' title='2 pages viewed' />
+                    <ActivitySub icon='clock' title='3m session length' />
 
                     <p
                       className={css`
@@ -367,20 +246,24 @@ export default () => {
           </div>
         </div>
       </div>
-  
-      <div className={css`
-max-width: 978.98px;
-margin: auto;
-margin-top:32px;
-`}>
-<div className={css`
-display:flex;
-justify-content: center;
-margin-left: 3%;
-`}>
-<Pagination/>
-</div>
-</div>
+
+      <div
+        className={css`
+          max-width: 978.98px;
+          margin: auto;
+          margin-top: 32px;
+        `}
+      >
+        <div
+          className={css`
+            display: flex;
+            justify-content: center;
+            margin-left: 3%;
+          `}
+        >
+          <Pagination />
+        </div>
+      </div>
     </>
   );
 };
@@ -426,7 +309,7 @@ const Style = {
     max-width: 1119px;
     margin: auto;
     display: flex;
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
     }
   `,
@@ -435,36 +318,35 @@ const Style = {
     max-width: 224px;
     position: relative;
     bottom: 29px;
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       bottom: 0px;
-      margin-top:10px;
+      margin-top: 10px;
 
       display: flex;
-      flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
     }
-    @media (max-width:532px) {
-      display:block;
-      padding:10px;
+    @media (max-width: 532px) {
+      display: block;
+      padding: 10px;
     }
   `,
-  kasdfjersajdk2:css`
-  @media (max-width:1024px) {
-    margin-right: 15px;
-  }
-  @media (max-width:532px) {
-    margin: 0;
-  }
+  kasdfjersajdk2: css`
+    @media (max-width: 1024px) {
+      margin-right: 15px;
+    }
+    @media (max-width: 532px) {
+      margin: 0;
+    }
   `,
   kasjfkrnf: css`
     width: 224px;
     height: 224px;
     border-radius: 224px;
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.16));
-  
-    `,
+  `,
   kasdjaklds: css`
     font-family: Lucida Grande;
     font-style: normal;
@@ -491,8 +373,9 @@ const Style = {
     margin: 22px 0px;
   `,
   kasjhlrer: css`
-  height: 0.1px;
-  background-color: #e1e4e8;  `,
+    height: 0.1px;
+    background-color: #e1e4e8;
+  `,
   ksahdks31: css`
     margin-top: 22px;
   `,
@@ -525,9 +408,9 @@ const Style = {
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
-    border-radius:3px;
-    @media (max-width:768px) {
-      min-width:100%;
+    border-radius: 3px;
+    @media (max-width: 768px) {
+      min-width: 100%;
     }
   `,
   askjdkls7: css`
@@ -542,7 +425,7 @@ const Style = {
     padding: 8px 9.5px 8px 17px;
     border-right: 1px solid #e1e4e8;
 
-    @media (max-width:534px) {
+    @media (max-width: 534px) {
       border: none;
     }
   `,
@@ -556,19 +439,18 @@ const Style = {
     justify-content: flex-start;
     align-items: center;
     width: 560px;
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       width: 100%;
     }
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
-    align-items: flex-start;
+      align-items: flex-start;
     }
-    
   `,
   askjdkls3: css`
     margin-top: 24px;
-    @media (max-width:532px) {
-     width:100%;
+    @media (max-width: 532px) {
+      width: 100%;
     }
   `,
   askjdkls2: css`
@@ -581,7 +463,6 @@ const Style = {
   askjdkls1: css`
     margin-top: 10px;
     margin-bottom: 22px;
-    
   `,
   a233ksldnasdasd: css`
     border-bottom: 1px solid #e1e4e8;
@@ -597,8 +478,8 @@ const Style = {
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
     border-bottom: 1px solid #e1e4e8;
-    @media (max-width:534px) {
-      flex-wrap:wrap;
+    @media (max-width: 534px) {
+      flex-wrap: wrap;
     }
   `,
   cdjasbere: css`
@@ -624,8 +505,8 @@ const Style = {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width:534px) {
-      margin-top:10px
+    @media (max-width: 534px) {
+      margin-top: 10px;
     }
   `,
   cansjkebwr: css`

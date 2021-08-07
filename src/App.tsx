@@ -1,17 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import Expand from './pages/Dashboard/expand'
-import Directory from './pages/M_Opp/Directory'
-import TimeLine from './pages/M_Opp/Io/timeline'
-import People from './pages/M_contaacts/people'
-import AllocateToNew from './pages/M_contaacts/reconcile/item/allocatetonew'
-import Profile from './pages/M_contaacts/UserProfile/Profile/profile'
-import Footer from './components/footer'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+
+import OrganisationPeople from './pages/new Pages/organisations/people';
+
+import Footer from './components/footer';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -19,29 +12,38 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
+            <OrganisationPeople />
+          </Route>
+
+          {/* 
+          <Route exact path='/'>
             <Expand />
           </Route>
-          <Route exact path="/directory">
-            <Directory />
-          </Route>
+     
 
-          <Route exact path="/timeLine">
+          <Route exact path='/io/timeLine'>
             <TimeLine />
           </Route>
-          <Route exact path="/people">
+          <Route exact path='/people'>
             <People />
           </Route>
-          <Route exact path="/allocateToNew">
+          <Route exact path='/allocateToNew'>
             <AllocateToNew />
           </Route>
-          <Route exact path="/profile">
+          <Route exact path='/userprofile/profile'>
             <Profile />
           </Route>
-
-        </Switch></Router>
+          <Route exact path='/watchlist'>
+            <Watchlist />
+          </Route>
+          <Route exact path='/userprofile/timeline'>
+            <TimelineUser />
+          </Route>
+       */}
+        </Switch>
+      </Router>
       <Footer />
-
     </>
   );
 }
