@@ -1,6 +1,7 @@
 import React from 'react';
 
 import OrganisationPeople from './pages/new Pages/organisations/people';
+import Reconcile from './pages/new Pages/M_contact/reconcile';
 
 import Footer from './components/footer';
 
@@ -13,7 +14,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/'>
-            <OrganisationPeople />
+            <Reconcile />
           </Route>
 
           {/* 

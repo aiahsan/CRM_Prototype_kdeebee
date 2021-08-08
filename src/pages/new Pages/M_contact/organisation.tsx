@@ -1,21 +1,21 @@
 import React from 'react';
-import Breadcrumb from '../../components/crumbread';
-import TopBar from '../../components/topBar';
-import Tabs from '../../components/M_Contacts/tabs';
+import Breadcrumb from '../../../components/crumbread';
+import TopBar from '../../../components/topBar';
+import Tabs from '../../../components/M_Contacts/tabs';
 import { css, cx } from '@emotion/css';
-import Dropdown from '../../components/dropdown';
-import Icon from '../../icons/icons';
-import Activity from '../../components/M_Contacts/activity';
-import avt from '../../images/1.png';
-import UserImg from '../../images/User.png';
-import Pagination from '../../components/pagination';
+import Dropdown from '../../../components/dropdown';
+import Icon from '../../../icons/icons';
+import Activity from '../../../components/M_Contacts/activity';
+import avt from '../../../images/img1big.png';
+import UserImg from '../../../images/User.png';
+import Pagination from '../../../components/pagination';
 
 export default () => {
   return (
     <>
       <TopBar />
       <Breadcrumb list={['Contacts', 'People']} activeIndex={1} />
-      <Tabs activeTab={1} />
+      <Tabs activeTab={2} />
       <div className={Style.akdshgksdhner}>
         <div className={Style.kandsfjsdneR}>
           <div className={Style.aknsdlsereT}>
@@ -25,7 +25,10 @@ export default () => {
               </div>
               <div className={Style.kansfdjerew}>
                 <Icon icon='search' />
-                <input className={Style.ks2asdjfkfnre} placeholder='search' />
+                <input
+                  className={Style.ks2asdjfkfnre}
+                  placeholder='Search organasations '
+                />
               </div>
             </div>
             <div
@@ -38,58 +41,7 @@ export default () => {
             >
               <button
                 className={css`
-                  border: 1px solid #e1e4e8;
-                  box-sizing: border-box;
-                  border-radius: 2px;
-                  width: 138px;
-                  height: 40px;
-                  margin-right: 11px;
-                  background-color: white;
-
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                `}
-              >
-                <Icon icon='label' />
-                <p
-                  className={css`
-                    margin: 0px 4px;
-                    letter-spacing: -0.07em;
-
-                    color: #586069;
-                    font-weight: bold;
-                    font-size: 15px;
-                    line-height: 18px;
-                  `}
-                >
-                  Tags
-                </p>
-                <div
-                  className={css`
-                    width: 24px;
-                    height: 15px;
-                    background: #e8e9eb;
-                    border-radius: 7px;
-                  `}
-                >
-                  <p
-                    className={css`
-                      align-items: center;
-                      letter-spacing: -0.07em;
-                      font-weight: bold;
-                      font-size: 12px;
-                      line-height: 14px;
-                      color: #586069;
-                    `}
-                  >
-                    41
-                  </p>
-                </div>
-              </button>
-              <button
-                className={css`
-                  width: 111px;
+                  width: 143px;
                   height: 34px;
                   background: #b6af9d;
                   border: 1px solid #b6af9d;
@@ -100,7 +52,7 @@ export default () => {
                   justify-content: center;
                 `}
               >
-                <Icon icon='userwhite' />
+                <Icon icon='org' color='white' />
                 <p
                   className={css`
                     font-weight: bold;
@@ -113,7 +65,7 @@ export default () => {
                     margin-left: 4.25px;
                   `}
                 >
-                  Add Contact
+                  Add Organisation
                 </p>
               </button>
             </div>
@@ -123,11 +75,10 @@ export default () => {
               <div className={Style.aklsdfnkser}>
                 <input className={Style.kdsanfjlsdner} type='checkbox' />
                 <img src={UserImg} />
-                <p className={Style.vkasdnjffsf}>87 People</p>
+                <p className={Style.vkasdnjffsf}>10 Organisations</p>
               </div>
               <div className={Style.jsdabfjsdfser}>
-                <Dropdown title='Tag' />
-                <Dropdown title='Stage' />
+                <Dropdown title='Type' />
                 <Dropdown title='Sort' />
               </div>
             </div>
@@ -135,92 +86,89 @@ export default () => {
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='Mary Ek'
+                title='Blu Family Office'
                 lastActitvy='Last active:  23 minutes ago'
-                status='Stage: KYC Completed'
-                email='lucy@blu-fo.com'
+                status='Family Office'
+                email=''
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='Sarah Thiem'
-                email='sarah.thiem@abc.com'
+                title='Carter Family Office'
+                email=''
                 lastActitvy='Last active:  44 minutes ago'
-                status='Stage: KYC Completed'
+                status='Family Office'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='Tom Johnson'
-                email='tom.johnson@abc.com'
+                title='Blu Family Office'
+                email=''
                 lastActitvy='Last active:  55 minutes ago'
-                status='Stage: KYC Completed'
+                status='Family Office'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='James Lennon'
-                email='james.lennon@abc.com'
+                title='Carter Family Office'
+                email=''
                 lastActitvy='Last active:  2 hours ago'
                 status='Stage: Investment Preferences Known'
-                tag='Tag ABC'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='Preethi Mackenzie'
-                email='preethi.mackenzie@abc.com'
+                title='Blu Family Office'
+                email=''
                 lastActitvy='Last active:  3 hours ago'
                 status='Stage: Investment Preferences Known'
-                tag='Tag XYZ'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='Marie Carney'
-                email='marie.carney@abc.com'
+                title='Carter Family Office'
+                email=''
                 lastActitvy='Last active:  4 hours ago'
-                status='Stage: KYC Completed'
+                status='Family Office'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='James Jarret'
-                email='james.jarret@abc.com'
+                title='Blu Family Office'
+                email=''
                 lastActitvy='Last active:  6 hours ago'
                 status='Stage: Prospect'
-                tag='ABC BD Partner'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='John Steadman'
-                email='john.steadman@abc.com'
+                title='Carter Family Office'
+                email=''
                 lastActitvy='Last active:  6 hours ago'
-                status='Stage: KYC Completed'
+                status='Family Office'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='Chris Copeland'
-                email='chris.copeland@abc.com'
+                title='Blu Family Office'
+                email=''
                 lastActitvy='Last active:  6 hours ago'
-                status='Stage: KYC Completed'
+                status='Family Office'
               />
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
                 image={avt}
-                title='Sara Hodge'
-                email='sara.hodge@abc.com'
+                title='Carter Family Office'
+                email=''
                 lastActitvy='Last active:  7 hours ago'
                 status='Stage: Transacted'
               />
@@ -363,7 +311,7 @@ const Style = {
     color: #586069;
   `,
   jsdabfjsdfser: css`
-    max-width: 185px;
+    max-width: 115px;
     width: 100%;
     display: flex;
     justify-content: space-between;
