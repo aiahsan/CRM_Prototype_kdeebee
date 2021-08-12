@@ -13,6 +13,7 @@ import BreadButtons from '../../../components/newComponents/io/breadButtons';
 import avt from '../../../images/1.png';
 import Profile from '../../../components/newComponents/io/profileBar';
 import SideMenu from '../../../components/sidemenu';
+import { useHistory } from 'react-router-dom';
 
 const List = [
   {
@@ -103,6 +104,8 @@ const List = [
   },
 ];
 export default () => {
+  const history = useHistory();
+
   return (
     <>
       <TopBar />
@@ -122,11 +125,32 @@ export default () => {
       </div>
       <div className={Style.g1}>
         <div className={Style.sp3}>
-          <SideMenu isActive={false} islast={false} title='By Investor' />
-          <SideMenu isActive={false} islast={false} title='By Parameter' />
-          <SideMenu isActive={false} islast={false} title='Insights' />
-          <SideMenu isActive={true} islast={true} title='Feedback' />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/investor')}
+            isActive={false}
+            islast={false}
+            title='By Investor'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/parameter')}
+            isActive={false}
+            islast={false}
+            title='By Parameter'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/insight')}
+            isActive={false}
+            islast={false}
+            title='Insights'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/feedback')}
+            isActive={true}
+            islast={true}
+            title='Feedback'
+          />
         </div>
+
         <div>
           <div className={Style.g13}>
             <div className={Style.g14}>

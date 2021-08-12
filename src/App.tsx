@@ -8,6 +8,9 @@ import Smartwatch from './pages/new Pages/smart/smart';
 Smartwatch
 */
 import SmartwatchInvestor from './pages/new Pages/smart/byinvestor';
+import SmartwatchParameter from './pages/new Pages/smart/byparameter';
+import SmartwatchInsight from './pages/new Pages/smart/byinsights';
+import SmartwatchFeedback from './pages/new Pages/smart/feedback';
 
 /*
 timeline
@@ -44,6 +47,18 @@ function App() {
           </Route>
           <Route exact path='/smartwatch/investor'>
             <SmartwatchInvestor />
+          </Route>
+          <Route exact path='/smartwatch/parameter'>
+            <SmartwatchParameter />
+          </Route>
+          <Route exact path='/smartwatch/insight'>
+            <SmartwatchInsight />
+          </Route>
+          <Route exact path='/smartwatch/feedback'>
+            <SmartwatchFeedback />
+          </Route>
+          <Route exact path='/smartwatch/parameter'>
+            <SmartwatchParameter />
           </Route>
           <Route exact path='/io/timeline'>
             <IoTimeLine />

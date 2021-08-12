@@ -4,11 +4,13 @@ interface SideMenuProps {
   title: string;
   isActive: boolean;
   islast: boolean;
+  onClick?: () => void;
 }
 const SideMenu = (props: SideMenuProps) => {
-  const { title, isActive, islast } = props;
+  const { title, isActive, islast, onClick } = props;
   return (
     <div
+      onClick={() => (onClick ? onClick() : console.log())}
       className={css`
         ${Style.sp1}
         ${isActive == true ? 'border-left:2.03px solid #B6AF9D;' : ''}

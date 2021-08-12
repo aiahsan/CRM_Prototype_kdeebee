@@ -11,6 +11,7 @@ import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
 import BreadButtons from '../../../components/newComponents/io/breadButtons';
 import SideMenu from '../../../components/sidemenu';
+import { useHistory } from 'react-router-dom';
 
 const Activites = [
   {
@@ -73,6 +74,8 @@ const Activites = [
   },
 ];
 export default () => {
+  const history = useHistory();
+
   return (
     <>
       <TopBar />
@@ -93,11 +96,32 @@ export default () => {
 
       <div className={Style.g1}>
         <div className={Style.sp3}>
-          <SideMenu isActive={true} islast={false} title='By Investor' />
-          <SideMenu isActive={false} islast={false} title='By Parameter' />
-          <SideMenu isActive={false} islast={false} title='Insights' />
-          <SideMenu isActive={false} islast={true} title='Feedback' />
-        </div>{' '}
+          <SideMenu
+            onClick={() => history.push('/smartwatch/investor')}
+            isActive={false}
+            islast={false}
+            title='By Investor'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/parameter')}
+            isActive={true}
+            islast={false}
+            title='By Parameter'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/insight')}
+            isActive={false}
+            islast={false}
+            title='Insights'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/feedback')}
+            isActive={false}
+            islast={true}
+            title='Feedback'
+          />
+        </div>
+
         <div>
           <div className={Style.g13}>
             <div className={Style.g14}>
