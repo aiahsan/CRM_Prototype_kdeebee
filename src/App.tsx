@@ -1,7 +1,7 @@
 import React from 'react';
 
-import OrganisationPeople from './pages/new Pages/organisations/people';
-import Reconcile from './pages/new Pages/M_contact/reconcile';
+import OrganisationPeople from './pages/new Pages/smart/smart';
+import Reconcile from './pages/new Pages/smart/create';
 
 import Footer from './components/footer';
 

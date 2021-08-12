@@ -9,25 +9,7 @@ import Activity from '../../components/dashboard/expanded/activity';
 import ActivitySub from '../../components/dashboard/expanded/activitysub';
 import avt from '../../images/1.png';
 import Pagination from '../../components/pagination';
-interface SideMenuProps {
-  title: string;
-  isActive: boolean;
-  islast: boolean;
-}
-const SideMenu = (props: SideMenuProps) => {
-  const { title, isActive, islast } = props;
-  return (
-    <div
-      className={css`
-        ${Style.sp1}
-        ${isActive == true ? 'border-left:2.03px solid #B6AF9D' : ''}
-        ${islast == true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
-      `}
-    >
-      {title}
-    </div>
-  );
-};
+import SideMenu from '../../components/sidemenu';
 export default () => {
   return (
     <>

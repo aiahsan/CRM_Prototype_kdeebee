@@ -25,14 +25,18 @@ export default (props: ActivityChartProps) => {
             {title}
           </p>
 
-          <p
-            className={css`
-              ${Style.BaseCss}
-              ${Style.knasdkffsaf223}
-            `}
-          >
-            &thinsp; {type == undefined ? '-' : '/'} {email}
-          </p>
+          {email == '' || email == undefined ? (
+            <></>
+          ) : (
+            <p
+              className={css`
+                ${Style.BaseCss}
+                ${Style.knasdkffsaf223}
+              `}
+            >
+              &thinsp; {type == undefined ? '-' : '/'} {email}
+            </p>
+          )}
 
           <p
             className={css`

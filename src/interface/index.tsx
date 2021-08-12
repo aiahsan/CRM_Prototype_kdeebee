@@ -71,7 +71,7 @@ export interface TimelineTabProps {
 export interface ActivityChartProps {
   value: number;
   title: string;
-  email: string;
+  email?: string;
   status: string;
   lastActitvy: string;
   tag?: string;
@@ -82,4 +82,5 @@ export interface profileProps {
   img: string;
   title: string;
   LastActive: string;
+  type?: number;
 }

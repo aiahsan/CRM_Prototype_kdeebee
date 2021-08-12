@@ -4,10 +4,14 @@ import { css, cx } from '@emotion/css';
 import { profileProps } from '../../../interface';
 import PieChart from './piechart';
 export default (props: profileProps) => {
-  const { img, title, LastActive } = props;
+  const { img, title, LastActive, type } = props;
   return (
     <div className={Style.kdsklfjasdklf}>
-      <input className={Style.kasdnkfjdaslkfsd} type='checkbox' />
+      {type ? (
+        <></>
+      ) : (
+        <input className={Style.kasdnkfjdaslkfsd} type='checkbox' />
+      )}
 
       <img className={Style.zxcnjdaw} src={img} alt='' />
       <div>
