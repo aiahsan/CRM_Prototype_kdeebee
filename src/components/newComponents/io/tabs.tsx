@@ -2,11 +2,15 @@ import React from 'react';
 import Icon from '../../../icons/icons';
 import { css, cx } from '@emotion/css';
 import { TimelineTabProps, TimeLineItemProps } from '../../../interface';
+import { useHistory } from 'react-router-dom';
 
 const Tab = (props: TimelineTabProps) => {
-  const { icon, title, subtitle, isActive } = props;
+  const { icon, title, subtitle, isActive, onClick } = props;
   return (
     <div
+      onClick={() => {
+        onClick ? onClick() : console.log();
+      }}
       className={css`
         ${isActive ? Style.p1 : ''}
         ${Style.p2}
@@ -26,6 +30,8 @@ const Tab = (props: TimelineTabProps) => {
   );
 };
 export default (props: TimeLineItemProps) => {
+  const history = useHistory();
+
   return (
     <div className={Style.p5}>
       <div className={Style.p6}>
@@ -35,24 +41,28 @@ export default (props: TimeLineItemProps) => {
             icon='chain'
             title='Timeline'
             subtitle=''
+            onClick={() => history.push('/io/timeline')}
           />
           <Tab
             isActive={props.activeTab == 1 ? true : false}
             icon='menu'
             title='Profile'
             subtitle='41'
+            onClick={() => history.push('/io/profile')}
           />
           <Tab
             isActive={props.activeTab == 2 ? true : false}
             icon='research'
             title='Knowledge'
             subtitle=''
+            onClick={() => history.push('/io/knowledge')}
           />
           <Tab
             isActive={props.activeTab == 3 ? true : false}
             icon='puzzle'
             title='SMART Match'
             subtitle=''
+            onClick={() => history.push('/io/investor')}
           />
         </div>
       </div>

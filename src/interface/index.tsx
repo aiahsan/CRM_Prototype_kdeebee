@@ -67,6 +67,7 @@ export interface TimelineTabProps {
   title: string;
   subtitle: string;
   isActive: Boolean;
+  onClick?: () => void;
 }
 export interface ActivityChartProps {
   value: number;

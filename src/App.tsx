@@ -1,7 +1,24 @@
 import React from 'react';
+import Dashboard from './pages/new Pages/dashboard';
+import Directory from './pages/new Pages/directory';
+import WatchList from './pages/new Pages/watchlist';
+import Smartwatch from './pages/new Pages/smart/smart';
 
-import OrganisationPeople from './pages/new Pages/smart/smart';
-import Reconcile from './pages/new Pages/smart/create';
+/* 
+Smartwatch
+*/
+import SmartwatchInvestor from './pages/new Pages/smart/byinvestor';
+
+/*
+timeline
+*/
+import IoTimeLine from './pages/new Pages/io/timeline';
+import IoProfile from './pages/new Pages/io/profile';
+import IoKnowledge from './pages/new Pages/io/knowledge';
+import IoInvestor from './pages/new Pages/io/smartWatch/byinvestor';
+import IoParameter from './pages/new Pages/io/smartWatch/byparameter';
+import IoInsight from './pages/new Pages/io/smartWatch/byinsights';
+import IoFeedback from './pages/new Pages/io/smartWatch/feedback';
 
 import Footer from './components/footer';
 
@@ -14,34 +31,41 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/'>
-            <Reconcile />
+            <Dashboard />
           </Route>
-
-          {/* 
-          <Route exact path='/'>
-            <Expand />
+          <Route exact path='/directory'>
+            <Directory />
           </Route>
-     
-
-          <Route exact path='/io/timeLine'>
-            <TimeLine />
+          <Route exact path='/watchList'>
+            <WatchList />
           </Route>
-          <Route exact path='/people'>
-            <People />
+          <Route exact path='/smartwatch'>
+            <Smartwatch />
           </Route>
-          <Route exact path='/allocateToNew'>
-            <AllocateToNew />
+          <Route exact path='/smartwatch/investor'>
+            <SmartwatchInvestor />
           </Route>
-          <Route exact path='/userprofile/profile'>
-            <Profile />
+          <Route exact path='/io/timeline'>
+            <IoTimeLine />
           </Route>
-          <Route exact path='/watchlist'>
-            <Watchlist />
+          <Route exact path='/io/profile'>
+            <IoProfile />
           </Route>
-          <Route exact path='/userprofile/timeline'>
-            <TimelineUser />
+          <Route exact path='/io/knowledge'>
+            <IoKnowledge />
           </Route>
-       */}
+          <Route exact path='/io/investor'>
+            <IoInvestor />
+          </Route>
+          <Route exact path='/io/insight'>
+            <IoInsight />
+          </Route>
+          <Route exact path='/io/feedback'>
+            <IoFeedback />
+          </Route>
+          <Route exact path='/io/parameter'>
+            <IoParameter />
+          </Route>
         </Switch>
       </Router>
       <Footer />

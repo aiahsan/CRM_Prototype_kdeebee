@@ -1,11 +1,15 @@
 import React from 'react';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
+import { useHistory } from 'react-router-dom';
 
 export default ({ active }: { active: number }) => {
+  const history = useHistory();
+
   return (
     <div className={Style.g6}>
       <button
+        onClick={() => history.push('/io/investor')}
         className={`
 
         ${
@@ -30,6 +34,7 @@ export default ({ active }: { active: number }) => {
         By Investor
       </button>
       <button
+        onClick={() => history.push('/io/parameter')}
         className={`
         ${active == 1 ? Style.g7 : Style.g11}
        ${Style.g8}
@@ -42,6 +47,7 @@ export default ({ active }: { active: number }) => {
         By Parameter
       </button>
       <button
+        onClick={() => history.push('/io/insight')}
         className={`
         ${active == 2 ? Style.g7 : Style.g11}
        ${Style.g8}
@@ -54,6 +60,7 @@ export default ({ active }: { active: number }) => {
         Insight
       </button>
       <button
+        onClick={() => history.push('/io/feedback')}
         className={`
 
         ${active == 3 ? Style.g7 : Style.g11}

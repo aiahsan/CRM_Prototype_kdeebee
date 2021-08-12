@@ -1,6 +1,7 @@
 import React from 'react';
 import Icon from '../icons/icons';
 import { css, cx } from '@emotion/css';
+import { useHistory } from 'react-router-dom';
 interface Propos {
   activeTab: number;
 }
@@ -9,11 +10,15 @@ interface TabProps {
   title: string;
   subtitle: string;
   isActive: Boolean;
+  onClick?: () => void;
 }
 const Tab = (props: TabProps) => {
-  const { icon, title, subtitle, isActive } = props;
+  const { icon, title, subtitle, isActive, onClick } = props;
   return (
     <div
+      onClick={() => {
+        onClick ? onClick() : console.log();
+      }}
       className={css`
         ${isActive ? Style.activeCss : ''}
         ${Style.akdfjsfsdf}
@@ -33,6 +38,7 @@ const Tab = (props: TabProps) => {
   );
 };
 export default (props: Propos) => {
+  const history = useHistory();
   return (
     <div className={Style.hausdfnasjne}>
       <div className={Style.djasfnq3Sfaw}>
@@ -42,30 +48,35 @@ export default (props: Propos) => {
             icon='meter'
             title='Dashboard'
             subtitle=''
+            onClick={() => history.push('/')}
           />
           <Tab
             isActive={props.activeTab == 1 ? true : false}
             icon='menu'
             title='Directory'
             subtitle='41'
+            onClick={() => history.push('/directory')}
           />
           <Tab
             isActive={props.activeTab == 2 ? true : false}
             icon='glasses'
             title='Watchlist'
             subtitle=''
+            onClick={() => history.push('/watchList')}
           />
           <Tab
             isActive={props.activeTab == 3 ? true : false}
             icon='puzzle'
             title='SMART Match'
             subtitle=''
+            onClick={() => history.push('/smartwatch')}
           />
           <Tab
             isActive={props.activeTab == 4 ? true : false}
             icon='settings'
             title='Admin'
             subtitle=''
+            onClick={() => history.push('/directory')}
           />
         </div>
       </div>

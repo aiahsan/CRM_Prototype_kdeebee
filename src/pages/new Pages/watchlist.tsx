@@ -14,7 +14,7 @@ export default () => {
     <>
       <TopBar />
       <Breadcrumb list={['Opportunities', 'Directory']} activeIndex={1} />
-      <Tabs activeTab={1} />
+      <Tabs activeTab={2} />
       <div className={Style.ps1}>
         <div className={Style.ps2}>
           <div className={Style.ps3}>

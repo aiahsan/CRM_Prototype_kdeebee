@@ -11,6 +11,7 @@ import avt from '../../../images/1.png';
 import UserImg from '../../../images/User.png';
 
 import Pagination from '../../../components/pagination';
+import { useHistory } from 'react-router-dom';
 const Activites = [
   {
     value: 90.47,
@@ -72,6 +73,7 @@ const Activites = [
   },
 ];
 export default () => {
+  const history = useHistory();
   return (
     <>
       <TopBar />
@@ -92,6 +94,7 @@ export default () => {
                   </div>
                 </div>
                 <button
+                  onClick={() => history.push('/smartwatch/investor')}
                   className={css`
                     width: 143px;
                     height: 34px;
