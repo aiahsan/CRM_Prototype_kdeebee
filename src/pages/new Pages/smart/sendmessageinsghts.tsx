@@ -103,7 +103,11 @@ export default () => {
             title='Feedback'
           />
         </div>
-        <div>
+        <div
+          className={css`
+            overflow: auto;
+          `}
+        >
           <div className={Style.g13}>
             <div
               className={css`

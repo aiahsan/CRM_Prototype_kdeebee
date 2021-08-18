@@ -232,6 +232,7 @@ const Style = {
   `,
   kandsfjsdneR: css`
     margin-left: 29.04px;
+    width: 100%;
     @media (max-width: 425px) {
       margin-left: 0px;
     }

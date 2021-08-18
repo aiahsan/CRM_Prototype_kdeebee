@@ -9,7 +9,7 @@ import {
   ReferenceLine,
   ResponsiveContainer,
 } from 'recharts';
-
+import { css } from '@emotion/css';
 const data = [
   {
     name: '02/10',
@@ -72,50 +72,66 @@ const data = [
 
 const Chart = () => {
   return (
-    <ResponsiveContainer width='99%' aspect={3}>
-      <LineChart
-        width={1080}
-        height={421}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
+    <div
+      className={css`
+        @media (max-width: 983px) {
+          overflow: auto;
+        }
+      `}
+    >
+      <div
+        className={css`
+          @media (max-width: 983px) {
+            width: 450px;
+          }
+        `}
       >
-        <CartesianGrid
-          strokeDasharray='1 1'
-          vertical={true}
-          horizontal={false}
-        />
-        <XAxis
-          fontSize={16}
-          tickMargin={16}
-          tickLine={false}
-          axisLine={false}
-          dataKey='name'
-        />
-        <YAxis
-          domain={[0, 50]}
-          ticks={[0, 10, 20, 30, 40, 50]}
-          fontSize={16}
-          tickMargin={21}
-          tickLine={false}
-          axisLine={false}
-        />
-        <Tooltip />
-        <Line
-          dataKey='pv'
-          name='Kongkursbo'
-          strokeWidth={3}
-          dot={true}
-          stroke='#0059C8'
-        />
+        <ResponsiveContainer width='99%' aspect={3}>
+          <LineChart
+            width={1080}
+            height={421}
+            data={data}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid
+              strokeDasharray='1 1'
+              vertical={true}
+              horizontal={false}
+            />
+            <XAxis
+              fontSize={16}
+              tickMargin={16}
+              tickLine={false}
+              axisLine={false}
+              dataKey='name'
+            />
+            <YAxis
+              domain={[0, 50]}
+              ticks={[0, 10, 20, 30, 40, 50]}
+              fontSize={16}
+              tickMargin={21}
+              tickLine={false}
+              axisLine={false}
+            />
+            <Tooltip />
+            <Line
+              dataKey='pv'
+              name='Kongkursbo'
+              strokeWidth={3}
+              dot={true}
+              stroke='#0059C8'
+            />
 
-        {/* <ReferenceLine y={80} label={} stroke="red" strokeWidth={0}  /> */}
-      </LineChart>
-    </ResponsiveContainer>
+            {/* <ReferenceLine y={80} label={} stroke="red" strokeWidth={0}  /> */}
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
   );
 };
 

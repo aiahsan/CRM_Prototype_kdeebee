@@ -259,7 +259,13 @@ export default () => {
               </p>
             </div>
 
-            <div className='d-flex w-100'>
+            <div
+              className={`d-flex w-100 ${css`
+                @media (max-width: 425px) {
+                  flex-direction: column;
+                }
+              `}`}
+            >
               <div className='w-100'>
                 <div
                   className={css`
@@ -310,7 +316,14 @@ export default () => {
                   />
                 </div>
               </div>
-              <div className='w-100 ml-4'>
+              <div
+                className={`w-100  ${css`
+                  margin-left: 1.5rem;
+                  @media (max-width: 425px) {
+                    margin-left: 0px;
+                  }
+                `}`}
+              >
                 <div
                   className={css`
                     ${Style.cstyy2}
@@ -406,13 +419,18 @@ const Style = {
   g1sk1: css`
     margin-left: 29px;
     width: 100%;
+    @media (max-width: 768px) {
+      margin-left: 2%;
+      width: 98%;
+      margin-top: 20px;
+    }
   `,
   g1: css`
     max-width: 979px;
     margin: auto;
 
     display: flex;
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
       flex-direction: column;
     }
   `,
