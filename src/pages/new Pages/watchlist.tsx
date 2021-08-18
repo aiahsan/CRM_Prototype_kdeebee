@@ -8,12 +8,13 @@ import Icon from '../../icons/icons';
 import avt from '../../images/pc1.png';
 import Pagination from '../../components/pagination';
 import ViewBox from '../../components/newComponents/directory/ViewBox';
-
+import { useHistory } from 'react-router-dom';
 export default () => {
+  const history = useHistory();
   return (
     <>
       <TopBar />
-      <Breadcrumb list={['Opportunities', 'Directory']} activeIndex={1} />
+      <Breadcrumb list={['Opportunities', 'Watchlist']} activeIndex={1} />
       <Tabs activeTab={2} />
       <div className={Style.ps1}>
         <div className={Style.ps2}>
@@ -46,58 +47,22 @@ export default () => {
               </div>
             </div>
 
-            <ViewBox
-              image={avt}
-              title='Project Fluid'
-              subtitle='Equity Investment in a Biotech Start-Up'
-              type='Equity Investment in a Biotech Start-Up'
-              sector='Healthcare & Pharma'
-              expectedIRR='> 20%'
-              rargetRaise='USD 2.8m'
-              assetGeography='United States'
-              indicationOfInterestby='30 Apr 2021'
-              investmentHorizon='4 Years'
-              introducedby='Strategic Partner'
-            />
-            <ViewBox
-              image={avt}
-              title='Project Fluid'
-              subtitle='Equity Investment in a Biotech Start-Up'
-              type='Equity Investment in a Biotech Start-Up'
-              sector='Healthcare & Pharma'
-              expectedIRR='> 20%'
-              rargetRaise='USD 2.8m'
-              assetGeography='United States'
-              indicationOfInterestby='30 Apr 2021'
-              investmentHorizon='4 Years'
-              introducedby='Strategic Partner'
-            />
-            <ViewBox
-              image={avt}
-              title='Project Fluid'
-              subtitle='Equity Investment in a Biotech Start-Up'
-              type='Equity Investment in a Biotech Start-Up'
-              sector='Healthcare & Pharma'
-              expectedIRR='> 20%'
-              rargetRaise='USD 2.8m'
-              assetGeography='United States'
-              indicationOfInterestby='30 Apr 2021'
-              investmentHorizon='4 Years'
-              introducedby='Strategic Partner'
-            />
-            <ViewBox
-              image={avt}
-              title='Project Fluid'
-              subtitle='Equity Investment in a Biotech Start-Up'
-              type='Equity Investment in a Biotech Start-Up'
-              sector='Healthcare & Pharma'
-              expectedIRR='> 20%'
-              rargetRaise='USD 2.8m'
-              assetGeography='United States'
-              indicationOfInterestby='30 Apr 2021'
-              investmentHorizon='4 Years'
-              introducedby='Strategic Partner'
-            />
+            {Array.from({ length: 4 }, () => (
+              <ViewBox
+                image={avt}
+                title='Project Fluid'
+                subtitle='Equity Investment in a Biotech Start-Up'
+                type='Equity Investment in a Biotech Start-Up'
+                sector='Healthcare & Pharma'
+                expectedIRR='> 20%'
+                rargetRaise='USD 2.8m'
+                assetGeography='United States'
+                indicationOfInterestby='30 Apr 2021'
+                investmentHorizon='4 Years'
+                introducedby='Strategic Partner'
+                onClick={() => history.push('/io/timeline')}
+              />
+            ))}
           </div>
         </div>
       </div>

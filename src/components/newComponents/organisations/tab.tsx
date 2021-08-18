@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '../../../icons/icons';
 import { css, cx } from '@emotion/css';
-
+import { useHistory } from 'react-router-dom';
 interface Propos {
   activeTab: number;
 }
@@ -10,11 +10,13 @@ interface TabProps {
   title: string;
   subtitle: string;
   isActive: Boolean;
+  onClick: () => void;
 }
 const Tab = (props: TabProps) => {
-  const { icon, title, subtitle, isActive } = props;
+  const { icon, title, subtitle, isActive, onClick } = props;
   return (
     <div
+      onClick={() => (onClick ? onClick() : () => console.log())}
       className={css`
         ${isActive ? Style.activeCss : ''}
         ${Style.tab1}
@@ -34,6 +36,7 @@ const Tab = (props: TabProps) => {
   );
 };
 export default (props: Propos) => {
+  const history = useHistory();
   return (
     <div className={Style.tab4}>
       <div className={Style.tab5}>
@@ -43,18 +46,21 @@ export default (props: Propos) => {
           `}
         >
           <Tab
+            onClick={() => history.push('/contacts/organisation/timeline')}
             isActive={props.activeTab == 0 ? true : false}
             icon='chain'
             title='Timeline'
             subtitle=''
           />
           <Tab
+            onClick={() => history.push('/contacts/organisation/profile')}
             isActive={props.activeTab == 1 ? true : false}
             icon='menu'
             title='Profile'
             subtitle=''
           />
           <Tab
+            onClick={() => history.push('/contacts/organisation/people')}
             isActive={props.activeTab == 2 ? true : false}
             icon='empl'
             title='People'

@@ -9,8 +9,9 @@ import Activity from '../../../components/M_Contacts/activity';
 import avt from '../../../images/img1big.png';
 import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
-
+import { useHistory } from 'react-router-dom';
 export default () => {
+  const history = useHistory();
   return (
     <>
       <TopBar />
@@ -37,7 +38,10 @@ export default () => {
                 status='BCC'
                 email=''
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -49,7 +53,10 @@ export default () => {
                 lastActitvy='Last active:  44 minutes ago'
                 tag='TO'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -61,7 +68,10 @@ export default () => {
                 lastActitvy='Last active:  55 minutes ago'
                 status='BCC'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -73,7 +83,11 @@ export default () => {
                 lastActitvy='Last active:  2 hours ago'
                 tag='TO'
               />
-              <button className={Style.bhasd23yehr}>
+
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -85,7 +99,10 @@ export default () => {
                 lastActitvy='Last active:  3 hours ago'
                 tag='TO'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -97,7 +114,10 @@ export default () => {
                 lastActitvy='Last active:  4 hours ago'
                 status='BCC'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -109,7 +129,10 @@ export default () => {
                 lastActitvy='Last active:  6 hours ago'
                 status='BCC'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -121,7 +144,10 @@ export default () => {
                 lastActitvy='Last active:  6 hours ago'
                 tag='TO'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -133,7 +159,10 @@ export default () => {
                 lastActitvy='Last active:  6 hours ago'
                 status='BCC'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>
@@ -145,7 +174,10 @@ export default () => {
                 lastActitvy='Last active:  7 hours ago'
                 status='BCC'
               />
-              <button className={Style.bhasd23yehr}>
+              <button
+                onClick={() => history.push('/contacts/recoil/allocate')}
+                className={Style.bhasd23yehr}
+              >
                 <Icon icon='eye' />
                 <p className={Style.njasdklerue}>View Details</p>
               </button>

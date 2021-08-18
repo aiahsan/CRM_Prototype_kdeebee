@@ -5,7 +5,7 @@ import Tabs from '../../../components/M_Contacts/tabs';
 import { css, cx } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import Linechart from '../../../components/linechart';
-
+import { useHistory } from 'react-router-dom';
 import SideMenu from '../../../components/sidemenu';
 
 const AssingTab = ({
@@ -114,20 +114,26 @@ const LabelTab = ({
   );
 };
 export default () => {
+  const history = useHistory();
   return (
     <>
       <TopBar />
-      <Breadcrumb list={['Contacts', 'People']} activeIndex={1} />
+      <Breadcrumb
+        list={['Contacts', 'Dashboard', 'Outstanding Queries']}
+        activeIndex={1}
+      />
       <Tabs activeTab={0} />
       <div></div>
       <div className={Style.g1}>
         <div className={Style.sp3}>
           <SideMenu
+            onClick={() => history.push('/contacts')}
             isActive={true}
             islast={false}
             title='Outstanding Queries'
           />
           <SideMenu
+            onClick={() => history.push('/contacts/dashboard2')}
             isActive={false}
             islast={false}
             title='Prospect Conversion'

@@ -6,6 +6,7 @@ import { css, cx } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import Linechart from '../../../components/linechart';
 import Dropdown from '../../../components/dropdown';
+import { useHistory } from 'react-router-dom';
 
 import SideMenu from '../../../components/sidemenu';
 
@@ -115,6 +116,8 @@ const LabelTab = ({
   );
 };
 export default () => {
+  const history = useHistory();
+
   return (
     <>
       <TopBar />
@@ -127,8 +130,10 @@ export default () => {
             isActive={false}
             islast={false}
             title='Outstanding Queries'
+            onClick={() => history.push('/contacts')}
           />
           <SideMenu
+            onClick={() => history.push('/contacts/dashboard2')}
             isActive={true}
             islast={false}
             title='Prospect Conversion'

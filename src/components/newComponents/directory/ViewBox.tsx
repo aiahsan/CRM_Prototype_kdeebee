@@ -6,7 +6,10 @@ const ViewBox = (props: DirectoryBoxProps) => {
   const { title, image, subtitle } = props;
 
   return (
-    <div className={Style.ps1}>
+    <div
+      onClick={() => (props.onClick ? props.onClick() : () => null)}
+      className={Style.ps1}
+    >
       <div className={css``}>
         <img className={Style.ps2} src={image} alt='' />
       </div>
@@ -72,6 +75,7 @@ const Style = {
     display: flex;
     padding: 16px 0px 16px 16px;
     border-bottom: 1px solid #e1e4e8;
+    cursor: pointer;
     @media (max-width: 881px) {
       overflow: scroll;
     }

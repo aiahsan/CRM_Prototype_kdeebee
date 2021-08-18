@@ -9,8 +9,9 @@ import Activity from '../../../components/M_Contacts/activity';
 import avt from '../../../images/1.png';
 import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
-
+import { useHistory } from 'react-router-dom';
 export default () => {
+  const history = useHistory();
   return (
     <>
       <TopBar />
@@ -134,6 +135,7 @@ export default () => {
 
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='Mary Ek'
                 lastActitvy='Last active:  23 minutes ago'
@@ -143,6 +145,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='Sarah Thiem'
                 email='sarah.thiem@abc.com'
@@ -152,6 +155,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='Tom Johnson'
                 email='tom.johnson@abc.com'
@@ -161,6 +165,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='James Lennon'
                 email='james.lennon@abc.com'
@@ -171,6 +176,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='Preethi Mackenzie'
                 email='preethi.mackenzie@abc.com'
@@ -181,6 +187,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='Marie Carney'
                 email='marie.carney@abc.com'
@@ -190,6 +197,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='James Jarret'
                 email='james.jarret@abc.com'
@@ -200,6 +208,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='John Steadman'
                 email='john.steadman@abc.com'
@@ -209,6 +218,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='Chris Copeland'
                 email='chris.copeland@abc.com'
@@ -218,6 +228,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/usertimeline')}
                 image={avt}
                 title='Sara Hodge'
                 email='sara.hodge@abc.com'

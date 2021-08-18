@@ -36,6 +36,7 @@ export interface DirectoryBoxProps {
   indicationOfInterestby: string;
   investmentHorizon: string;
   introducedby: string;
+  onClick?: () => void;
 }
 export interface ResearchBoxProps {
   title: string;
@@ -78,6 +79,7 @@ export interface ActivityChartProps {
   tag?: string;
   color?: string;
   type?: number;
+  onClick?: () => void;
 }
 export interface profileProps {
   img: string;

@@ -4,9 +4,22 @@ import { css, cx } from '@emotion/css';
 import { ActivityChartProps } from '../../../interface';
 import PieChart from './piechart';
 export default (props: ActivityChartProps) => {
-  const { value, title, email, status, lastActitvy, tag, color, type } = props;
+  const {
+    value,
+    title,
+    email,
+    status,
+    lastActitvy,
+    tag,
+    color,
+    type,
+    onClick,
+  } = props;
   return (
-    <div className={Style.kdsklfjasdklf}>
+    <div
+      onClick={onClick ? () => onClick() : () => null}
+      className={Style.kdsklfjasdklf}
+    >
       {type == undefined ? (
         <input className={Style.kasdnkfjdaslkfsd} type='checkbox' />
       ) : (
@@ -108,6 +121,7 @@ font-family: Lucida Grande;
     margin-top: 11px;
     margin-left: 15px;
     display: flex;
+    cursor: pointer;
   `,
   kasdnkfjdaslkfsd: css`
     margin-right: 7.5px;

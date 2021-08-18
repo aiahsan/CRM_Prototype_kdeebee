@@ -111,14 +111,14 @@ export default () => {
   return (
     <>
       <TopBar />
-      <Breadcrumb
-        list={['Opportunities', 'Directory', 'Project Fluid']}
-        activeIndex={2}
-      />
+      <Breadcrumb list={['Opportunities', 'SMART Match']} activeIndex={1} />
       <Tabs activeTab={3} />
       <div className={Style.g2}>
         <p className={Style.g3}>Project Storebox</p>
-        <button className={Style.g4}>
+        <button
+          onClick={() => history.push('/smartwatch/insight/edit')}
+          className={Style.g4}
+        >
           <div className={Style.g5}>
             <Icon icon='puzzle' />
           </div>{' '}

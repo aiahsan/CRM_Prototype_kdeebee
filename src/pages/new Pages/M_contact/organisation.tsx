@@ -9,8 +9,9 @@ import Activity from '../../../components/M_Contacts/activity';
 import avt from '../../../images/img1big.png';
 import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
-
+import { useHistory } from 'react-router-dom';
 export default () => {
+  const history = useHistory();
   return (
     <>
       <TopBar />
@@ -85,6 +86,7 @@ export default () => {
 
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Blu Family Office'
                 lastActitvy='Last active:  23 minutes ago'
@@ -94,6 +96,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Carter Family Office'
                 email=''
@@ -103,6 +106,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Blu Family Office'
                 email=''
@@ -112,6 +116,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Carter Family Office'
                 email=''
@@ -121,6 +126,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Blu Family Office'
                 email=''
@@ -130,6 +136,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Carter Family Office'
                 email=''
@@ -139,6 +146,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Blu Family Office'
                 email=''
@@ -148,6 +156,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Carter Family Office'
                 email=''
@@ -157,6 +166,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Blu Family Office'
                 email=''
@@ -166,6 +176,7 @@ export default () => {
             </div>
             <div className={Style.kahsdfjkhfsf}>
               <Activity
+                onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
                 title='Carter Family Office'
                 email=''

@@ -11,10 +11,13 @@ import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
 import SideMenu from '../../../components/sidemenu';
 import ReactQuill from 'react-quill';
+import { useHistory } from 'react-router-dom';
 
 import 'react-quill/dist/quill.snow.css';
 
 export default () => {
+  const history = useHistory();
+
   const [convertedText, setConvertedText] = React.useState(
     'Some default content Some default content Some default content U+000A'
   );
@@ -75,10 +78,30 @@ export default () => {
       </div>
       <div className={Style.g1}>
         <div className={Style.sp3}>
-          <SideMenu isActive={false} islast={false} title='By Investor' />
-          <SideMenu isActive={false} islast={false} title='By Parameter' />
-          <SideMenu isActive={true} islast={false} title='Insights' />
-          <SideMenu isActive={false} islast={true} title='Feedback' />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/investor')}
+            isActive={false}
+            islast={false}
+            title='By Investor'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/parameter')}
+            isActive={false}
+            islast={false}
+            title='By Parameter'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/insight')}
+            isActive={true}
+            islast={false}
+            title='Insights'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/feedback')}
+            isActive={false}
+            islast={true}
+            title='Feedback'
+          />
         </div>
         <div>
           <div className={Style.g13}>

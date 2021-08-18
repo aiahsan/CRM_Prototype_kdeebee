@@ -11,10 +11,13 @@ import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
 import SideMenu from '../../../components/sidemenu';
 import ReactQuill from 'react-quill';
+import { useHistory } from 'react-router-dom';
 
 import 'react-quill/dist/quill.snow.css';
 
 export default () => {
+  const history = useHistory();
+
   const [convertedText, setConvertedText] = React.useState(
     'Some default content Some default content Some default content U+000A'
   );
@@ -69,10 +72,30 @@ export default () => {
       </div>
       <div className={Style.g1}>
         <div className={Style.sp3}>
-          <SideMenu isActive={false} islast={false} title='By Investor' />
-          <SideMenu isActive={false} islast={false} title='By Parameter' />
-          <SideMenu isActive={false} islast={false} title='Insights' />
-          <SideMenu isActive={true} islast={true} title='Feedback' />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/investor')}
+            isActive={false}
+            islast={false}
+            title='By Investor'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/parameter')}
+            isActive={false}
+            islast={false}
+            title='By Parameter'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/insight')}
+            isActive={false}
+            islast={false}
+            title='Insights'
+          />
+          <SideMenu
+            onClick={() => history.push('/smartwatch/feedback')}
+            isActive={true}
+            islast={true}
+            title='Feedback'
+          />
         </div>
         <div>
           <div className={Style.g13}>
@@ -118,7 +141,10 @@ export default () => {
               <div className={Style.cst5}></div>
               <div className={Style.p14}>
                 <button className={Style.p15}>Cancel</button>
-                <button className={Style.p16}>
+                <button
+                  onClick={() => history.push('/smartwatch/create/smartmatch')}
+                  className={Style.p16}
+                >
                   <div className='mr-1'>
                     <Icon icon='mail' />
                   </div>

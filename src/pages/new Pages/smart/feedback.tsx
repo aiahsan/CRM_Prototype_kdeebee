@@ -109,15 +109,15 @@ export default () => {
   return (
     <>
       <TopBar />
-      <Breadcrumb
-        list={['Opportunities', 'Directory', 'Project Fluid']}
-        activeIndex={2}
-      />
+      <Breadcrumb list={['Opportunities', 'SMART Match']} activeIndex={1} />
       <Tabs activeTab={3} />
       <div className={Style.g2}>
         <p className={Style.g3}>Project Storebox</p>
         <button className={Style.g4}>
-          <div className={Style.g5}>
+          <div
+            className={Style.g5}
+            onClick={() => history.push('/smartwatch/investor/edit')}
+          >
             <Icon icon='puzzle' />
           </div>{' '}
           Edit SMART Match
@@ -269,7 +269,11 @@ export default () => {
                             ${Style.g27}
                           `}
                         >
-                          {x.by}
+                          {List.length - 1 == i ? (
+                            <a href='/smartwatch/feeback/submit'> {x.by}</a>
+                          ) : (
+                            x.by
+                          )}
                         </td>
                       </tr>
                     ))}

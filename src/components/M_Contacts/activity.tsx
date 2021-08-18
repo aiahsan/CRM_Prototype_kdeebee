@@ -8,11 +8,15 @@ interface Props {
   status?: string;
   lastActitvy: string;
   tag?: string;
+  onClick?: () => void;
 }
 export default (props: Props) => {
-  const { image, title, email, status, lastActitvy, tag } = props;
+  const { image, title, email, status, lastActitvy, tag, onClick } = props;
   return (
-    <div className={Style.kdsklfjasdklf}>
+    <div
+      onClick={() => (onClick ? onClick() : () => console.log())}
+      className={Style.kdsklfjasdklf}
+    >
       {image ? (
         <>
           <input className={Style.kasdnkfjdaslkfsd} type='checkbox' />{' '}
@@ -119,6 +123,7 @@ font-family: Lucida Grande;
     margin-top: 11px;
     margin-left: 15px;
     display: flex;
+    cursor: pointer;
   `,
   kasdnkfjdaslkfsd: css`
     margin-right: 7.5px;

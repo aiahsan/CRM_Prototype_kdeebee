@@ -94,7 +94,6 @@ export default () => {
                   </div>
                 </div>
                 <button
-                  onClick={() => history.push('/smartwatch/investor')}
                   className={css`
                     width: 143px;
                     height: 34px;
@@ -145,6 +144,7 @@ export default () => {
                       tag={x.tag}
                       value={x.value}
                       type={0}
+                      onClick={() => history.push('/smartwatch/investor')}
                     />
                   </div>
                 ))}

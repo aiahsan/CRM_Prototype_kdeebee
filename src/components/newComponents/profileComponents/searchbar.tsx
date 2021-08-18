@@ -2,8 +2,9 @@ import React from 'react';
 import Dropdown from '../../dropdown';
 import Icon from '../../../icons/icons';
 import { css } from '@emotion/css';
-
+import { useHistory } from 'react-router-dom';
 const SearchBar = ({ variant }: { variant?: number }) => {
+  const history = useHistory();
   return (
     <div className={Style.p5}>
       <div className={Style.p1}>
@@ -17,7 +18,10 @@ const SearchBar = ({ variant }: { variant?: number }) => {
       </div>
       <div>
         {!variant ? (
-          <button className={Style.p6}>
+          <button
+            onClick={() => history.push('/contacts/usertimeline/callnote')}
+            className={Style.p6}
+          >
             <Icon icon='faq' /> Add Call Note
           </button>
         ) : (
