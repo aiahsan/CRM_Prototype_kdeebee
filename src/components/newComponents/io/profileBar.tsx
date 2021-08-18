@@ -56,7 +56,7 @@ const Style = {
     font-weight: bold;
     padding: 0px 10px;
     margin-left: 7px;
-    @media (max-width: 425px) {
+    @media (max-width: 425pxpx) {
       margin-left: 0px;
       margin-bottom: 25px;
     }
@@ -103,7 +103,7 @@ font-family: Lucida Grande;
     padding: 0px 10px;
     margin-left: 15px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 425pxpx) {
       margin-left: 0px;
       margin-bottom: 25px;
     }

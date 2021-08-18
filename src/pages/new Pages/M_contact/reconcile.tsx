@@ -231,7 +231,8 @@ const Style = {
     display: flex;
   `,
   kandsfjsdneR: css`
-    margin-left: 29.04px @media (max-width: 425) {
+    margin-left: 29.04px;
+    @media (max-width: 425px) {
       margin-left: 0px;
     }
   `,

@@ -247,6 +247,9 @@ const Style = {
     display: flex;
     justify-content: center;
     margin-left: 35%;
+    @media (max-width: 425pxpx) {
+      margin-left: 0%;
+    }
   `,
   sp1: css`
     background: #ffffff;

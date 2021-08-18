@@ -143,140 +143,156 @@ export default () => {
                     <Dropdown title='Sort' />
                   </div>
                 </div>
-                <table>
-                  <thead>
-                    <tr
+                <div>
+                  <div
+                    className={css`
+                      overflow: auto;
+                    `}
+                  >
+                    <table
                       className={css`
-                        border-bottom: 1px solid #e1e4e8;
+                        @media (max-width: 590px) {
+                          width: 600px;
+                        }
                       `}
                     >
-                      <td
-                        className={css`
-                          width: 307.5px;
-                          ${Style.g27}
-                        `}
-                      ></td>
-                      <td
-                        className={css`
-                          width: 78px;
-                          padding: 0px 8.5px;
-                          border-right: 1px dashed #e1e4e8;
-                          ${Style.g27}
-                          ${Style.g28}
-                        `}
-                      >
-                        # Investors
-                      </td>
-                      <td
-                        className={css`
-                          width: 79px;
-                          padding: 0px 11.5px;
-                          ${Style.g27}
-                          ${Style.g28}
-                        `}
-                      >
-                        Interested
-                      </td>
-                      <td
-                        className={css`
-                          width: 67px;
-                          padding: 0px 9.5px;
-                          ${Style.g27}
-                          ${Style.g28}
-                        `}
-                      >
-                        Declined
-                      </td>
-                      <td
-                        className={css`
-                          width: 97px;
-                          padding: 0px 8.5px;
-                          border-right: 1px dashed #e1e4e8;
-                          ${Style.g27}
-                          ${Style.g28}
-                        `}
-                      >
-                        Not Answered
-                      </td>
-                      <td
-                        className={css`
-                          width: 97.5px;
-                          padding: 0px 14px 0px 10.5px;
-                          ${Style.g27}
-                        `}
-                      >
-                        Answered (%)
-                      </td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {List.map((x, i) => (
-                      <tr
-                        className={css`
-                          border-bottom: 1px solid #e1e4e8;
-                        `}
-                      >
-                        <td
+                      <thead>
+                        <tr
                           className={css`
-                            ${x.profile == undefined ? 'padding:30px 0px' : ''}
+                            border-bottom: 1px solid #e1e4e8;
                           `}
                         >
-                          {x.profile ? (
-                            <Profile
-                              img={x.profile?.img}
-                              title={x.profile?.title}
-                              LastActive={x.profile?.LastActive}
-                            />
-                          ) : (
-                            <></>
-                          )}
-                        </td>
-                        <td
-                          className={css`
-                            text-align: center;
-                            padding-right: 20px;
-                            border-right: 1px dashed #e1e4e8;
-                          `}
-                        >
-                          {x.investorsNo}
-                        </td>
-                        <td
-                          className={css`
-                            text-align: center;
-                            padding-right: 20px;
-                          `}
-                        >
-                          {x.interested}
-                        </td>
-                        <td
-                          className={css`
-                            text-align: center;
-                            padding-right: 20px;
-                          `}
-                        >
-                          {x.declined}
-                        </td>
-                        <td
-                          className={css`
-                            text-align: center;
-                            padding-right: 20px;
-                            border-right: 1px dashed #e1e4e8;
-                          `}
-                        >
-                          {x.answered}
-                        </td>
-                        <td
-                          className={css`
-                            text-align: center;
-                            padding-right: 20px;
-                          `}
-                        >
-                          {x.answeredper}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                          <td
+                            className={css`
+                              width: 307.5px;
+                              ${Style.g27}
+                            `}
+                          ></td>
+                          <td
+                            className={css`
+                              width: 78px;
+                              padding: 0px 8.5px;
+                              border-right: 1px dashed #e1e4e8;
+                              ${Style.g27}
+                              ${Style.g28}
+                            `}
+                          >
+                            # Investors
+                          </td>
+                          <td
+                            className={css`
+                              width: 79px;
+                              padding: 0px 11.5px;
+                              ${Style.g27}
+                              ${Style.g28}
+                            `}
+                          >
+                            Interested
+                          </td>
+                          <td
+                            className={css`
+                              width: 67px;
+                              padding: 0px 9.5px;
+                              ${Style.g27}
+                              ${Style.g28}
+                            `}
+                          >
+                            Declined
+                          </td>
+                          <td
+                            className={css`
+                              width: 97px;
+                              padding: 0px 8.5px;
+                              border-right: 1px dashed #e1e4e8;
+                              ${Style.g27}
+                              ${Style.g28}
+                            `}
+                          >
+                            Not Answered
+                          </td>
+                          <td
+                            className={css`
+                              width: 97.5px;
+                              padding: 0px 14px 0px 10.5px;
+                              ${Style.g27}
+                            `}
+                          >
+                            Answered (%)
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {List.map((x, i) => (
+                          <tr
+                            className={css`
+                              border-bottom: 1px solid #e1e4e8;
+                            `}
+                          >
+                            <td
+                              className={css`
+                                ${x.profile == undefined
+                                  ? 'padding:30px 0px'
+                                  : ''}
+                              `}
+                            >
+                              {x.profile ? (
+                                <Profile
+                                  img={x.profile?.img}
+                                  title={x.profile?.title}
+                                  LastActive={x.profile?.LastActive}
+                                />
+                              ) : (
+                                <></>
+                              )}
+                            </td>
+                            <td
+                              className={css`
+                                text-align: center;
+                                padding-right: 20px;
+                                border-right: 1px dashed #e1e4e8;
+                              `}
+                            >
+                              {x.investorsNo}
+                            </td>
+                            <td
+                              className={css`
+                                text-align: center;
+                                padding-right: 20px;
+                              `}
+                            >
+                              {x.interested}
+                            </td>
+                            <td
+                              className={css`
+                                text-align: center;
+                                padding-right: 20px;
+                              `}
+                            >
+                              {x.declined}
+                            </td>
+                            <td
+                              className={css`
+                                text-align: center;
+                                padding-right: 20px;
+                                border-right: 1px dashed #e1e4e8;
+                              `}
+                            >
+                              {x.answered}
+                            </td>
+                            <td
+                              className={css`
+                                text-align: center;
+                                padding-right: 20px;
+                              `}
+                            >
+                              {x.answeredper}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -293,10 +309,14 @@ const Style = {
     margin: auto;
     margin-bottom: -1px;
     display: flex;
+    @media (max-width: 590px) {
+      display: initial;
+    }
   `,
   g14: css`
     margin-top: 24px;
-    margin-left: 29.04px @media (max-width: 425) {
+    margin-left: 29.04px;
+    @media (max-width: 590px) {
       margin-left: 0px;
     }
   `,
@@ -403,6 +423,10 @@ const Style = {
     align-items: center;
     border-bottom: 1px solid #e1e4e8;
     margin-top: 23px;
+    @media (max-width: 320px) {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
   `,
   g3: css`
     font-size: 24px;

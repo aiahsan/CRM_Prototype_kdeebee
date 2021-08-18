@@ -202,7 +202,8 @@ const Style = {
   `,
   g14: css`
     margin-top: 24px;
-    margin-left: 29.04px @media (max-width: 425) {
+    margin-left: 29.04px;
+    @media (max-width: 425px) {
       margin-left: 0px;
     }
   `,
@@ -297,7 +298,7 @@ const Style = {
     justify-content: space-between;
 
     display: flex;
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
       flex-direction: column;
     }
   `,

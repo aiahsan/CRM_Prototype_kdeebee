@@ -31,7 +31,7 @@ export default ({ active }: { active: number }) => {
         <div className={Style.g10}>
           <Icon icon='userb1' color={active == 0 ? 'white' : 'black'} />
         </div>
-        By Investor
+        <span className={Style.g15}> By Investor</span>
       </button>
       <button
         onClick={() => history.push('/io/parameter')}
@@ -44,7 +44,7 @@ export default ({ active }: { active: number }) => {
         <div className={Style.g10}>
           <Icon icon='filterb1' color={active == 1 ? 'white' : 'black'} />
         </div>
-        By Parameter
+        <span className={Style.g15}> By Parameter</span>
       </button>
       <button
         onClick={() => history.push('/io/insight')}
@@ -57,7 +57,7 @@ export default ({ active }: { active: number }) => {
         <div className={Style.g10}>
           <Icon icon='eyeb1' color={active == 2 ? 'white' : 'black'} />
         </div>
-        Insight
+        <span className={Style.g15}> Insight</span>
       </button>
       <button
         onClick={() => history.push('/io/feedback')}
@@ -72,16 +72,24 @@ export default ({ active }: { active: number }) => {
         <div className={Style.g10}>
           <Icon icon='pencilb1' color={active == 3 ? 'white' : 'black'} />
         </div>
-        Feedback
+        <span className={Style.g15}>Feedback</span>
       </button>
     </div>
   );
 };
 
 const Style = {
+  g15: css`
+    @media (max-width: 473px) {
+      display: none;
+    }
+  `,
   g6: css`
     margin: 24px 0px;
     display: flex;
+    @media (max-width: 473px) {
+      justify-content: center;
+    }
   `,
   g7: css`
     background: #b6af9d;

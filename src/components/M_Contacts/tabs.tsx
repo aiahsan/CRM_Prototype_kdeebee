@@ -134,7 +134,7 @@ const Style = {
     }
   `,
   kasndfnjkff: css`
-    @media (max-width: 425px) {
+    @media (max-width: 425pxpx) {
       display: none;
     }
     margin: 0px;

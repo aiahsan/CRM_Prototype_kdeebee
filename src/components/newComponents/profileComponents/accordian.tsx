@@ -586,7 +586,7 @@ const Style = {
     }
 
     @media (max-width: 556px) {
-      max-width: 425px;
+      max-width: 425pxpx;
     }
     @media (max-width: 556px) {
       max-width: 100%;
