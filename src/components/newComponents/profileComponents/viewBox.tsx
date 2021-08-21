@@ -4,7 +4,7 @@ import Icon from '../../../icons/icons';
 import ViewBoxText from './viewBoxText';
 import { BoxProps } from '../../../interface';
 const ViewBox = (props: BoxProps) => {
-  const { title, values } = props;
+  const { title, values, variant } = props;
 
   return (
     <div className={Style.p1}>
@@ -28,6 +28,7 @@ const ViewBox = (props: BoxProps) => {
               key2={x.key2}
               value2={x.value2}
               isLast={i == values.length ? true : false}
+              variant={variant}
             />
           ))}
         </div>
@@ -74,6 +75,9 @@ const Style = {
     @media (max-width: 639px) {
       margin: 23px 0px;
       margin-bottom: 0px;
+    }
+    @media (max-width: 535px) {
+      width: 100%;
     }
   `,
   p12: css`

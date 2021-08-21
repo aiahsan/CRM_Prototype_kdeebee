@@ -120,6 +120,11 @@ const Profile = () => {
                         margin-right: 40px;
                         margin-top: 23px;
                         width: 100%;
+
+                        @media (max-width: 534px) {
+                          margin-left: 0px;
+                          margin-right: 0px;
+                        }
                       `}
                     >
                       <div className={Style.c2}>
@@ -139,6 +144,9 @@ const Profile = () => {
                             display: flex;
                             width: 100%;
                             border-bottom: 1px solid #e1e4e8;
+                            @media (max-width: 534px) {
+                              flex-direction: column;
+                            }
                           `}
                         >
                           <p
@@ -164,6 +172,9 @@ const Profile = () => {
                             display: flex;
                             width: 100%;
                             border-bottom: 1px solid #e1e4e8;
+                            @media (max-width: 534px) {
+                              flex-direction: column;
+                            }
                           `}
                         >
                           <p
@@ -189,6 +200,9 @@ const Profile = () => {
                             display: flex;
                             width: 100%;
                             border-bottom: 1px solid #e1e4e8;
+                            @media (max-width: 534px) {
+                              flex-direction: column;
+                            }
                           `}
                         >
                           <p
@@ -347,6 +361,11 @@ const Style = {
     color: #586069;
     margin: 0px;
     padding: 7px 0px;
+
+    @media (max-width: 534px) {
+      margin: 0;
+      justify-content: flex-start;
+    }
   `,
   cs7: css`
     width: 100px;

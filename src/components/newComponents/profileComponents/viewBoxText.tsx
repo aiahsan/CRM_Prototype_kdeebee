@@ -4,8 +4,16 @@ import { useMediaQuery } from 'react-responsive';
 import { BoxTextProps } from '../../../interface';
 
 const ViewBoxText = (props: BoxTextProps) => {
-  const { key1, key2, value1, value2, index, value1Active, value2Active } =
-    props;
+  const {
+    key1,
+    key2,
+    value1,
+    value2,
+    index,
+    value1Active,
+    value2Active,
+    variant,
+  } = props;
   const isMobile = useMediaQuery({
     query: '(max-width: 535px)',
   });
@@ -13,10 +21,17 @@ const ViewBoxText = (props: BoxTextProps) => {
     <>
       <div
         className={css`
-     
+        width: 100%;
+        display: ${variant ? 'block' : 'flex'};
+        justify-content: center;
         border-bottom:${
-          props.isLast && props.isLast == true ? '1px solid #e1e4e8' : '0px'
+          props.isLast && props.isLast == true && !isMobile
+            ? '1px solid #e1e4e8'
+            : '0px'
         }}
+        @media (max-width: 535px) {
+          justify-content:space-between;
+        }
         `}
       >
         <p
@@ -24,6 +39,16 @@ const ViewBoxText = (props: BoxTextProps) => {
             ${Style.c1}
             ${Style.c2}
               ${Style.c3}
+              ${variant
+              ? css`
+                  margin-right: 0px;
+                  display: block;
+                  text-align: left;
+                `
+              : ''}
+              @media (max-width: 535px) {
+              width: 100%;
+            }
           `}
         >
           {key1}
@@ -34,6 +59,16 @@ const ViewBoxText = (props: BoxTextProps) => {
             ${Style.c1}
             ${Style.c2}
               ${Style.c4}
+              ${variant
+              ? css`
+                  margin-right: 0px;
+                  display: block;
+                  text-align: left;
+                `
+              : ''}
+              @media (max-width: 535px) {
+              width: 100%;
+            }
           `}
         >
           {value1}
@@ -42,9 +77,14 @@ const ViewBoxText = (props: BoxTextProps) => {
       <div
         className={css`
          ${Style.c5}
+         display: ${variant ? 'block' : 'flex'};
+
         border-bottom:${
           props.isLast && props.isLast == true ? '1px solid #e1e4e8' : '0px'
         }}
+        @media (max-width: 535px) {
+          justify-content:space-between;
+        }
         `}
       >
         <p
@@ -52,6 +92,16 @@ const ViewBoxText = (props: BoxTextProps) => {
             ${Style.c1}
             ${Style.c2}
                 ${Style.c6}
+${variant
+              ? css`
+                  margin-right: 0px;
+                  display: block;
+                  text-align: left;
+                `
+              : ''}
+                @media (max-width: 535px) {
+              width: 100%;
+            }
           `}
         >
           {key2}
@@ -62,6 +112,16 @@ const ViewBoxText = (props: BoxTextProps) => {
             ${Style.c1}
             ${Style.c2}
                  ${Style.c7}
+                 ${variant
+              ? css`
+                  margin-right: 0px;
+                  display: block;
+                  text-align: left;
+                `
+              : ''}
+                 @media (max-width: 535px) {
+              width: 100%;
+            }
           `}
         >
           {value2}

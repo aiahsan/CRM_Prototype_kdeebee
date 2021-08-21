@@ -1,6 +1,7 @@
 export interface BoxProps {
   title: string;
   values: BoxTextProps[];
+  variant?: boolean;
 }
 export interface RadioBoxProps {
   title: string;
@@ -22,6 +23,7 @@ export interface BoxTextProps {
   value1Active: boolean;
   value2Active: boolean;
   isLast?: boolean;
+  variant?: boolean;
 }
 
 export interface DirectoryBoxProps {

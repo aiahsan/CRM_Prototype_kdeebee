@@ -88,6 +88,14 @@ const Style = {
     @media (max-width: 1089px) {
       min-width: 100%;
     }
+    @media (max-width: 535px) {
+      max-width: 400px;
+      margin-left: 5px;
+    }
+    @media (max-width: 415px) {
+      max-width: 300px;
+      margin-left: 0px;
+    }
   `,
   g4: css`
     display: flex;

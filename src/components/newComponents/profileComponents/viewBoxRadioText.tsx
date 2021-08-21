@@ -8,7 +8,34 @@ const ViewBoxText = (props: RadioBoxTextProps) => {
   const isMobile = useMediaQuery({
     query: '(max-width: 535px)',
   });
-  return (
+  return isMobile ? (
+    <>
+      <div className={css``}>
+        <div>
+          <div
+            className={`d-flex ${css`
+              border-bottom: 1px solid #e1e4e8;
+              margin-bottom: 10px;
+              padding-bottom: 5px;
+            `}`}
+          >
+            <input type={type == 0 ? 'checkbox' : 'radio'} />
+            <p className={Style.s4}>{key1}</p>
+          </div>
+          <div
+            className={`d-flex ${css`
+              border-bottom: 1px solid #e1e4e8;
+              margin-bottom: 5px;
+              padding-bottom: 5px;
+            `}`}
+          >
+            <input type={type == 0 ? 'checkbox' : 'radio'} />
+            <p className={Style.s4}>{key2}</p>
+          </div>
+        </div>
+      </div>
+    </>
+  ) : (
     <div
       className={css`
         ${isLast == false ? 'border-bottom: 1px solid #e1e4e8;' : ''}

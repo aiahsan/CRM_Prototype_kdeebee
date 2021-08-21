@@ -170,7 +170,6 @@ const Style = {
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
-    display: flex;
   `,
   g14: css`
     margin-top: 24px;
@@ -223,11 +222,10 @@ const Style = {
   g19: css`
     border: 1px solid #e1e4e8;
     margin-top: 24px;
-    min-width: 980px;
+    max-width: 980px;
     border-radius: 3px;
 
     @media (max-width: 1024px) {
-      min-width: 100%;
     }
   `,
   g20: css`
@@ -268,8 +266,7 @@ const Style = {
   g1: css`
     max-width: 980px;
     margin: auto;
-    display: flex;
-    @media (max-width: 1024px) {
+    width: 100% @media (max-width: 1024px) {
       flex-direction: column;
     }
   `,

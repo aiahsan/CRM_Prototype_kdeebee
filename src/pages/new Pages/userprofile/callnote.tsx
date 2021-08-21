@@ -69,19 +69,30 @@ export default () => {
                 <div className='w-100'>
                   <div className='d-flex align-items-center w-100'>
                     <p className={Style.p8}>Set follow-up task</p>
-                    <input
-                      placeholder='Enter date'
-                      className={`${css`
-                        ${Style.p6}
-                        ${Style.p10}
+                    <div
+                      className={css`
+                        display: flex;
+                        align-items: center;
+                        @media (max-width: 534px) {
+                          flex-direction: column;
+                        }
+                      `}
+                    >
+                      <input
+                        placeholder='Enter date'
+                        className={`${css`
+                          ${Style.p6}
+                          ${Style.p10}
                         ${Style.p20}
-                      `}`}
-                    />
-                    <div>
-                      <p className={Style.p21}>
-                        30 days from today <span className={Style.p22}>|</span>{' '}
-                        <Icon icon='calender' />
-                      </p>
+                        `}`}
+                      />
+                      <div>
+                        <p className={Style.p21}>
+                          30 days from today{' '}
+                          <span className={Style.p22}>|</span>{' '}
+                          <Icon icon='calender' />
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -99,7 +110,13 @@ export default () => {
               </div>
             </div>
           </div>
-          <div>
+          <div
+            className={css`
+              @media (max-width: 534px) {
+                margin: 20px 10px;
+              }
+            `}
+          >
             <div>
               <div className='d-flex align-items-center justify-content-between'>
                 <p className={`${Style.p5} m-0`}>Date</p>
@@ -165,6 +182,9 @@ const Style = {
     display: flex;
     padding-bottom: 25px;
     border-bottom: 1px solid #e1e4e8;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   `,
   p4: css`
     color: red;
@@ -271,6 +291,13 @@ const Style = {
     max-width: 550px;
     margin-right: 28px;
     margin-left: 75px;
+
+    @media (max-width: 768px) {
+      max-width: initial;
+      width: initial;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   `,
   p18: css`
     margin-left: 75px;

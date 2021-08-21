@@ -127,6 +127,7 @@ export default () => {
 
             <ViewBox
               title='Additional Links'
+              variant={true}
               values={[
                 {
                   key1: 'LinkedIn URL',

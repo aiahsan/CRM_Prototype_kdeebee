@@ -11,7 +11,7 @@ import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
 import SideMenu from '../../../components/sidemenu';
 import ReactQuill from 'react-quill';
-
+import Counter from '../../../components/newComponents/counter';
 import 'react-quill/dist/quill.snow.css';
 
 export default () => {
@@ -64,6 +64,9 @@ export default () => {
                 margin-top: 25px;
                 width: 100%;
                 min-width: 727px;
+                @media (max-width: 768px) {
+                  min-width: 100%;
+                }
               `}
             >
               <h2 className={Style.cst1}>SMART Match Name</h2>
@@ -101,6 +104,189 @@ export default () => {
                 </p>
                 <Icon icon='chevdown' color='black' />
               </div>
+              <div
+                className={css`
+                  border: 1px solid #e1e4e8;
+                  box-sizing: border-box;
+                  margin: auto;
+
+                  margin-top: 20px;
+                  max-width: 616px;
+                  padding: 9px 28px 20px 28px;
+                `}
+              >
+                <p
+                  className={css`
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 126.02%;
+
+                    letter-spacing: -0.05em;
+
+                    color: #000000;
+                  `}
+                >
+                  Corporate Equity / Company stage
+                </p>
+                <div
+                  className={css`
+                    display: flex;
+                    align-items: center;
+                    max-width: 134px;
+                    justify-content: space-between;
+                  `}
+                >
+                  <p
+                    className={css`
+                      ${Style.kjfasdklf}
+                    `}
+                  >
+                    Weight
+                  </p>
+                  <Counter />
+                </div>
+                <div className='mt-3 d-flex align-items-center'>
+                  <input
+                    type='checkbox'
+                    className={css`
+                      margin-right: 10px;
+                    `}
+                  />
+                  <p className={Style.kjfasdklf}>Seed / Pre-revenue</p>
+                </div>
+                <div className='mt-3 d-flex align-items-center'>
+                  <input
+                    type='checkbox'
+                    className={css`
+                      margin-right: 10px;
+                    `}
+                  />
+                  <p className={Style.kjfasdklf}>Early venture</p>
+                </div>
+
+                <div className='mt-3 d-flex align-items-center'>
+                  <input
+                    type='checkbox'
+                    className={css`
+                      margin-right: 10px;
+                    `}
+                  />
+                  <p className={Style.kjfasdklf}>Late venture</p>
+                </div>
+                <div className='mt-3 d-flex align-items-center'>
+                  <input
+                    type='checkbox'
+                    className={css`
+                      margin-right: 10px;
+                    `}
+                  />
+                  <p className={Style.kjfasdklf}>Growth</p>
+                </div>
+
+                <div className='mt-3 d-flex align-items-center'>
+                  <input
+                    type='checkbox'
+                    className={css`
+                      margin-right: 10px;
+                    `}
+                  />
+                  <p className={Style.kjfasdklf}>Pre-IPO</p>
+                </div>
+
+                <div className='mt-3 d-flex align-items-center'>
+                  <input
+                    type='checkbox'
+                    className={css`
+                      margin-right: 10px;
+                    `}
+                  />
+                  <p className={Style.kjfasdklf}>Public</p>
+                </div>
+              </div>
+              <div
+                className={css`
+                  border: 1px solid #e1e4e8;
+                  box-sizing: border-box;
+                  margin: auto;
+
+                  margin-top: 20px;
+                  max-width: 616px;
+                  padding: 9px 28px 20px 28px;
+                `}
+              >
+                <p
+                  className={css`
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 126.02%;
+
+                    letter-spacing: -0.05em;
+
+                    color: #000000;
+                  `}
+                >
+                  Equity / Net IRR
+                </p>
+                <div
+                  className={css`
+                    display: flex;
+                    align-items: center;
+                    max-width: 134px;
+                    justify-content: space-between;
+                  `}
+                >
+                  <p
+                    className={css`
+                      ${Style.kjfasdklf}
+                    `}
+                  >
+                    Weight
+                  </p>
+                  <Counter />
+                </div>
+                <div
+                  className={css`
+                    display: flex;
+                    align-items: center;
+                    max-width: 134px;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                  `}
+                >
+                  <p
+                    className={css`
+                      ${Style.kjfasdklf}
+                    `}
+                  >
+                    Weight
+                  </p>
+                  <div>
+                    <input
+                      className={css`
+                        width: 140px;
+                        font-weight: bold;
+                        font-size: 13px;
+                        line-height: 15px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.03em;
+
+                        color: #c6cbd1;
+                        background: linear-gradient(
+                          180deg,
+                          #fafbfc 0%,
+                          #f9fafb 100%
+                        );
+                        border: none;
+                        padding: 4px 10px;
+                        margin-left: 40px;
+                      `}
+                      placeholder='Enter IRR value'
+                    />
+                  </div>
+                </div>
+              </div>
+
               <div className={Style.cst5}></div>
               <div className={Style.p14}>
                 <button className={Style.p15}>Cancel</button>
@@ -357,5 +543,13 @@ const Style = {
     letter-spacing: -0.1em;
     color: #ffffff;
     padding: 8px 13px;
+  `,
+  kjfasdklf: css`
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.05em;
+    margin: 0px;
+    color: #586069;
   `,
 };

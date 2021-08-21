@@ -44,6 +44,9 @@ const Style = {
     display: flex;
     margin-top: 17px;
     align-items: center;
+    @media (max-width: 556px) {
+      flex-wrap: wrap;
+    }
   `,
   ps4: css`
     margin-right: 8px;
@@ -54,6 +57,9 @@ const Style = {
     font-size: 13px;
     line-height: 15px;
     letter-spacing: -0.03em;
+    @media (max-width: 556px) {
+      margin-bottom: 10px;
+    }
   `,
   ps5: css`
     border: 2px solid #e1e4e8;
@@ -68,6 +74,9 @@ const Style = {
     letter-spacing: -0.03em;
     color: #000000;
     margin-right: 8px;
+    @media (max-width: 556px) {
+      margin-bottom: 10px;
+    }
   `,
   ps6: css`
     margin-left: 10px;

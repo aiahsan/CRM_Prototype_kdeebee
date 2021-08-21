@@ -12,6 +12,38 @@ export default (props: Props) => {
     case '': {
       return <></>;
     }
+    case 'crrl': {
+      return (
+        <svg
+          width='110'
+          height='110'
+          viewBox='0 0 224 224'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <circle cx='112' cy='112' r='112' fill={color} />
+          <circle cx='112.5' cy='112.5' r='92.5' fill='white' />
+        </svg>
+      );
+    }
+    case 'oval': {
+      return (
+        <svg
+          width='130'
+          height='130'
+          viewBox='0 0 271 224'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <circle cx='112' cy='112' r='112' fill={color} />
+          <path
+            d='M116.5 0C187.332 4.97877 200.72 46.2892 271 122C203.892 179.122 192.484 215.342 116.5 223.5V0Z'
+            fill={color}
+          />
+          <circle cx='112.5' cy='112.5' r='92.5' fill='white' />
+        </svg>
+      );
+    }
     case 'label': {
       return (
         <>
@@ -1484,6 +1516,24 @@ export default (props: Props) => {
             />
           </svg>
         </>
+      );
+    }
+    case 'chevup': {
+      return (
+        <svg
+          width='8'
+          height='4'
+          viewBox='0 0 8 4'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+          style={{ marginBottom: 5 }}
+        >
+          <path
+            d='M4 0.707107L6.79289 3.5L1.20711 3.5L4 0.707107Z'
+            fill='#586069'
+            stroke='#586069'
+          />
+        </svg>
       );
     }
     case 'chevdown': {
