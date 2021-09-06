@@ -22,31 +22,18 @@ const AssingTab = ({
   return (
     <div
       className={css`
-        display: flex;
-        justify-content: space-between;
-        padding: 5px 15px;
+        ${Style.GH1}
         ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
       `}
     >
-      <div
-        className={css`
-          display: flex;
-          align-items: center;
-        `}
-      >
+      <div className={Style.GH2}>
         {name ? (
           <>
-            <img
-              className={css`
-                width: 23px;
-                height: 23px;
-              `}
-              src={image}
-            />
+            <img className={Style.GH3} src={image} />
             <p
               className={css`
                 ${Style.cstyy3}
-                margin-left:6px;
+                ${Style.GH4}
               `}
             >
               {name}
@@ -74,32 +61,23 @@ const LabelTab = ({
   return (
     <div
       className={css`
-        display: flex;
-        justify-content: space-between;
-        padding: 11px 15px;
+        ${Style.GH5}
         ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
       `}
     >
-      <div
-        className={css`
-          display: flex;
-          align-items: center;
-        `}
-      >
+      <div className={Style.GH2}>
         {name ? (
           <>
             <div
               className={css`
-                width: 15px;
-                height: 15px;
-                border-radius: 15px;
+                ${Style.GH6}
                 background-color: ${image};
               `}
             ></div>
             <p
               className={css`
                 ${Style.cstyy3}
-                margin-left:6px;
+                ${Style.GH4}
               `}
             >
               {name}
@@ -148,55 +126,11 @@ export default () => {
         <div className={Style.g1sk1}>
           <div className={Style.g2}>
             <p className={Style.gglb}>Outstanding Queries</p>
-            <button
-              className={css`
-                border: 1px solid #e1e4e8;
-                box-sizing: border-box;
-                border-radius: 2px;
-                width: 138px;
-                height: 40px;
-                margin-right: 11px;
-                background-color: white;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              `}
-            >
+            <button className={Style.GH7}>
               <Icon icon='label' />
-              <p
-                className={css`
-                  margin: 0px 4px;
-                  letter-spacing: -0.07em;
-
-                  color: #586069;
-                  font-weight: bold;
-                  font-size: 15px;
-                  line-height: 18px;
-                `}
-              >
-                Tags
-              </p>
-              <div
-                className={css`
-                  width: 24px;
-                  height: 15px;
-                  background: #e8e9eb;
-                  border-radius: 7px;
-                `}
-              >
-                <p
-                  className={css`
-                    align-items: center;
-                    letter-spacing: -0.07em;
-                    font-weight: bold;
-                    font-size: 12px;
-                    line-height: 14px;
-                    color: #586069;
-                  `}
-                >
-                  41
-                </p>
+              <p className={Style.GH8}>Tags</p>
+              <div className={Style.GH9}>
+                <p className={Style.GH10}>41</p>
               </div>
             </button>
           </div>
@@ -205,86 +139,25 @@ export default () => {
             <div className={Style.cstyy2}>
               <p className={Style.cstyy1}>Outstanding Queries</p>
             </div>
-            <div
-              className={css`
-                border: 1px solid #e1e4e8;
-                box-sizing: border-box;
-                border-radius: 0px;
-                border-top: 0px;
-                padding-top: 31px;
-              `}
-            >
+            <div className={Style.GH11}>
               <Linechart />
             </div>
-            <div
-              className={css`
-                border: 1px solid #e1e4e8;
-                box-sizing: border-box;
-                border-radius: 0px 0px 5px 5px;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                padding: 13px;
-                border-top: 0px;
-              `}
-            >
-              <h5
-                className={css`
-                  margin: 0px;
-                  font-weight: bold;
-                  font-size: 16px;
-                  line-height: 126%;
-                  display: flex;
-                  align-items: center;
-                  text-align: center;
-                  color: #000000;
-                `}
-              >
-                41
-              </h5>
-              <p
-                className={css`
-                  margin: 0px;
-                  font-weight: bold;
-                  font-size: 13px;
-                  line-height: 126%;
-                  display: flex;
-                  align-items: center;
-                  text-align: center;
-                  color: #798087;
-                `}
-              >
-                Currently Outstanding Queries
-              </p>
+            <div className={Style.GH12}>
+              <h5 className={Style.GH13}>41</h5>
+              <p className={Style.GH14}>Currently Outstanding Queries</p>
             </div>
 
-            <div
-              className={`d-flex w-100 ${css`
-                @media (max-width: 425px) {
-                  flex-direction: column;
-                }
-              `}`}
-            >
+            <div className={`d-flex w-100 ${Style.GH15}`}>
               <div className='w-100'>
                 <div
                   className={css`
                     ${Style.cstyy2}
-                    max-width:347px;
-                    width: 100%;
+                    ${Style.GH16}
                   `}
                 >
                   <p className={Style.cstyy1}>By Assignee</p>
                 </div>
-                <div
-                  className={css`
-                    border: 1px solid #e1e4e8;
-                    box-sizing: border-box;
-                    border-radius: 0px 0px 5px 5px;
-                    max-width: 347px;
-                    border-top: 1px;
-                  `}
-                >
+                <div className={Style.GH17}>
                   <AssingTab
                     name='Joern Czech'
                     number={13}
@@ -316,32 +189,16 @@ export default () => {
                   />
                 </div>
               </div>
-              <div
-                className={`w-100  ${css`
-                  margin-left: 1.5rem;
-                  @media (max-width: 425px) {
-                    margin-left: 0px;
-                  }
-                `}`}
-              >
+              <div className={`w-100  ${Style.GH18}`}>
                 <div
                   className={css`
                     ${Style.cstyy2}
-                    max-width:347px;
-                    width: 100%;
+                    ${Style.GH16}
                   `}
                 >
                   <p className={Style.cstyy1}>By Assignee</p>
                 </div>
-                <div
-                  className={css`
-                    border: 1px solid #e1e4e8;
-                    box-sizing: border-box;
-                    border-radius: 0px 0px 5px 5px;
-                    max-width: 347px;
-                    border-top: 1px;
-                  `}
-                >
+                <div className={Style.GH19}>
                   <LabelTab
                     name='Urgent'
                     number={27}
@@ -376,6 +233,135 @@ export default () => {
 };
 
 const Style = {
+  GH1: css`
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+  `,
+  GH2: css`
+    display: flex;
+    align-items: center;
+  `,
+  GH3: css`
+    width: 23px;
+    height: 23px;
+  `,
+  GH4: css`
+    margin-left: 6px;
+  `,
+  GH5: css`
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 15px;
+  `,
+  GH6: css`
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+  `,
+  GH7: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 138px;
+    height: 40px;
+    margin-right: 11px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `,
+  GH8: css`
+    margin: 0px 4px;
+    letter-spacing: -0.07em;
+
+    color: #586069;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+  `,
+  GH9: css`
+    width: 24px;
+    height: 15px;
+    background: #e8e9eb;
+    border-radius: 7px;
+  `,
+  GH10: css`
+    align-items: center;
+    letter-spacing: -0.07em;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #586069;
+  `,
+  GH11: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-top: 0px;
+    padding-top: 31px;
+  `,
+  GH12: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    border-top: 0px;
+  `,
+  GH13: css`
+    margin: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 126%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  `,
+  GH14: css`
+    margin: 0px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 126%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #798087;
+  `,
+  GH15: css`
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
+  `,
+  GH16: css`
+    max-width: 347px;
+    width: 100%;
+  `,
+  GH17: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+    max-width: 347px;
+    border-top: 1px;
+  `,
+  GH18: css`
+    margin-left: 1.5rem;
+    @media (max-width: 425px) {
+      margin-left: 0px;
+    }
+  `,
+  GH19: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+    max-width: 347px;
+    border-top: 1px;
+  `,
   g2: css`
     max-width: 979px;
     display: flex;
