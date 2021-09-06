@@ -58,15 +58,7 @@ export default () => {
         <div className={Style.g2}>
           <p className={Style.g3}>
             {' '}
-            <span
-              className={css`
-                color: #1269d3;
-              `}
-            >
-              {' '}
-              Project Storebox
-            </span>{' '}
-            / Send Message
+            <span className={Style.GH2}> Project Storebox</span> / Send Message
           </p>
         </div>
       </div>
@@ -103,14 +95,7 @@ export default () => {
           `}
         >
           <div className={Style.g13}>
-            <div
-              className={css`
-                margin-top: 25px;
-                margin-left: 29px;
-                width: 100%;
-                min-width: 727px;
-              `}
-            >
+            <div className={Style.GH1}>
               <h2 className={Style.cst1}>Recipients</h2>
               <p className={Style.cst2}>56 Investors</p>
               <h2 className={Style.cst1}>Email subject</h2>
@@ -154,6 +139,15 @@ export default () => {
 };
 
 const Style = {
+  GH1: css`
+    margin-top: 25px;
+    margin-left: 29px;
+    width: 100%;
+    min-width: 727px;
+  `,
+  GH2: css`
+    color: #1269d3;
+  `,
   sp3: css`
     margin-top: 25px;
   `,

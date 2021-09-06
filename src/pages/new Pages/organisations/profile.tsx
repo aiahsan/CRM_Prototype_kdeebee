@@ -54,7 +54,7 @@ const Profile = () => {
                     <p
                       className={css`
                         ${Style.c4}
-                        margin-bottom:0px;
+                        ${Style.GH1}
                       `}
                     >
                       ​We provide investment management solutions and advise on
@@ -93,13 +93,7 @@ const Profile = () => {
                     ]}
                   />
 
-                  <div
-                    className={css`
-                      max-width: 711px;
-                      margin: auto;
-                      margin-top: 18px;
-                    `}
-                  >
+                  <div className={Style.GH2}>
                     <iframe
                       width='100%'
                       height='300'
@@ -108,25 +102,8 @@ const Profile = () => {
                       src='https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
                     ></iframe>
                   </div>
-                  <div
-                    className={css`
-                      display: flex;
-                      padding: 16px 16px 0px 16px;
-                    `}
-                  >
-                    <div
-                      className={css`
-                        margin-left: 40px;
-                        margin-right: 40px;
-                        margin-top: 23px;
-                        width: 100%;
-
-                        @media (max-width: 534px) {
-                          margin-left: 0px;
-                          margin-right: 0px;
-                        }
-                      `}
-                    >
+                  <div className={Style.GH3}>
+                    <div className={Style.GH4}>
                       <div className={Style.c2}>
                         <p
                           className={css`
@@ -139,16 +116,7 @@ const Profile = () => {
                         <Icon icon='pencil' />
                       </div>
                       <div className='w-100 mb-5'>
-                        <div
-                          className={css`
-                            display: flex;
-                            width: 100%;
-                            border-bottom: 1px solid #e1e4e8;
-                            @media (max-width: 534px) {
-                              flex-direction: column;
-                            }
-                          `}
-                        >
+                        <div className={Style.GH5}>
                           <p
                             className={css`
                               ${Style.cs6}
@@ -167,16 +135,7 @@ const Profile = () => {
                           </p>
                         </div>
 
-                        <div
-                          className={css`
-                            display: flex;
-                            width: 100%;
-                            border-bottom: 1px solid #e1e4e8;
-                            @media (max-width: 534px) {
-                              flex-direction: column;
-                            }
-                          `}
-                        >
+                        <div className={Style.GH6}>
                           <p
                             className={css`
                               ${Style.cs6}
@@ -195,16 +154,7 @@ const Profile = () => {
                           </p>
                         </div>
 
-                        <div
-                          className={css`
-                            display: flex;
-                            width: 100%;
-                            border-bottom: 1px solid #e1e4e8;
-                            @media (max-width: 534px) {
-                              flex-direction: column;
-                            }
-                          `}
-                        >
+                        <div className={Style.GH7}>
                           <p
                             className={css`
                               ${Style.cs6}
@@ -236,6 +186,53 @@ const Profile = () => {
 };
 
 const Style = {
+  GH1: css`
+    margin-bottom: 0px;
+  `,
+  GH2: css`
+    max-width: 711px;
+    margin: auto;
+    margin-top: 18px;
+  `,
+  GH3: css`
+    display: flex;
+    padding: 16px 16px 0px 16px;
+  `,
+  GH4: css`
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 23px;
+    width: 100%;
+
+    @media (max-width: 534px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  `,
+  GH5: css`
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e1e4e8;
+    @media (max-width: 534px) {
+      flex-direction: column;
+    }
+  `,
+  GH6: css`
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e1e4e8;
+    @media (max-width: 534px) {
+      flex-direction: column;
+    }
+  `,
+  GH7: css`
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e1e4e8;
+    @media (max-width: 534px) {
+      flex-direction: column;
+    }
+  `,
   p1: css`
     max-width: 1119px;
     margin: auto;

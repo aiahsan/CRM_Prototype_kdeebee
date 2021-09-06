@@ -69,15 +69,7 @@ export default () => {
                 <div className='w-100'>
                   <div className='d-flex align-items-center w-100'>
                     <p className={Style.p8}>Set follow-up task</p>
-                    <div
-                      className={css`
-                        display: flex;
-                        align-items: center;
-                        @media (max-width: 534px) {
-                          flex-direction: column;
-                        }
-                      `}
-                    >
+                    <div className={Style.GH1}>
                       <input
                         placeholder='Enter date'
                         className={`${css`
@@ -110,13 +102,7 @@ export default () => {
               </div>
             </div>
           </div>
-          <div
-            className={css`
-              @media (max-width: 534px) {
-                margin: 20px 10px;
-              }
-            `}
-          >
+          <div className={Style.GH3}>
             <div>
               <div className='d-flex align-items-center justify-content-between'>
                 <p className={`${Style.p5} m-0`}>Date</p>
@@ -163,6 +149,18 @@ export default () => {
 };
 
 const Style = {
+  GH3: css`
+    @media (max-width: 534px) {
+      margin: 20px 10px;
+    }
+  `,
+  GH1: css`
+    display: flex;
+    align-items: center;
+    @media (max-width: 534px) {
+      flex-direction: column;
+    }
+  `,
   p1: css`
           max-width: 970px;
           margin: auto;
@@ -212,10 +210,6 @@ const Style = {
     border: 1px solid #e1e4e8;
     box-sizing: border-box;
     border-radius: 2px;
-  `,
-  p7: css`
-    display: flex;
-    align-items: center;
   `,
 
   p8: css`
@@ -299,9 +293,7 @@ const Style = {
       margin-left: 10px;
     }
   `,
-  p18: css`
-    margin-left: 75px;
-  `,
+
   p19: css`
     margin-top: 15px;
   `,

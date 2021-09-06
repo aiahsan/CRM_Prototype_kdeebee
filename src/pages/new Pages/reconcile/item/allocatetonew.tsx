@@ -144,9 +144,9 @@ export default () => {
                 </div>
                 {option == 2 ? (
                   <>
-                    <div className={Style.akshdkas232}>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                    <div className={Style.GH4}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -164,8 +164,8 @@ export default () => {
                           />
                         </div>
                       </div>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -185,9 +185,9 @@ export default () => {
                       </div>
                     </div>
 
-                    <div className={Style.akshdkas232}>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                    <div className={Style.GH4}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -205,8 +205,8 @@ export default () => {
                           />
                         </div>
                       </div>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -226,9 +226,9 @@ export default () => {
                       </div>
                     </div>
 
-                    <div className={Style.akshdkas232}>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                    <div className={Style.GH4}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -246,8 +246,8 @@ export default () => {
                           />
                         </div>
                       </div>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -267,9 +267,9 @@ export default () => {
                       </div>
                     </div>
 
-                    <div className={Style.akshdkas232}>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                    <div className={Style.GH4}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -287,8 +287,8 @@ export default () => {
                           />
                         </div>
                       </div>
-                      <div className={Style.akshdkas23}>
-                        <div className={Style.akshdkas231}>
+                      <div className={Style.GH5}>
+                        <div className={Style.GH51}>
                           <p
                             className={css`
                               ${Style.TextInputp}
@@ -311,63 +311,9 @@ export default () => {
                 ) : (
                   <></>
                 )}
-                <div
-                  className={css`
-                    margin-top: 73px;
-                    display: flex;
-                    justify-content: flex-end;
-                  `}
-                >
-                  <button
-                    className={css`
-                      margin-right: 28px;
-                      background: linear-gradient(
-                        180deg,
-                        #f9fafb 0%,
-                        #eff3f6 100%
-                      );
-                      border: 1px solid #c4c8cc;
-                      border-radius: 2px;
-                      font-family: Lucida Grande;
-                      font-style: normal;
-                      font-weight: bold;
-                      font-size: 14px;
-                      line-height: 16px;
-                      text-align: center;
-                      letter-spacing: -1px;
-                      width: 56px;
-                      height: 32px;
-                      color: #444d56;
-                    `}
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    className={css`
-                      background: linear-gradient(
-                        180deg,
-                        #a1d1a6 0%,
-                        #a1d1a6 100%
-                      );
-                      border: 1px solid #86ad8c;
-                      box-sizing: border-box;
-                      border-radius: 2px;
-                      width: 56px;
-                      height: 32px;
-                      font-family: Lucida Grande;
-                      font-style: normal;
-                      font-weight: bold;
-                      font-size: 14px;
-                      line-height: 16px;
-                      align-items: center;
-                      text-align: center;
-                      letter-spacing: -0.1em;
-
-                      color: #e7f3e9;
-                    `}
-                  >
-                    Save
-                  </button>
+                <div className={Style.GH1}>
+                  <button className={Style.GH2}>Cancel</button>
+                  <button className={Style.GH3}>Save</button>
                 </div>
               </div>
             </div>
@@ -379,6 +325,45 @@ export default () => {
 };
 
 const Style = {
+  GH1: css`
+    margin-top: 73px;
+    display: flex;
+    justify-content: flex-end;
+  `,
+  GH2: css`
+    margin-right: 28px;
+    background: linear-gradient(180deg, #f9fafb 0%, #eff3f6 100%);
+    border: 1px solid #c4c8cc;
+    border-radius: 2px;
+    font-family: Lucida Grande;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -1px;
+    width: 56px;
+    height: 32px;
+    color: #444d56;
+  `,
+  GH3: css`
+    background: linear-gradient(180deg, #a1d1a6 0%, #a1d1a6 100%);
+    border: 1px solid #86ad8c;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 56px;
+    height: 32px;
+    font-family: Lucida Grande;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.1em;
+
+    color: #e7f3e9;
+  `,
   TextInputp: css`
     font-family: Lucida Grande;
     font-style: normal;
@@ -546,7 +531,7 @@ const Style = {
     padding-left: 29px;
     border-radius: 3px 3px 0px 0px;
   `,
-  akshdkas232: css`
+  GH4: css`
     margin-top: 20px;
     margin-left: 56px;
     display: flex;
@@ -561,13 +546,13 @@ const Style = {
       margin-left: 5px;
     }
   `,
-  akshdkas231: css`
+  GH51: css`
     width: 139px;
     display: flex;
     justify-content: flex-end;
     margin-right: 26px;
   `,
-  akshdkas23: css`
+  GH5: css`
     display: flex;
     align-items: center;
   `,

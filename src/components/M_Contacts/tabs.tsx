@@ -21,20 +21,20 @@ const Tab = (props: TabProps) => {
         onClick ? onClick() : console.log();
       }}
       className={css`
-        ${Style.akdsjfasdasd}
-        ${isActive ? Style.activeCss : ''}
+        ${Style.GH1}
+        ${isActive ? Style.GH3 : ''}
       `}
     >
       <Icon icon={icon} />
       <p
         className={css`
-          ${Style.mkasdnjfasdaf}
+          ${Style.GH2}
           ${isActive ? 'color: #000000;' : 'color: #586069;'}
         `}
       >
         {title}
       </p>
-      {subtitle != '' ? <p className={Style.kasndfnjkff}>{subtitle}</p> : <></>}
+      {subtitle != '' ? <p className={Style.GH4}>{subtitle}</p> : <></>}
     </div>
   );
 };
@@ -42,9 +42,9 @@ export default (props: Propos) => {
   const history = useHistory();
 
   return (
-    <div className={Style.klasdfjklsdf}>
-      <div className={Style.kahsndfiore}>
-        <div className={Style.xawdsawe}>
+    <div className={Style.GH5}>
+      <div className={Style.GH6}>
+        <div className={Style.GH7}>
           <Tab
             isActive={props.activeTab == 0 ? true : false}
             icon='meter'
@@ -86,17 +86,17 @@ export default (props: Propos) => {
 };
 
 const Style = {
-  xawdsawe: css`
+  GH7: css`
     display: flex;
   `,
-  kahsndfiore: css`
+  GH6: css`
     max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
   `,
 
-  klasdfjklsdf: css`
+  GH5: css`
     background: #f2f2f2;
 
     height: 64px;
@@ -104,13 +104,13 @@ const Style = {
     align-items: flex-end;
     display: flex;
   `,
-  activeCss: css`
+  GH3: css`
     background-color: white;
     border-top: 3px solid #b6af9d;
     border-left: 1px solid #e1e4e8;
     border-right: 1px solid #e1e4e8;
   `,
-  akdsjfasdasd: css`
+  GH1: css`
     display: flex;
 
     cursor: pointer;
@@ -120,7 +120,7 @@ const Style = {
     justify-content: center;
     margin-left: 28px;
   `,
-  mkasdnjfasdaf: css`
+  GH2: css`
     margin: 0px 4px;
     font-family: Lucida Grande;
     font-style: normal;
@@ -133,7 +133,7 @@ const Style = {
       display: none;
     }
   `,
-  kasndfnjkff: css`
+  GH4: css`
     @media (max-width: 425pxpx) {
       display: none;
     }

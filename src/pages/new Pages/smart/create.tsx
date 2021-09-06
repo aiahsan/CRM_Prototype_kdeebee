@@ -59,86 +59,23 @@ export default () => {
       <div className={Style.g1}>
         <div>
           <div className={Style.g13}>
-            <div
-              className={css`
-                margin-top: 25px;
-                width: 100%;
-                min-width: 727px;
-                @media (max-width: 768px) {
-                  min-width: 100%;
-                }
-              `}
-            >
+            <div className={Style.GH1}>
               <h2 className={Style.cst1}>SMART Match Name</h2>
               <input
                 value='Enter a name for the SMART Match'
                 className={Style.cst3}
               />
               <h2 className={Style.cst1}>Parameters</h2>
-              <div
-                className={css`
-                  border: 1px solid #e1e4e8;
-                  box-sizing: border-box;
-                  border-radius: 2px;
-                  width: 560px;
-                  height: 35px;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  padding: 10px;
-                `}
-              >
-                <p
-                  className={css`
-                    font-weight: bold;
-                    font-size: 13px;
-                    line-height: 15px;
-                    display: flex;
-                    align-items: center;
-                    letter-spacing: -0.03em;
-                    color: #c6cbd1;
-                    margin: 0px;
-                  `}
-                >
-                  Select one or more parameters
-                </p>
+              <div className={Style.GH2}>
+                <p className={Style.GH3}>Select one or more parameters</p>
                 <Icon icon='chevdown' color='black' />
               </div>
-              <div
-                className={css`
-                  border: 1px solid #e1e4e8;
-                  box-sizing: border-box;
-                  margin: auto;
-
-                  margin-top: 20px;
-                  max-width: 616px;
-                  padding: 9px 28px 20px 28px;
-                `}
-              >
-                <p
-                  className={css`
-                    font-weight: bold;
-                    font-size: 14px;
-                    line-height: 126.02%;
-
-                    letter-spacing: -0.05em;
-
-                    color: #000000;
-                  `}
-                >
-                  Corporate Equity / Company stage
-                </p>
-                <div
-                  className={css`
-                    display: flex;
-                    align-items: center;
-                    max-width: 134px;
-                    justify-content: space-between;
-                  `}
-                >
+              <div className={Style.GH4}>
+                <p className={Style.GH5}>Corporate Equity / Company stage</p>
+                <div className={Style.GH6}>
                   <p
                     className={css`
-                      ${Style.kjfasdklf}
+                      ${Style.GH13}
                     `}
                   >
                     Weight
@@ -146,141 +83,56 @@ export default () => {
                   <Counter />
                 </div>
                 <div className='mt-3 d-flex align-items-center'>
-                  <input
-                    type='checkbox'
-                    className={css`
-                      margin-right: 10px;
-                    `}
-                  />
-                  <p className={Style.kjfasdklf}>Seed / Pre-revenue</p>
+                  <input type='checkbox' className={Style.GH7} />
+                  <p className={Style.GH13}>Seed / Pre-revenue</p>
                 </div>
                 <div className='mt-3 d-flex align-items-center'>
-                  <input
-                    type='checkbox'
-                    className={css`
-                      margin-right: 10px;
-                    `}
-                  />
-                  <p className={Style.kjfasdklf}>Early venture</p>
+                  <input type='checkbox' className={Style.GH7} />
+                  <p className={Style.GH13}>Early venture</p>
                 </div>
 
                 <div className='mt-3 d-flex align-items-center'>
-                  <input
-                    type='checkbox'
-                    className={css`
-                      margin-right: 10px;
-                    `}
-                  />
-                  <p className={Style.kjfasdklf}>Late venture</p>
+                  <input type='checkbox' className={Style.GH7} />
+                  <p className={Style.GH13}>Late venture</p>
                 </div>
                 <div className='mt-3 d-flex align-items-center'>
-                  <input
-                    type='checkbox'
-                    className={css`
-                      margin-right: 10px;
-                    `}
-                  />
-                  <p className={Style.kjfasdklf}>Growth</p>
+                  <input type='checkbox' className={Style.GH7} />
+                  <p className={Style.GH13}>Growth</p>
                 </div>
 
                 <div className='mt-3 d-flex align-items-center'>
-                  <input
-                    type='checkbox'
-                    className={css`
-                      margin-right: 10px;
-                    `}
-                  />
-                  <p className={Style.kjfasdklf}>Pre-IPO</p>
+                  <input type='checkbox' className={Style.GH7} />
+                  <p className={Style.GH13}>Pre-IPO</p>
                 </div>
 
                 <div className='mt-3 d-flex align-items-center'>
-                  <input
-                    type='checkbox'
-                    className={css`
-                      margin-right: 10px;
-                    `}
-                  />
-                  <p className={Style.kjfasdklf}>Public</p>
+                  <input type='checkbox' className={Style.GH7} />
+                  <p className={Style.GH13}>Public</p>
                 </div>
               </div>
-              <div
-                className={css`
-                  border: 1px solid #e1e4e8;
-                  box-sizing: border-box;
-                  margin: auto;
-
-                  margin-top: 20px;
-                  max-width: 616px;
-                  padding: 9px 28px 20px 28px;
-                `}
-              >
-                <p
-                  className={css`
-                    font-weight: bold;
-                    font-size: 14px;
-                    line-height: 126.02%;
-
-                    letter-spacing: -0.05em;
-
-                    color: #000000;
-                  `}
-                >
-                  Equity / Net IRR
-                </p>
-                <div
-                  className={css`
-                    display: flex;
-                    align-items: center;
-                    max-width: 134px;
-                    justify-content: space-between;
-                  `}
-                >
+              <div className={Style.GH8}>
+                <p className={Style.GH9}>Equity / Net IRR</p>
+                <div className={Style.GH10}>
                   <p
                     className={css`
-                      ${Style.kjfasdklf}
+                      ${Style.GH13}
                     `}
                   >
                     Weight
                   </p>
                   <Counter />
                 </div>
-                <div
-                  className={css`
-                    display: flex;
-                    align-items: center;
-                    max-width: 134px;
-                    justify-content: space-between;
-                    margin-top: 30px;
-                  `}
-                >
+                <div className={Style.GH11}>
                   <p
                     className={css`
-                      ${Style.kjfasdklf}
+                      ${Style.GH13}
                     `}
                   >
                     Weight
                   </p>
                   <div>
                     <input
-                      className={css`
-                        width: 140px;
-                        font-weight: bold;
-                        font-size: 13px;
-                        line-height: 15px;
-                        display: flex;
-                        align-items: center;
-                        letter-spacing: -0.03em;
-
-                        color: #c6cbd1;
-                        background: linear-gradient(
-                          180deg,
-                          #fafbfc 0%,
-                          #f9fafb 100%
-                        );
-                        border: none;
-                        padding: 4px 10px;
-                        margin-left: 40px;
-                      `}
+                      className={Style.GH12}
                       placeholder='Enter IRR value'
                     />
                   </div>
@@ -306,6 +158,109 @@ export default () => {
 };
 
 const Style = {
+  GH1: css`
+    margin-top: 25px;
+    width: 100%;
+    min-width: 727px;
+    @media (max-width: 768px) {
+      min-width: 100%;
+    }
+  `,
+  GH2: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 560px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  `,
+  GH3: css`
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: #c6cbd1;
+    margin: 0px;
+  `,
+  GH4: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    margin: auto;
+
+    margin-top: 20px;
+    max-width: 616px;
+    padding: 9px 28px 20px 28px;
+  `,
+  GH5: css`
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 126.02%;
+
+    letter-spacing: -0.05em;
+
+    color: #000000;
+  `,
+  GH6: css`
+    display: flex;
+    align-items: center;
+    max-width: 134px;
+    justify-content: space-between;
+  `,
+  GH7: css`
+    margin-right: 10px;
+  `,
+
+  GH8: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    margin: auto;
+
+    margin-top: 20px;
+    max-width: 616px;
+    padding: 9px 28px 20px 28px;
+  `,
+  GH9: css`
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 126.02%;
+
+    letter-spacing: -0.05em;
+
+    color: #000000;
+  `,
+  GH10: css`
+    display: flex;
+    align-items: center;
+    max-width: 134px;
+    justify-content: space-between;
+  `,
+  GH11: css`
+    display: flex;
+    align-items: center;
+    max-width: 134px;
+    justify-content: space-between;
+    margin-top: 30px;
+  `,
+  GH12: css`
+    width: 140px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+
+    color: #c6cbd1;
+    background: linear-gradient(180deg, #fafbfc 0%, #f9fafb 100%);
+    border: none;
+    padding: 4px 10px;
+    margin-left: 40px;
+  `,
   sp3: css`
     margin-top: 25px;
   `,
@@ -544,7 +499,7 @@ const Style = {
     color: #ffffff;
     padding: 8px 13px;
   `,
-  kjfasdklf: css`
+  GH13: css`
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;

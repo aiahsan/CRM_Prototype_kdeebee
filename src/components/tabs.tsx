@@ -20,29 +20,29 @@ const Tab = (props: TabProps) => {
         onClick ? onClick() : console.log();
       }}
       className={css`
-        ${isActive ? Style.activeCss : ''}
-        ${Style.akdfjsfsdf}
+        ${isActive ? Style.GH7 : ''}
+        ${Style.GH1}
       `}
     >
       <Icon icon={icon} />
       <p
         className={css`
-          ${Style.kasjdfnsf}
+          ${Style.GH2}
           ${isActive ? 'color: #000000;' : 'color: #586069;'}
         `}
       >
         {title}
       </p>
-      {subtitle != '' ? <p className={Style.jkafbdsjser}>{subtitle}</p> : <></>}
+      {subtitle != '' ? <p className={Style.GH3}>{subtitle}</p> : <></>}
     </div>
   );
 };
 export default (props: Propos) => {
   const history = useHistory();
   return (
-    <div className={Style.hausdfnasjne}>
-      <div className={Style.djasfnq3Sfaw}>
-        <div className={Style.jasdjkwq3sd}>
+    <div className={Style.GH4}>
+      <div className={Style.GH5}>
+        <div className={Style.GH6}>
           <Tab
             isActive={props.activeTab == 0 ? true : false}
             icon='meter'
@@ -85,7 +85,7 @@ export default (props: Propos) => {
 };
 
 const Style = {
-  akdfjsfsdf: css`
+  GH1: css`
     display: flex;
     cursor: pointer;
     width: 151px;
@@ -93,7 +93,7 @@ const Style = {
     align-items: center;
     justify-content: center;
   `,
-  kasjdfnsf: css`
+  GH2: css`
     margin: 0px 4px;
     font-family: Lucida Grande;
     font-style: normal;
@@ -105,7 +105,7 @@ const Style = {
       display: none;
     }
   `,
-  jkafbdsjser: css`
+  GH3: css`
     margin: 0px;
     background: #e8e9eb;
     width: 24px;
@@ -120,7 +120,7 @@ const Style = {
     padding-left: 4px;
     padding-top: 1px;
   `,
-  hausdfnasjne: css`
+  GH4: css`
     background: #f2f2f2;
 
     height: 64px;
@@ -128,16 +128,16 @@ const Style = {
     align-items: flex-end;
     display: flex;
   `,
-  djasfnq3Sfaw: css`
+  GH5: css`
     max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
   `,
-  jasdjkwq3sd: css`
+  GH6: css`
     display: flex;
   `,
-  activeCss: css`
+  GH7: css`
     background-color: white;
     border-top: 3px solid #b6af9d;
     border-left: 1px solid #e1e4e8;

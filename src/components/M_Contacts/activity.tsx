@@ -15,12 +15,12 @@ export default (props: Props) => {
   return (
     <div
       onClick={() => (onClick ? onClick() : () => console.log())}
-      className={Style.kdsklfjasdklf}
+      className={Style.GH4}
     >
       {image ? (
         <>
-          <input className={Style.kasdnkfjdaslkfsd} type='checkbox' />{' '}
-          <img className={Style.zxcnjdaw} src={image} alt='' />
+          <input className={Style.GH1} type='checkbox' />{' '}
+          <img className={Style.GH2} src={image} alt='' />
         </>
       ) : (
         <></>
@@ -29,8 +29,8 @@ export default (props: Props) => {
         <div className='d-flex flex-wrap'>
           <p
             className={css`
-              ${Style.BaseCss}
-              ${Style.kjdafjkdsf}
+              ${Style.GH9}
+              ${Style.GH6}
             `}
           >
             {' '}
@@ -40,8 +40,8 @@ export default (props: Props) => {
           {email != '' ? (
             <p
               className={css`
-                ${Style.BaseCss}
-                ${Style.knasdkffsaf223}
+                ${Style.GH9}
+                ${Style.GH7}
               `}
             >
               &thinsp; - {email}
@@ -53,8 +53,8 @@ export default (props: Props) => {
           {status ? (
             <p
               className={css`
-                ${Style.BaseCss}
-                ${Style.nsaodjasdasd}
+                ${Style.GH9}
+                ${Style.GH8}
               `}
             >
               &thinsp;{status}
@@ -65,7 +65,7 @@ export default (props: Props) => {
           {tag ? (
             <p
               className={css`
-                ${Style.BaseCss}
+                ${Style.GH9}
                 ${Style.jvbjsddasf}
               `}
             >
@@ -111,7 +111,7 @@ const Style = {
     }
   `,
 
-  BaseCss: css`
+  GH9: css`
 font-family: Lucida Grande;
         font-style: normal;
         line-height: 18px;
@@ -119,32 +119,32 @@ font-family: Lucida Grande;
         letter-spacing: -0.03em;
         margin-0px;
 `,
-  kdsklfjasdklf: css`
+  GH4: css`
     margin-top: 11px;
     margin-left: 15px;
     display: flex;
     cursor: pointer;
   `,
-  kasdnkfjdaslkfsd: css`
+  GH1: css`
     margin-right: 7.5px;
     margin-left: 4.5px;
     margin-top: 10px;
   `,
-  zxcnjdaw: css`
+  GH2: css`
     width: 32px;
     height: 32px;
     margin-bottom: 10px;
     margin-right: 10px;
   `,
-  kjdafjkdsf: css`
+  GH6: css`
     font-weight: bold;
     font-size: 15px;
   `,
-  knasdkffsaf223: css`
+  GH7: css`
     font-weight: bold;
     font-size: 15px;
   `,
-  nsaodjasdasd: css`
+  GH8: css`
     font-size: 13px;
     height: 20px;
     background: rgba(142, 182, 230, 0.75);

@@ -59,12 +59,6 @@ const Style = {
     }
   `,
 
-  p27: css`
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-  `,
-
   g1: css`
     max-width: 978.98px;
     width: 100%;
@@ -124,14 +118,6 @@ const Style = {
     letter-spacing: -0.06em;
     margin-left: 7.5px;
     color: #586069;
-  `,
-  prfcst33: css`
-    margin-left: 54px;
-    margin-top: 23px;
-    @media (max-width: 639px) {
-      margin: 23px 12px;
-      margin-bottom: 0px;
-    }
   `,
 };
 export default Profile;

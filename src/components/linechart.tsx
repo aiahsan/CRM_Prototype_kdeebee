@@ -72,20 +72,8 @@ const data = [
 
 const Chart = () => {
   return (
-    <div
-      className={css`
-        @media (max-width: 983px) {
-          overflow: auto;
-        }
-      `}
-    >
-      <div
-        className={css`
-          @media (max-width: 983px) {
-            width: 450px;
-          }
-        `}
-      >
+    <div className={Style.GH1}>
+      <div className={Style.GH2}>
         <ResponsiveContainer width='99%' aspect={3}>
           <LineChart
             width={1080}
@@ -136,3 +124,15 @@ const Chart = () => {
 };
 
 export default Chart;
+const Style = {
+  GH1: css`
+    @media (max-width: 983px) {
+      overflow: auto;
+    }
+  `,
+  GH2: css`
+    @media (max-width: 983px) {
+      width: 450px;
+    }
+  `,
+};

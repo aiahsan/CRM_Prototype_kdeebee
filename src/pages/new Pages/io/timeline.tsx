@@ -22,34 +22,34 @@ export default () => {
       />
       <Tabs activeTab={0} />
 
-      <div className={Style.askfklasf}>
+      <div className={Style.GH1}>
         <LeftBar />
         <div className='w-100'>
-          <div className={Style.askjdkls2}>
-            <div className={Style.askjdkls3}>
-              <div className={Style.askjdkls4}>
-                <div className={Style.askjdkls5}>
+          <div className={Style.GH2}>
+            <div className={Style.GH3}>
+              <div className={Style.GH4}>
+                <div className={Style.GH5}>
                   <Dropdown title='All activity' />
                 </div>
-                <div className={Style.askjdkls6}>
+                <div className={Style.GH6}>
                   <Icon icon='search' />
-                  <input className={Style.askjdkls7} placeholder='search' />
+                  <input className={Style.GH7} placeholder='search' />
                 </div>
               </div>
 
-              <div className={Style.askjdkls8}>
-                <div className={Style.askjdkslenwe}>
-                  <div className={Style.cdjasbere}>
+              <div className={Style.GH8}>
+                <div className={Style.GH9}>
+                  <div className={Style.GH10}>
                     <Icon icon='chain' />
-                    <p className={Style.cnajenrek}>IO Activity Summary</p>
+                    <p className={Style.GH11}>IO Activity Summary</p>
                   </div>
-                  <div className={Style.asdbjrerer}>
+                  <div className={Style.GH12}>
                     <Dropdown title='Actor' />
                     <Dropdown title='Activity Type' />
                   </div>
                 </div>
 
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Mary Ek'
@@ -57,7 +57,7 @@ export default () => {
                     status=' logged in'
                     subtitle=''
                   />
-                  <div className={Style.cansjkebwr}>
+                  <div className={Style.GH14}>
                     <ActivitySub
                       icon='eye'
                       title='viewed'
@@ -67,7 +67,7 @@ export default () => {
                     <ActivitySub icon='glasses' title='41m session length' />
                     <p
                       className={css`
-                        ${Style.BaseMoreText}
+                        ${Style.GH16}
                       `}
                     >
                       view less »
@@ -75,7 +75,7 @@ export default () => {
                   </div>
                 </div>
 
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Mike Johnson'
@@ -83,12 +83,12 @@ export default () => {
                     status=' logged in'
                     subtitle=''
                   />
-                  <div className={Style.askbdjwbe34l}>
+                  <div className={Style.GH15}>
                     <ActivitySub icon='eye' title='3 pages viewed' />
                     <ActivitySub icon='clock' title='7m session length' />
                     <p
                       className={css`
-                        ${Style.BaseMoreText}
+                        ${Style.GH16}
                       `}
                     >
                       2 more items »
@@ -96,7 +96,7 @@ export default () => {
                   </div>
                 </div>
 
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Lucy Granger'
@@ -106,7 +106,7 @@ export default () => {
                   />
                 </div>
 
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Lucy Granger'
@@ -116,7 +116,7 @@ export default () => {
                   />
                 </div>
 
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Deanne Phillips'
@@ -125,7 +125,7 @@ export default () => {
                     date='25 Apr ‘21'
                   />
                 </div>
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Sergio Scalzi'
@@ -135,7 +135,7 @@ export default () => {
                   />
                 </div>
 
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Paul Jones'
@@ -143,20 +143,20 @@ export default () => {
                     status=' logged in'
                     subtitle=''
                   />
-                  <div className={Style.khasdkhasdeWR23}>
+                  <div className={Style.GH17}>
                     <ActivitySub icon='eye' title='7 pages viewed' />
                     <ActivitySub icon='clock' title='12m session length' />
 
                     <p
                       className={css`
-                        ${Style.BaseMoreText}
+                        ${Style.GH16}
                       `}
                     >
                       2 more items »
                     </p>
                   </div>
                 </div>
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Sara Bell'
@@ -164,20 +164,20 @@ export default () => {
                     status=' logged in'
                     subtitle=''
                   />
-                  <div className={Style.khasdkhasdeWR23}>
+                  <div className={Style.GH17}>
                     <ActivitySub icon='eye' title='34 pages viewed' />
                     <ActivitySub icon='clock' title='86m session length' />
 
                     <p
                       className={css`
-                        ${Style.BaseMoreText}
+                        ${Style.GH16}
                       `}
                     >
                       2 more items »
                     </p>
                   </div>
                 </div>
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Tom Gill'
@@ -185,13 +185,13 @@ export default () => {
                     status=' logged in'
                     subtitle=''
                   />
-                  <div className={Style.khasdkhasdeWR23}>
+                  <div className={Style.GH17}>
                     <ActivitySub icon='eye' title='9 pages viewed' />
                     <ActivitySub icon='clock' title='24m session length' />
 
                     <p
                       className={css`
-                        ${Style.BaseMoreText}
+                        ${Style.GH16}
                       `}
                     >
                       2 more items »
@@ -199,7 +199,7 @@ export default () => {
                   </div>
                 </div>
 
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Lucy Granger'
@@ -207,20 +207,20 @@ export default () => {
                     status=' logged in'
                     subtitle=''
                   />
-                  <div className={Style.khasdkhasdeWR23}>
+                  <div className={Style.GH17}>
                     <ActivitySub icon='eye' title='14 pages viewed' />
                     <ActivitySub icon='clock' title='37m session length' />
 
                     <p
                       className={css`
-                        ${Style.BaseMoreText}
+                        ${Style.GH16}
                       `}
                     >
                       2 more items »
                     </p>
                   </div>
                 </div>
-                <div className={Style.a233ksldnasdasd}>
+                <div className={Style.GH13}>
                   <Activity
                     image={avt}
                     title='Chris Reed'
@@ -228,13 +228,13 @@ export default () => {
                     status=' logged in'
                     subtitle=''
                   />
-                  <div className={Style.khasdkhasdeWR23}>
+                  <div className={Style.GH17}>
                     <ActivitySub icon='eye' title='2 pages viewed' />
                     <ActivitySub icon='clock' title='3m session length' />
 
                     <p
                       className={css`
-                        ${Style.BaseMoreText}
+                        ${Style.GH16}
                       `}
                     >
                       2 more items »
@@ -247,20 +247,8 @@ export default () => {
         </div>
       </div>
 
-      <div
-        className={css`
-          max-width: 978.98px;
-          margin: auto;
-          margin-top: 32px;
-        `}
-      >
-        <div
-          className={css`
-            display: flex;
-            justify-content: center;
-            margin-left: 3%;
-          `}
-        >
+      <div className={Style.GH18}>
+        <div className={Style.GH19}>
           <Pagination />
         </div>
       </div>
@@ -269,7 +257,17 @@ export default () => {
 };
 
 const Style = {
-  BaseMoreText: css`
+  GH18: css`
+    max-width: 978.98px;
+    margin: auto;
+    margin-top: 32px;
+  `,
+  GH19: css`
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+  `,
+  GH16: css`
     font-family: Lucida Grande;
     font-style: normal;
     font-weight: normal;
@@ -290,22 +288,8 @@ const Style = {
     margin: 0px;
     margin-left: 6px;
   `,
-  askjkflsf: css`
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
-    padding: 10px 0px 11px 9.12px;
-    font-family: Lucida Grande;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: -0.03em;
-    color: #000000;
-    width: 224px;
-    border-bottom: 0.5px solid #e1e4e8;
-    cursor: pointer;
-  `,
-  askfklasf: css`
+
+  GH1: css`
     max-width: 1119px;
     margin: auto;
     display: flex;
@@ -313,98 +297,8 @@ const Style = {
       flex-direction: column;
     }
   `,
-  asjdkasjfwer: css`
-    margin-right: 28px;
-    max-width: 224px;
-    position: relative;
-    bottom: 29px;
-    @media (max-width: 1024px) {
-      bottom: 0px;
-      margin-top: 10px;
 
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      max-width: 100%;
-    }
-    @media (max-width: 532px) {
-      display: block;
-      padding: 10px;
-    }
-  `,
-  kasdfjersajdk2: css`
-    @media (max-width: 1024px) {
-      margin-right: 15px;
-    }
-    @media (max-width: 532px) {
-      margin: 0;
-    }
-  `,
-  kasjfkrnf: css`
-    width: 224px;
-    height: 224px;
-    border-radius: 224px;
-    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.16));
-  `,
-  kasdjaklds: css`
-    font-family: Lucida Grande;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.07em;
-    color: #000000;
-    margin: 0px;
-    margin-top: 22px;
-  `,
-  kashdklasasewe: css`
-    font-family: Lucida Grande;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.07em;
-    color: #000000;
-    margin: 22px 0px;
-  `,
-  kasjhlrer: css`
-    height: 0.1px;
-    background-color: #e1e4e8;
-  `,
-  ksahdks31: css`
-    margin-top: 22px;
-  `,
-  xznfzsff: css`
-    margin-top: 10px;
-    margin-bottom: 22px;
-  `,
-  skajdklnwe: css`
-    border: 1px solid #e1e4e8;
-  `,
-  cbjasbjkwew: css`
-    margin-top: 17.51px;
-    margin-bottom: 18.49px;
-  `,
-  ksajkfasnfa: css`
-    font-family: Lucida Grande;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.07em;
-    color: #000000;
-  `,
-  snkaknkdad: css`
-    margin-top: 10px;
-  `,
-  askjdkls8: css`
+  GH8: css`
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 728px;
@@ -413,15 +307,15 @@ const Style = {
       min-width: 100%;
     }
   `,
-  askjdkls7: css`
+  GH7: css`
     background-color: transparent;
     border: none;
     margin-left: 10px;
   `,
-  askjdkls6: css`
+  GH6: css`
     padding-left: 10px;
   `,
-  askjdkls5: css`
+  GH5: css`
     padding: 8px 9.5px 8px 17px;
     border-right: 1px solid #e1e4e8;
 
@@ -429,7 +323,7 @@ const Style = {
       border: none;
     }
   `,
-  askjdkls4: css`
+  GH4: css`
     background: #fafbfc;
 
     border: 1px solid #e1e4e8;
@@ -447,32 +341,29 @@ const Style = {
       align-items: flex-start;
     }
   `,
-  askjdkls3: css`
+  GH3: css`
     margin-top: 24px;
     @media (max-width: 532px) {
       width: 100%;
     }
   `,
-  askjdkls2: css`
+  GH2: css`
     max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
     display: flex;
   `,
-  askjdkls1: css`
-    margin-top: 10px;
-    margin-bottom: 22px;
-  `,
-  a233ksldnasdasd: css`
+
+  GH13: css`
     border-bottom: 1px solid #e1e4e8;
   `,
-  khasdkhasdeWR23: css`
+  GH17: css`
     margin-left: 59px;
     margin-top: -15px;
     margin-bottom: 15px;
   `,
-  askjdkslenwe: css`
+  GH9: css`
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
@@ -482,12 +373,12 @@ const Style = {
       flex-wrap: wrap;
     }
   `,
-  cdjasbere: css`
+  GH10: css`
     display: flex;
     justify-content: center;
     align-items: center;
   `,
-  cnajenrek: css`
+  GH11: css`
     margin: 0px;
 
     font-family: Lucida Grande;
@@ -499,7 +390,7 @@ const Style = {
     margin-left: 7.5px;
     color: #586069;
   `,
-  asdbjrerer: css`
+  GH12: css`
     max-width: 175px;
     width: 100%;
     display: flex;
@@ -509,12 +400,12 @@ const Style = {
       margin-top: 10px;
     }
   `,
-  cansjkebwr: css`
+  GH14: css`
     margin-left: 59px;
     margin-top: -25px;
     margin-bottom: 15px;
   `,
-  askbdjwbe34l: css`
+  GH15: css`
     margin-left: 59px;
     margin-top: -15px;
     margin-bottom: 15px;

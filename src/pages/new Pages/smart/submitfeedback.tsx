@@ -58,15 +58,8 @@ export default () => {
         <div className={Style.g2}>
           <p className={Style.g3}>
             {' '}
-            <span
-              className={css`
-                color: #1269d3;
-              `}
-            >
-              {' '}
-              Project Storebox
-            </span>{' '}
-            / Submit Feedback
+            <span className={Style.GH1}> Project Storebox</span> / Submit
+            Feedback
           </p>
         </div>
       </div>
@@ -99,25 +92,13 @@ export default () => {
         </div>
         <div>
           <div className={Style.g13}>
-            <div
-              className={css`
-                margin-top: 25px;
-                margin-left: 29px;
-                width: 100%;
-                min-width: 727px;
-              `}
-            >
+            <div className={Style.GH2}>
               <h2 className={Style.cst1}>Answer</h2>
               <p className={Style.cst2}>
                 Is the Tom Gill interested in exploring this investment
                 opportunity?
               </p>
-              <div
-                className={css`
-                  margin-bottom: 25px;
-                  margin-left: 25px;
-                `}
-              >
+              <div className={Style.GH3}>
                 <div className='d-flex align-items-center'>
                   <input type='radio' />
                   <h2 className={`ml-1 ${Style.cst1}`}>Yes</h2>
@@ -128,16 +109,7 @@ export default () => {
                 </div>
               </div>
               <h2 className={Style.cst1}>Optional Feedback</h2>
-              <textarea
-                className={css`
-                  background: linear-gradient(180deg, #fafbfc 0%, #f9fafb 100%);
-                  border: 1px solid #e1e4e7;
-                  box-sizing: border-box;
-                  border-radius: 3px;
-                  width: 560px;
-                  height: 118px;
-                `}
-              ></textarea>
+              <textarea className={Style.GH4}></textarea>
               <div className={Style.cst5}></div>
               <div className={Style.p14}>
                 <button className={Style.p15}>Cancel</button>
@@ -160,6 +132,27 @@ export default () => {
 };
 
 const Style = {
+  GH1: css`
+    color: #1269d3;
+  `,
+  GH2: css`
+    margin-top: 25px;
+    margin-left: 29px;
+    width: 100%;
+    min-width: 727px;
+  `,
+  GH3: css`
+    margin-bottom: 25px;
+    margin-left: 25px;
+  `,
+  GH4: css`
+    background: linear-gradient(180deg, #fafbfc 0%, #f9fafb 100%);
+    border: 1px solid #e1e4e7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 560px;
+    height: 118px;
+  `,
   sp3: css`
     margin-top: 25px;
   `,

@@ -16,21 +16,11 @@ const ViewBox = (props: DirectoryBoxProps) => {
       <div className={Style.ps3}>
         <div className={Style.ps4}>
           <p className={Style.ps5}>{title}</p>
-          <p
-            className={css`
-              margin: 0px 9.5px;
-            `}
-          >
-            -
-          </p>
+          <p className={Style.PS7}>-</p>
           <p className={Style.ps6}>{subtitle}</p>
         </div>
 
-        <div
-          className={css`
-            margin-top: 27px;
-          `}
-        >
+        <div className={Style.ps8}>
           <ViewBoxText
             key1='Type'
             value1='Equity'
@@ -111,6 +101,12 @@ const Style = {
     letter-spacing: -0.07em;
     color: #586069;
     margin: 0px;
+  `,
+  PS7: css`
+    margin: 0px 9.5px;
+  `,
+  ps8: css`
+    margin-top: 27px;
   `,
 };
 

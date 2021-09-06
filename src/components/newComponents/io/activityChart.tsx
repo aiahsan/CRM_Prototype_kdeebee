@@ -16,12 +16,9 @@ export default (props: ActivityChartProps) => {
     onClick,
   } = props;
   return (
-    <div
-      onClick={onClick ? () => onClick() : () => null}
-      className={Style.kdsklfjasdklf}
-    >
+    <div onClick={onClick ? () => onClick() : () => null} className={Style.GH1}>
       {type == undefined ? (
-        <input className={Style.kasdnkfjdaslkfsd} type='checkbox' />
+        <input className={Style.GH2} type='checkbox' />
       ) : (
         <></>
       )}
@@ -30,8 +27,8 @@ export default (props: ActivityChartProps) => {
         <div className='d-flex flex-wrap'>
           <p
             className={css`
-              ${Style.BaseCss}
-              ${Style.kjdafjkdsf}
+              ${Style.GH3}
+              ${Style.GH4}
             `}
           >
             {' '}
@@ -43,8 +40,8 @@ export default (props: ActivityChartProps) => {
           ) : (
             <p
               className={css`
-                ${Style.BaseCss}
-                ${Style.knasdkffsaf223}
+                ${Style.GH3}
+                ${Style.GH5}
               `}
             >
               &thinsp; {type == undefined ? '-' : '/'} {email}
@@ -53,8 +50,8 @@ export default (props: ActivityChartProps) => {
 
           <p
             className={css`
-              ${Style.BaseCss}
-              ${Style.nsaodjasdasd}
+              ${Style.GH3}
+              ${Style.GH6}
               background-color:${color}
             `}
           >
@@ -63,8 +60,8 @@ export default (props: ActivityChartProps) => {
           {tag ? (
             <p
               className={css`
-                ${Style.BaseCss}
-                ${Style.jvbjsddasf}
+                ${Style.GH3}
+                ${Style.GH7}
               `}
             >
               &thinsp;{tag}
@@ -74,7 +71,7 @@ export default (props: ActivityChartProps) => {
           )}
         </div>
         <div>
-          <p className={Style.aksdfjlsdfjsd}>{lastActitvy}</p>
+          <p className={Style.GH8}>{lastActitvy}</p>
         </div>
       </div>
     </div>
@@ -82,7 +79,7 @@ export default (props: ActivityChartProps) => {
 };
 
 const Style = {
-  aksdfjlsdfjsd: css`
+  GH8: css`
     margin: 0px;
     margin-top: -12px;
     font-family: Lucida Grande;
@@ -94,7 +91,7 @@ const Style = {
     color: #5b636b;
     margin-bottom: 11px;
   `,
-  jvbjsddasf: css`
+  GH7: css`
     font-size: 13px;
     height: 20px;
     background: #b7d950;
@@ -109,7 +106,7 @@ const Style = {
     }
   `,
 
-  BaseCss: css`
+  GH3: css`
 font-family: Lucida Grande;
         font-style: normal;
         line-height: 18px;
@@ -117,32 +114,27 @@ font-family: Lucida Grande;
         letter-spacing: -0.03em;
         margin-0px;
 `,
-  kdsklfjasdklf: css`
+  GH1: css`
     margin-top: 11px;
     margin-left: 15px;
     display: flex;
     cursor: pointer;
   `,
-  kasdnkfjdaslkfsd: css`
+  GH2: css`
     margin-right: 7.5px;
     margin-left: 4.5px;
     margin-top: 10px;
   `,
-  zxcnjdaw: css`
-    width: 32px;
-    height: 32px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-  `,
-  kjdafjkdsf: css`
+
+  GH4: css`
     font-weight: bold;
     font-size: 15px;
   `,
-  knasdkffsaf223: css`
+  GH5: css`
     font-weight: bold;
     font-size: 15px;
   `,
-  nsaodjasdasd: css`
+  GH6: css`
     font-size: 13px;
     height: 20px;
     border-radius: 20px;

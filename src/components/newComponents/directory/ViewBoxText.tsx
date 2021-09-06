@@ -22,7 +22,7 @@ const ViewBoxText = (props: DirectoryBoxTextProps) => {
           className={css`
             ${Style.ps2}
             ${Style.ps3}
-                  width:82px;
+                 ${Style.ps11}
           `}
         >
           {key1}
@@ -32,7 +32,7 @@ const ViewBoxText = (props: DirectoryBoxTextProps) => {
           className={css`
             ${Style.ps2}
             ${Style.ps3}
-                  width: 109px;
+               ${Style.ps10}
           `}
         >
           {value1}
@@ -50,7 +50,7 @@ const ViewBoxText = (props: DirectoryBoxTextProps) => {
           className={css`
             ${Style.ps2}
             ${Style.ps3}
-                  width:82px;
+                ${Style.ps11}
           `}
         >
           {key2}
@@ -60,7 +60,7 @@ const ViewBoxText = (props: DirectoryBoxTextProps) => {
           className={css`
             ${Style.ps2}
             ${Style.ps3}
-                  width: 109px;
+                 ${Style.ps10}
           `}
         >
           {value2}
@@ -177,5 +177,11 @@ const Style = {
   ps9: css`
     width: 282px;
     margin: 0px;
+  `,
+  ps10: css`
+    width: 109px;
+  `,
+  ps11: css`
+    width: 82px;
   `,
 };

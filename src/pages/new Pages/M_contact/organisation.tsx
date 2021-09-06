@@ -17,74 +17,42 @@ export default () => {
       <TopBar />
       <Breadcrumb list={['Contacts', 'People']} activeIndex={1} />
       <Tabs activeTab={2} />
-      <div className={Style.akdshgksdhner}>
-        <div className={Style.kandsfjsdneR}>
-          <div className={Style.aknsdlsereT}>
-            <div className={Style.dnkavksdernkiser}>
-              <div className={Style.kasdgneet}>
+      <div className={Style.GH6}>
+        <div className={Style.GH7}>
+          <div className={Style.GH8}>
+            <div className={Style.GH9}>
+              <div className={Style.GH10}>
                 <Dropdown title='All stages' />
               </div>
-              <div className={Style.kansfdjerew}>
+              <div className={Style.GH11}>
                 <Icon icon='search' />
                 <input
-                  className={Style.ks2asdjfkfnre}
+                  className={Style.GH12}
                   placeholder='Search organasations '
                 />
               </div>
             </div>
-            <div
-              className={css`
-                display: flex;
-                @media (max-width: 768px) {
-                  margin-top: 20px;
-                }
-              `}
-            >
-              <button
-                className={css`
-                  width: 143px;
-                  height: 34px;
-                  background: #b6af9d;
-                  border: 1px solid #b6af9d;
-                  box-sizing: border-box;
-                  border-radius: 2px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                `}
-              >
+            <div className={Style.GH1}>
+              <button className={Style.GH2}>
                 <Icon icon='org' color='white' />
-                <p
-                  className={css`
-                    font-weight: bold;
-                    font-size: 14px;
-                    line-height: 16px;
-                    letter-spacing: -0.1em;
-                    color: #ffffff;
-                    margin: 0px;
-                    padding: 0px;
-                    margin-left: 4.25px;
-                  `}
-                >
-                  Add Organisation
-                </p>
+                <p className={Style.GH3}>Add Organisation</p>
               </button>
             </div>
           </div>
-          <div className={Style.ajkhsdfjksde}>
-            <div className={Style.asdkfnkdsfner}>
-              <div className={Style.aklsdfnkser}>
-                <input className={Style.kdsanfjlsdner} type='checkbox' />
+          <div className={Style.GH13}>
+            <div className={Style.GH14}>
+              <div className={Style.GH15}>
+                <input className={Style.GH16} type='checkbox' />
                 <img src={UserImg} />
-                <p className={Style.vkasdnjffsf}>10 Organisations</p>
+                <p className={Style.GH17}>10 Organisations</p>
               </div>
-              <div className={Style.jsdabfjsdfser}>
+              <div className={Style.GH18}>
                 <Dropdown title='Type' />
                 <Dropdown title='Sort' />
               </div>
             </div>
 
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -94,7 +62,7 @@ export default () => {
                 email=''
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -104,7 +72,7 @@ export default () => {
                 status='Family Office'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -114,7 +82,7 @@ export default () => {
                 status='Family Office'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -124,7 +92,7 @@ export default () => {
                 status='Stage: Investment Preferences Known'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -134,7 +102,7 @@ export default () => {
                 status='Stage: Investment Preferences Known'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -144,7 +112,7 @@ export default () => {
                 status='Family Office'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -154,7 +122,7 @@ export default () => {
                 status='Stage: Prospect'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -164,7 +132,7 @@ export default () => {
                 status='Family Office'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -174,7 +142,7 @@ export default () => {
                 status='Family Office'
               />
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH19}>
               <Activity
                 onClick={() => history.push('/contacts/organisation/timeline')}
                 image={avt}
@@ -187,20 +155,8 @@ export default () => {
           </div>
         </div>
       </div>
-      <div
-        className={css`
-          max-width: 978.98px;
-          margin: auto;
-          margin-top: 32px;
-        `}
-      >
-        <div
-          className={css`
-            display: flex;
-            justify-content: center;
-            margin-left: 3%;
-          `}
-        >
+      <div className={Style.GH4}>
+        <div className={Style.GH5}>
           <Pagination />
         </div>
       </div>
@@ -209,37 +165,59 @@ export default () => {
 };
 
 const Style = {
-  hajksdghks: css`
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
-    padding: 10px 0px 11px 9.12px;
-    font-family: Lucida Grande;
-    font-style: normal;
-    font-weight: normal;
+  GH1: css`
+    display: flex;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+  `,
+  GH2: css`
+    width: 143px;
+    height: 34px;
+    background: #b6af9d;
+    border: 1px solid #b6af9d;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `,
+  GH3: css`
+    font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: -0.03em;
-    color: #000000;
-    width: 224px;
-    border-bottom: 0.5px solid #e1e4e8;
-    cursor: pointer;
+    letter-spacing: -0.1em;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 4.25px;
+  `,
+  GH4: css`
+    max-width: 978.98px;
+    margin: auto;
+    margin-top: 32px;
+  `,
+  GH5: css`
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
   `,
 
-  akdshgksdhner: css`
+  GH6: css`
     max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
     display: flex;
   `,
-  kandsfjsdneR: css`
+  GH7: css`
     margin-top: 24px;
     margin-left: 29.04px;
     @media (max-width: 425px) {
       margin-left: 0px;
     }
   `,
-  aknsdlsereT: css`
+  GH8: css`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,7 +228,7 @@ const Style = {
     }
   `,
 
-  dnkavksdernkiser: css`
+  GH9: css`
     background: #fafbfc;
 
     border: 1px solid #e1e4e8;
@@ -268,23 +246,23 @@ const Style = {
     }
   `,
 
-  kasdgneet: css`
+  GH10: css`
     padding: 8px 9.5px 8px 17px;
     border-right: 1px solid #e1e4e8;
     @media (max-width: 320px) {
       border: none;
     }
   `,
-  kansfdjerew: css`
+  GH11: css`
     padding-left: 10px;
   `,
 
-  ks2asdjfkfnre: css`
+  GH12: css`
     background-color: transparent;
     border: none;
     margin-left: 10px;
   `,
-  ajkhsdfjksde: css`
+  GH13: css`
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 980px;
@@ -294,7 +272,7 @@ const Style = {
       min-width: 100%;
     }
   `,
-  asdkfnkdsfner: css`
+  GH14: css`
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
@@ -302,15 +280,15 @@ const Style = {
     background: #f6f8fa;
     flex-wrap: wrap;
   `,
-  aklsdfnkser: css`
+  GH15: css`
     display: flex;
     justify-content: center;
     align-items: center;
   `,
-  kdsanfjlsdner: css`
+  GH16: css`
     margin-right: 7.5px;
   `,
-  vkasdnjffsf: css`
+  GH17: css`
     margin: 0px;
 
     font-family: Lucida Grande;
@@ -322,13 +300,13 @@ const Style = {
     margin-left: 7.5px;
     color: #586069;
   `,
-  jsdabfjsdfser: css`
+  GH18: css`
     max-width: 115px;
     width: 100%;
     display: flex;
     justify-content: space-between;
   `,
-  kahsdfjkhfsf: css`
+  GH19: css`
     border-bottom: 1px solid #e1e4e8;
   `,
 };

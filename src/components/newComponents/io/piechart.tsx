@@ -17,13 +17,7 @@ function NormalPieChart({ value }: { value: number }) {
   }, []);
 
   return (
-    <div
-      className={css`
-        bottom: 6px;
-        position: relative;
-        margin-right: 4px;
-      `}
-    >
+    <div className={Style.ps1}>
       <PieChart width={48} height={48}>
         <Pie data={data} dataKey='value' innerRadius={12}>
           {data.map((entry, index) => {
@@ -47,3 +41,11 @@ function NormalPieChart({ value }: { value: number }) {
 }
 
 export default NormalPieChart;
+
+const Style = {
+  ps1: css`
+    bottom: 6px;
+    position: relative;
+    margin-right: 4px;
+  `,
+};

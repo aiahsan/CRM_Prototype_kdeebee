@@ -139,35 +139,19 @@ export default () => {
                     <Dropdown title='Sort' />
                   </div>
                 </div>
-                <div
-                  className={css`
-                    overflow: auto;
-                  `}
-                >
-                  <table
-                    className={css`
-                      @media (max-width: 590px) {
-                        width: 600px;
-                      }
-                    `}
-                  >
+                <div className={Style.GH1}>
+                  <table className={Style.GH2}>
                     <thead>
-                      <tr
-                        className={css`
-                          border-bottom: 1px solid #e1e4e8;
-                        `}
-                      >
+                      <tr className={Style.GH3}>
                         <td
                           className={css`
-                            width: 307.5px;
+                            ${Style.GH4}
                             ${Style.g27}
                           `}
                         ></td>
                         <td
                           className={css`
-                            width: 78px;
-                            padding: 0px 8.5px;
-                            border-right: 1px dashed #e1e4e8;
+                            ${Style.GH5}
                             ${Style.g27}
                             ${Style.g28}
                           `}
@@ -176,21 +160,18 @@ export default () => {
                         </td>
                         <td
                           className={css`
-                            width: 243px;
                             ${Style.g27}
                             ${Style.g28}
-                          text-align:center;
-                            border-right: 1px dashed #e1e4e8;
+                            ${Style.GH6}
                           `}
                         >
                           Feedback
                         </td>
                         <td
                           className={css`
-                            width: 97px;
                             ${Style.g27}
                             ${Style.g28}
-                          text-align:center;
+                          ${Style.GH7}
                           `}
                         >
                           By
@@ -199,11 +180,7 @@ export default () => {
                     </thead>
                     <tbody>
                       {List.map((x, i) => (
-                        <tr
-                          className={css`
-                            border-bottom: 1px solid #e1e4e8;
-                          `}
-                        >
+                        <tr className={Style.GH8}>
                           <td
                             className={css`
                               ${x.profile == undefined
@@ -221,13 +198,7 @@ export default () => {
                               <></>
                             )}
                           </td>
-                          <td
-                            className={css`
-                              text-align: center;
-                              padding-right: 20px;
-                              border-right: 1px dashed #e1e4e8;
-                            `}
-                          >
+                          <td className={Style.GH9}>
                             <Icon
                               icon={
                                 x.answer == 0
@@ -240,9 +211,7 @@ export default () => {
                           </td>
                           <td
                             className={css`
-                              padding: 0px 13px;
-                              border-right: 1px dashed #e1e4e8;
-
+                              ${Style.GH10}
                               ${Style.g27}
                             `}
                           >
@@ -250,7 +219,7 @@ export default () => {
                           </td>
                           <td
                             className={css`
-                              padding: 0px 10px;
+                              ${Style.GH11}
                               ${Style.g27}
                             `}
                           >
@@ -433,5 +402,49 @@ const Style = {
   `,
   g28: css`
     padding: 20px 0px;
+  `,
+  GH1: css`
+    overflow: auto;
+  `,
+
+  GH2: css`
+    @media (max-width: 590px) {
+      width: 600px;
+    }
+  `,
+  GH3: css`
+    border-bottom: 1px solid #e1e4e8;
+  `,
+  GH4: css`
+    width: 307.5px;
+  `,
+  GH5: css`
+    width: 78px;
+    padding: 0px 8.5px;
+    border-right: 1px dashed #e1e4e8;
+  `,
+  GH6: css`
+    text-align: center;
+    border-right: 1px dashed #e1e4e8;
+    width: 243px;
+  `,
+  GH7: css`
+    text-align: center;
+    width: 97px;
+  `,
+  GH8: css`
+    border-bottom: 1px solid #e1e4e8;
+  `,
+  GH9: css`
+    text-align: center;
+    padding-right: 20px;
+    border-right: 1px dashed #e1e4e8;
+  `,
+  GH10: css`
+    padding: 0px 13px;
+    border-right: 1px dashed #e1e4e8;
+  `,
+  GH11: css`
+    padding: 0px 10px;
   `,
 };

@@ -1,5 +1,3 @@
-import React from 'react';
-
 /* 
 Opportunity
 */
@@ -50,7 +48,6 @@ import OrganisationPeople from './pages/new Pages/organisations/people';
 import OrganisationTimeLine from './pages/new Pages/organisations/timeline';
 import Library from './pages/new Pages/research';
 import Footer from './components/footer';
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 

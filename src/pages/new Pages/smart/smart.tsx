@@ -93,38 +93,9 @@ export default () => {
                     <input className={Style.g18} placeholder='search' />
                   </div>
                 </div>
-                <button
-                  className={css`
-                    width: 143px;
-                    height: 34px;
-                    background: #b6af9d;
-                    border: 1px solid #b6af9d;
-                    box-sizing: border-box;
-                    border-radius: 2px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    @media (max-width: 768px) {
-                      margin-top: 20px;
-                    }
-                  `}
-                >
+                <button className={Style.GH1}>
                   <Icon icon='puzzle' color='white' />
-                  <p
-                    className={css`
-                      font-weight: bold;
-                      font-size: 14px;
-                      line-height: 16px;
-                      letter-spacing: -0.1em;
-                      color: #ffffff;
-                      margin: 0px;
-                      padding: 0px;
-                      margin-left: 4.25px;
-                    `}
-                  >
-                    Add SMART Match
-                  </p>
+                  <p className={Style.GH2}>Add SMART Match</p>
                 </button>
               </div>
               <div className={Style.g19}>
@@ -165,6 +136,31 @@ export default () => {
 };
 
 const Style = {
+  GH1: css`
+    width: 143px;
+    height: 34px;
+    background: #b6af9d;
+    border: 1px solid #b6af9d;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+  `,
+  GH2: css`
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.1em;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 4.25px;
+  `,
   g13: css`
     max-width: 978.98px;
     width: 100%;

@@ -17,21 +17,21 @@ export default () => {
       <TopBar />
       <Breadcrumb list={['Contacts', 'People']} activeIndex={1} />
       <Tabs activeTab={3} />
-      <div className={Style.akdshgksdhner}>
-        <div className={Style.kandsfjsdneR}>
-          <div className={Style.ajkhsdfjksde}>
-            <div className={Style.asdkfnkdsfner}>
-              <div className={Style.aklsdfnkser}>
+      <div className={Style.GH11}>
+        <div className={Style.GH10}>
+          <div className={Style.GH9}>
+            <div className={Style.GH8}>
+              <div className={Style.GH7}>
                 <Icon icon='chain1' />
-                <p className={Style.vkasdnjffsf}>11 Items to reconcile</p>
+                <p className={Style.GH12}>11 Items to reconcile</p>
               </div>
-              <div className={Style.jsdabfjsdfser}>
+              <div className={Style.GH6}>
                 <Dropdown title='Type' />
                 <Dropdown title='Sort' />
               </div>
             </div>
 
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='IANUA Anchor Social Housing '
                 lastActitvy='Last active:  23 minutes ago'
@@ -40,13 +40,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='Updates on IB’s'
                 email=''
@@ -55,13 +55,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='Catch-up'
                 email=''
@@ -70,13 +70,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='IANUA UK Social Housing'
                 email=''
@@ -86,13 +86,13 @@ export default () => {
 
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='Update - Anchor Social Housing'
                 email=''
@@ -101,13 +101,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='Summary of Fundamentum track record'
                 email=''
@@ -116,13 +116,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='IANUA UK Social Housing'
                 email=''
@@ -131,13 +131,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='IANUA follow-up'
                 email=''
@@ -146,13 +146,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='Catch-up'
                 email=''
@@ -161,13 +161,13 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
-            <div className={Style.kahsdfjkhfsf}>
+            <div className={Style.GH5}>
               <Activity
                 title='IANUA follow-up'
                 email=''
@@ -176,29 +176,17 @@ export default () => {
               />
               <button
                 onClick={() => history.push('/contacts/recoil/allocate')}
-                className={Style.bhasd23yehr}
+                className={Style.GH4}
               >
                 <Icon icon='eye' />
-                <p className={Style.njasdklerue}>View Details</p>
+                <p className={Style.GH3}>View Details</p>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className={css`
-          max-width: 978.98px;
-          margin: auto;
-          margin-top: 32px;
-        `}
-      >
-        <div
-          className={css`
-            display: flex;
-            justify-content: center;
-            margin-left: 3%;
-          `}
-        >
+      <div className={Style.GH1}>
+        <div className={Style.GH2}>
           <Pagination />
         </div>
       </div>
@@ -207,82 +195,33 @@ export default () => {
 };
 
 const Style = {
-  hajksdghks: css`
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
-    padding: 10px 0px 11px 9.12px;
-    font-family: Lucida Grande;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: -0.03em;
-    color: #000000;
-    width: 224px;
-    border-bottom: 0.5px solid #e1e4e8;
-    cursor: pointer;
+  GH2: css`
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+  `,
+  GH1: css`
+    max-width: 978.98px;
+    margin: auto;
+    margin-top: 32px;
   `,
 
-  akdshgksdhner: css`
+  GH11: css`
     max-width: 978.98px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
     display: flex;
   `,
-  kandsfjsdneR: css`
+  GH10: css`
     margin-left: 29.04px;
     width: 100%;
     @media (max-width: 425px) {
       margin-left: 0px;
     }
   `,
-  aknsdlsereT: css`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 980px;
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  `,
 
-  dnkavksdernkiser: css`
-    background: #fafbfc;
-
-    border: 1px solid #e1e4e8;
-    box-sizing: border-box;
-    border-radius: 2px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 560px;
-    width: 100%;
-
-    @media (max-width: 320px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  `,
-
-  kasdgneet: css`
-    padding: 8px 9.5px 8px 17px;
-    border-right: 1px solid #e1e4e8;
-    @media (max-width: 320px) {
-      border: none;
-    }
-  `,
-  kansfdjerew: css`
-    padding-left: 10px;
-  `,
-
-  ks2asdjfkfnre: css`
-    background-color: transparent;
-    border: none;
-    margin-left: 10px;
-  `,
-  ajkhsdfjksde: css`
+  GH9: css`
     border: 1px solid #e1e4e8;
     margin-top: 24px;
     min-width: 980px;
@@ -292,7 +231,7 @@ const Style = {
       min-width: 100%;
     }
   `,
-  asdkfnkdsfner: css`
+  GH8: css`
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
@@ -300,15 +239,13 @@ const Style = {
     background: #f6f8fa;
     flex-wrap: wrap;
   `,
-  aklsdfnkser: css`
+  GH7: css`
     display: flex;
     justify-content: center;
     align-items: center;
   `,
-  kdsanfjlsdner: css`
-    margin-right: 7.5px;
-  `,
-  vkasdnjffsf: css`
+
+  GH12: css`
     margin: 0px;
 
     font-family: Lucida Grande;
@@ -320,20 +257,20 @@ const Style = {
     margin-left: 7.5px;
     color: #586069;
   `,
-  jsdabfjsdfser: css`
+  GH6: css`
     max-width: 115px;
     width: 100%;
     display: flex;
     justify-content: space-between;
   `,
-  kahsdfjkhfsf: css`
+  GH5: css`
     border-bottom: 1px solid #e1e4e8;
     display: flex;
     justify-content: space-between;
     padding-right: 12px;
     align-items: center;
   `,
-  bhasd23yehr: css`
+  GH4: css`
     width: 111px;
     height: 34px;
     background: white;
@@ -344,7 +281,7 @@ const Style = {
     align-items: center;
     justify-content: center;
   `,
-  njasdklerue: css`
+  GH3: css`
     font-size: 14px;
     line-height: 16px;
     letter-spacing: -0.1em;
