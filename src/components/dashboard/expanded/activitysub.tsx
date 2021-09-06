@@ -1,13 +1,12 @@
-import React from 'react';
 import Icon from '../../../icons/icons';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 interface Props {
   icon: string;
   title: string;
   midtitle?: string;
   nextTitle?: string;
 }
-export default (props: Props) => {
+export default function RCom(props: Props) {
   const { nextTitle, title, midtitle, icon } = props;
   return (
     <div className={Style.GH1}>
@@ -39,7 +38,7 @@ export default (props: Props) => {
       </p>
     </div>
   );
-};
+}
 
 const Style = {
   GH1: css`

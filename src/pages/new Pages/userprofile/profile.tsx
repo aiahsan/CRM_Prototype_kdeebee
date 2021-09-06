@@ -1,11 +1,9 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tab from '../../../components/newComponents/profileComponents/tab';
 import { css } from '@emotion/css';
 import ProfileBar from '../../../components/newComponents/profileComponents/profileBar';
 import Icon from '../../../icons/icons';
-import Pagination from '../../../components/pagination';
 import Accordian from '../../../components/newComponents/profileComponents/accordian';
 
 const Profile = () => {

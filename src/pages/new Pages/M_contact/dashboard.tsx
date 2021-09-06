@@ -1,8 +1,7 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tabs from '../../../components/M_Contacts/tabs';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import Linechart from '../../../components/linechart';
 import { useHistory } from 'react-router-dom';
@@ -91,7 +90,7 @@ const LabelTab = ({
     </div>
   );
 };
-export default () => {
+export default function RCom() {
   const history = useHistory();
   return (
     <>
@@ -230,7 +229,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   GH1: css`

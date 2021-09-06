@@ -5,8 +5,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
-  ReferenceLine,
   ResponsiveContainer,
 } from 'recharts';
 import { css } from '@emotion/css';

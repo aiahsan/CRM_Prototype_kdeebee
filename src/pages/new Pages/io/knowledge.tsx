@@ -1,4 +1,3 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tabs from '../../../components/newComponents/io/tabs';
@@ -7,7 +6,7 @@ import Icon from '../../../icons/icons';
 import LeftBar from '../../../components/newComponents/io/leftBar';
 import Accordian from '../../../components/newComponents/io/knowledgeAccordian';
 
-export default () => {
+export default function RCom() {
   return (
     <>
       <TopBar />
@@ -38,7 +37,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   g7: css`

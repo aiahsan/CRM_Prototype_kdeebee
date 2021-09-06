@@ -1,5 +1,4 @@
-import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 interface Props {
   image: string;
   title: string;
@@ -7,7 +6,7 @@ interface Props {
   date: string;
   status: string;
 }
-export default (props: Props) => {
+export default function RCom(props: Props) {
   const { image, title, subtitle, date, status } = props;
   return (
     <div className={Style.GH1}>
@@ -64,7 +63,7 @@ export default (props: Props) => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   GH1: css`

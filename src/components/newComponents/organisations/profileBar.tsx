@@ -1,8 +1,6 @@
-import React from 'react';
 import avt1 from '../../../images/img1big.png';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
-import image14 from '../../../images/image14.png';
 import rothschild from '../../../images/Rothschild.png';
 
 const ProfileBar = () => {

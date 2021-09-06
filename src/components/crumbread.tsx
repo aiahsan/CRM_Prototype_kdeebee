@@ -1,5 +1,4 @@
-import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import Icon from '../icons/icons';
 interface Props {
   list: Array<string>;
@@ -21,7 +20,7 @@ const Crum = (props: CrumProps) => {
     </p>
   );
 };
-export default (props: Props) => {
+export default function RCom(props: Props) {
   const { activeIndex, list } = props;
   return (
     <>
@@ -41,7 +40,7 @@ export default (props: Props) => {
       </div>
     </>
   );
-};
+}
 const Style = {
   GH1: css`
     margin: 0px;

@@ -1,10 +1,8 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tabs from '../../../components/tabs';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
-import LeftBar from '../../../components/newComponents/io/leftBar';
 import Activity from '../../../components/newComponents/io/activityChart';
 import Dropdown from '../../../components/dropdown';
 import UserImg from '../../../images/User.png';
@@ -90,7 +88,7 @@ const Activites = [
     status: 'SMART Match: 83.23',
   },
 ];
-export default () => {
+export default function RCom() {
   const history = useHistory();
 
   return (
@@ -187,7 +185,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   sp3: css`

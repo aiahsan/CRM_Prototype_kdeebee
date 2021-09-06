@@ -1,8 +1,7 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tab from '../../../components/newComponents/profileComponents/tab';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import ProfileBar from '../../../components/newComponents/profileComponents/profileBar';
 import SearchBar from '../../../components/newComponents/profileComponents/searchbar';
 import Icon from '../../../icons/icons';

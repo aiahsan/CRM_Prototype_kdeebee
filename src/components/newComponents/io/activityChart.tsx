@@ -1,9 +1,8 @@
-import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 
 import { ActivityChartProps } from '../../../interface';
 import PieChart from './piechart';
-export default (props: ActivityChartProps) => {
+export default function RCom(props: ActivityChartProps) {
   const {
     value,
     title,
@@ -76,7 +75,7 @@ export default (props: ActivityChartProps) => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   GH8: css`

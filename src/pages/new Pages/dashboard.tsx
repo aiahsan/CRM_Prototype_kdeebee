@@ -1,8 +1,7 @@
-import React from 'react';
 import Breadcrumb from '../../components/crumbread';
 import TopBar from '../../components/topBar';
 import Tabs from '../../components/tabs';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import Dropdown from '../../components/dropdown';
 import Icon from '../../icons/icons';
 import Activity from '../../components/dashboard/expanded/activity';
@@ -10,7 +9,7 @@ import ActivitySub from '../../components/dashboard/expanded/activitysub';
 import avt from '../../images/1.png';
 import Pagination from '../../components/pagination';
 import SideMenu from '../../components/sidemenu';
-export default () => {
+export default function RCom() {
   return (
     <>
       <TopBar />
@@ -235,7 +234,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   sp32: css`

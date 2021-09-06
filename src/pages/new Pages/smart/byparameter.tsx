@@ -1,15 +1,11 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tabs from '../../../components/tabs';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
-import LeftBar from '../../../components/newComponents/io/leftBar';
 import Activity from '../../../components/newComponents/io/activityChart';
 import Dropdown from '../../../components/dropdown';
-import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
-import BreadButtons from '../../../components/newComponents/io/breadButtons';
 import SideMenu from '../../../components/sidemenu';
 import { useHistory } from 'react-router-dom';
 
@@ -73,7 +69,7 @@ const Activites = [
     tag: '',
   },
 ];
-export default () => {
+export default function RCom() {
   const history = useHistory();
 
   return (
@@ -167,7 +163,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   sp3: css`

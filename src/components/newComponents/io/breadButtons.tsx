@@ -1,9 +1,8 @@
-import React from 'react';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import { useHistory } from 'react-router-dom';
 
-export default ({ active }: { active: number }) => {
+export default function RCom({ active }: { active: number }) {
   const history = useHistory();
 
   return (
@@ -76,7 +75,7 @@ export default ({ active }: { active: number }) => {
       </button>
     </div>
   );
-};
+}
 
 const Style = {
   g15: css`

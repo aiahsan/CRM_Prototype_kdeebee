@@ -1,4 +1,3 @@
-import React from 'react';
 import Dropdown from '../../dropdown';
 import Icon from '../../../icons/icons';
 import { css } from '@emotion/css';

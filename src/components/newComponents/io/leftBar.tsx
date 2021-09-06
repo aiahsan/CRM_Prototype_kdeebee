@@ -1,9 +1,8 @@
-import React from 'react';
 import avt1 from '../../../images/pc1.png';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 
-export default () => {
+export default function RCom() {
   return (
     <div className={Style.ps1}>
       <div>
@@ -102,7 +101,7 @@ export default () => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   ps8: css`

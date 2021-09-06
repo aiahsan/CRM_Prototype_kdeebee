@@ -1,8 +1,13 @@
-import React from 'react';
 import Icon from '../../../../icons/icons';
 import { css } from '@emotion/css';
 
-export default ({ title, items }: { title: string; items: string[] }) => {
+export default function RCom({
+  title,
+  items,
+}: {
+  title: string;
+  items: string[];
+}) {
   return (
     <div className={Style.ps1}>
       <p className={Style.ps2}>{title}</p>
@@ -23,7 +28,7 @@ export default ({ title, items }: { title: string; items: string[] }) => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   ps1: css`

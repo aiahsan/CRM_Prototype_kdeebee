@@ -1,8 +1,7 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tabs from '../../../components/M_Contacts/tabs';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import Dropdown from '../../../components/dropdown';
 import Icon from '../../../icons/icons';
 import Activity from '../../../components/M_Contacts/activity';

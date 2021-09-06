@@ -1,5 +1,5 @@
 import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 
 interface Props {
   icon: string;

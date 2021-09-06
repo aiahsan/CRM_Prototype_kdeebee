@@ -1,6 +1,4 @@
 import React from 'react';
-import { css, cx } from '@emotion/css'
+import { css } from '@emotion/css';
 
-export const Styles = {
-  
-}
+export const Styles = {};

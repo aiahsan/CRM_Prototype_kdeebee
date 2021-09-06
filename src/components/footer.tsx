@@ -1,8 +1,7 @@
-import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import logo from '../images/fav.png';
 
-export default () => {
+export default function RCom() {
   return (
     <div className={Style.GH2}>
       <div className={Style.GH3}>
@@ -63,7 +62,7 @@ export default () => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   GH1: css`

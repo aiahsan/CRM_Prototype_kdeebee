@@ -1,5 +1,4 @@
-import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import Icon from '../icons/icons';
 import logo from '../images/fav.png';
 import { Dropdown } from 'react-bootstrap';
@@ -19,7 +18,7 @@ const MenuText = (props: MenuTextProps) => {
     </a>
   );
 };
-export default () => {
+export default function RCom() {
   const isTablet = useMediaQuery({
     query: '(max-width: 768px)',
   });
@@ -67,7 +66,7 @@ export default () => {
       </div>
     </div>
   );
-};
+}
 
 export const Style = {
   jkasdfasklf: css`

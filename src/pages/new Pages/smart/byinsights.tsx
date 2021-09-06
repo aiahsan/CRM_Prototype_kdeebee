@@ -1,4 +1,3 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tabs from '../../../components/tabs';
@@ -105,7 +104,7 @@ const List = [
     answeredper: 63,
   },
 ];
-export default () => {
+export default function RCom() {
   const history = useHistory();
 
   return (
@@ -261,7 +260,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   GH1: css`

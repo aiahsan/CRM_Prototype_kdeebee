@@ -21,7 +21,7 @@ const Header = ({ title, desc }: { title: string; desc?: string }) => (
     </p>
   </div>
 );
-export default () => {
+export default function RCom() {
   const [option, setoption] = React.useState(0);
   return (
     <>
@@ -322,7 +322,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   GH1: css`

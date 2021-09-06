@@ -1,4 +1,3 @@
-import React from 'react';
 import Breadcrumb from '../../components/crumbread';
 import TopBar from '../../components/topBar';
 import Tabs from '../../components/tabs';
@@ -9,7 +8,7 @@ import avt from '../../images/pc1.png';
 import Pagination from '../../components/pagination';
 import ViewBox from '../../components/newComponents/directory/ViewBox';
 
-export default () => {
+export default function RCom() {
   return (
     <>
       <TopBar />
@@ -108,7 +107,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   ps13: css`

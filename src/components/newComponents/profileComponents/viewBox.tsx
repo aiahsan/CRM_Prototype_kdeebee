@@ -1,4 +1,3 @@
-import React from 'react';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import ViewBoxText from './viewBoxText';

@@ -1,10 +1,9 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Icon from '../../../icons/icons';
 import { css } from '@emotion/css';
 
-export default () => {
+export default function RCom() {
   return (
     <>
       <TopBar />
@@ -146,7 +145,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   GH3: css`

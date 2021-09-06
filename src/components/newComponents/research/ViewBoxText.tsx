@@ -1,7 +1,6 @@
-import React from 'react';
 import { DirectoryBoxTextProps } from '../../../interface';
 import { useMediaQuery } from 'react-responsive';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 
 const ViewBoxText = (props: DirectoryBoxTextProps) => {
   const { key1, key2, value1, value2, variant } = props;

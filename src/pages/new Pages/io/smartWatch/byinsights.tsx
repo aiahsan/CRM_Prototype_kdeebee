@@ -1,14 +1,11 @@
-import React from 'react';
 import Breadcrumb from '../../../../components/crumbread';
 import TopBar from '../../../../components/topBar';
 import Tabs from '../../../../components/newComponents/io/tabs';
 import { css } from '@emotion/css';
 import Icon from '../../../../icons/icons';
 import LeftBar from '../../../../components/newComponents/io/leftBar';
-import Activity from '../../../../components/newComponents/io/activityChart';
 import Dropdown from '../../../../components/dropdown';
 import UserImg from '../../../../images/User.png';
-import Pagination from '../../../../components/pagination';
 import BreadButtons from '../../../../components/newComponents/io/breadButtons';
 import avt from '../../../../images/1.png';
 import Profile from '../../../../components/newComponents/io/profileBar';
@@ -107,7 +104,7 @@ const List = [
     answeredper: 63,
   },
 ];
-export default () => {
+export default function RCom() {
   return (
     <>
       <TopBar />
@@ -300,7 +297,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   g13: css`

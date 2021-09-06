@@ -1,5 +1,4 @@
-import { css, cx } from '@emotion/css';
-import React from 'react';
+import { css } from '@emotion/css';
 import { DirectoryBoxProps } from '../../../interface';
 import ViewBoxText from './ViewBoxText';
 const ViewBox = (props: DirectoryBoxProps) => {

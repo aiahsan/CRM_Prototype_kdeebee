@@ -1,6 +1,5 @@
-import React from 'react';
 import Icon from '../../../icons/icons';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import { TimelineTabProps, TimeLineItemProps } from '../../../interface';
 import { useHistory } from 'react-router-dom';
 
@@ -29,7 +28,7 @@ const Tab = (props: TimelineTabProps) => {
     </div>
   );
 };
-export default (props: TimeLineItemProps) => {
+export default function RCom(props: TimeLineItemProps) {
   const history = useHistory();
 
   return (
@@ -68,7 +67,7 @@ export default (props: TimeLineItemProps) => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   p1: css`

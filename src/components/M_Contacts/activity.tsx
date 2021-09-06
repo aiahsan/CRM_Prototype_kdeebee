@@ -1,5 +1,4 @@
-import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 
 interface Props {
   image?: string;
@@ -10,7 +9,7 @@ interface Props {
   tag?: string;
   onClick?: () => void;
 }
-export default (props: Props) => {
+export default function RCom(props: Props) {
   const { image, title, email, status, lastActitvy, tag, onClick } = props;
   return (
     <div
@@ -81,7 +80,7 @@ export default (props: Props) => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   aksdfjlsdfjsd: css`

@@ -4,17 +4,11 @@ import TopBar from '../../../components/topBar';
 import Tabs from '../../../components/tabs';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
-import LeftBar from '../../../components/newComponents/io/leftBar';
-import Activity from '../../../components/newComponents/io/activityChart';
-import Dropdown from '../../../components/dropdown';
-import UserImg from '../../../images/User.png';
-import Pagination from '../../../components/pagination';
-import SideMenu from '../../../components/sidemenu';
-import ReactQuill from 'react-quill';
+
 import Counter from '../../../components/newComponents/counter';
 import 'react-quill/dist/quill.snow.css';
 
-export default () => {
+export default function RCom() {
   const [convertedText, setConvertedText] = React.useState(
     'Some default content Some default content Some default content U+000A'
   );
@@ -155,7 +149,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   GH1: css`

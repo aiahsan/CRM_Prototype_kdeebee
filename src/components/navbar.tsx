@@ -1,12 +1,8 @@
-import React from 'react';
-import { Navbar, Nav, Dropdown } from 'react-bootstrap';
-import Icon from '../icons/icons';
+import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../images/fav.png';
-import { css, cx } from '@emotion/css';
 import { Style } from '../components/topBar';
-import avt from '../images/image 10.png';
 
-export default () => {
+export default function RCom() {
   return (
     <Navbar collapseOnSelect expand='lg' className='bg-dark1' variant='dark'>
       <Navbar.Brand href='#home'>
@@ -30,4 +26,4 @@ export default () => {
       </Navbar.Collapse>
     </Navbar>
   );
-};
+}

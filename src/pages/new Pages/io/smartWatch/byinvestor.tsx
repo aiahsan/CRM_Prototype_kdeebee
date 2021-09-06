@@ -1,4 +1,3 @@
-import React from 'react';
 import Breadcrumb from '../../../../components/crumbread';
 import TopBar from '../../../../components/topBar';
 import Tabs from '../../../../components/newComponents/io/tabs';
@@ -88,7 +87,7 @@ const Activites = [
     status: 'SMART Match: 83.23',
   },
 ];
-export default () => {
+export default function RCom() {
   return (
     <>
       <TopBar />
@@ -157,7 +156,7 @@ export default () => {
       </div>
     </>
   );
-};
+}
 
 const Style = {
   g13: css`

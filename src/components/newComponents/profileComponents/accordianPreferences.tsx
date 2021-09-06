@@ -5,7 +5,7 @@ import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import ViewBoxRadio from './viewBoxRadio';
 import InvestorprofileBar from './investorProfile/investorprofileBar';
-export default () => {
+export default function RCom() {
   const [activeeventkey, setactiveeventkey] = React.useState([
     { id: 0, isactive: true },
     { id: 1, isactive: false },
@@ -430,7 +430,7 @@ export default () => {
       </Card>
     </Accordion>
   );
-};
+}
 
 const Style = {
   c1: css`

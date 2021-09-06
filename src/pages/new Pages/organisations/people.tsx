@@ -1,4 +1,3 @@
-import React from 'react';
 import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Tab from '../../../components/newComponents/organisations/tab';
@@ -6,7 +5,6 @@ import { css } from '@emotion/css';
 import ProfileBar from '../../../components/newComponents/organisations/profileBar';
 import Icon from '../../../icons/icons';
 import Pagination from '../../../components/pagination';
-import Accordian from '../../../components/newComponents/profileComponents/accordian';
 import Dropdown from '../../../components/dropdown';
 import Activity from '../../../components/M_Contacts/activity';
 import UserImg from '../../../images/User.png';

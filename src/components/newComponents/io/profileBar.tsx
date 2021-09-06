@@ -1,9 +1,7 @@
-import React from 'react';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 
 import { profileProps } from '../../../interface';
-import PieChart from './piechart';
-export default (props: profileProps) => {
+export default function RCom(props: profileProps) {
   const { img, title, LastActive, type } = props;
   return (
     <div className={Style.GH1}>
@@ -28,7 +26,7 @@ export default (props: profileProps) => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   GH6: css`

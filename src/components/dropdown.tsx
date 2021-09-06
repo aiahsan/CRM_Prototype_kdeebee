@@ -1,11 +1,10 @@
-import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 import Icon from '../icons/icons';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 interface Props {
   title: String;
 }
-export default (props: Props) => {
+export default function RCom(props: Props) {
   return (
     <>
       <Dropdown>
@@ -30,7 +29,7 @@ export default (props: Props) => {
       </Dropdown>
     </>
   );
-};
+}
 
 const Style = {
   GH1: css`

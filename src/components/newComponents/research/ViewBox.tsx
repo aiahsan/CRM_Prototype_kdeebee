@@ -1,6 +1,4 @@
-import { css, cx } from '@emotion/css';
-import React from 'react';
-import { ResearchBoxProps } from '../../../interface';
+import { css } from '@emotion/css';
 import ViewBoxText from './ViewBoxText';
 const ViewBox = ({ image, title }: { image: string; title: string }) => {
   return (

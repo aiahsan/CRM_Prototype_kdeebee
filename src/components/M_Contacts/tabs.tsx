@@ -1,6 +1,5 @@
-import React from 'react';
 import Icon from '../../icons/icons';
-import { css, cx } from '@emotion/css';
+import { css } from '@emotion/css';
 import { useHistory } from 'react-router-dom';
 
 interface Propos {
@@ -38,7 +37,7 @@ const Tab = (props: TabProps) => {
     </div>
   );
 };
-export default (props: Propos) => {
+export default function RCom(props: Propos) {
   const history = useHistory();
 
   return (
@@ -83,7 +82,7 @@ export default (props: Propos) => {
       </div>
     </div>
   );
-};
+}
 
 const Style = {
   GH7: css`
