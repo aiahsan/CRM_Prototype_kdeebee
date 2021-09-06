@@ -23,31 +23,18 @@ const AssingTab = ({
   return (
     <div
       className={css`
-        display: flex;
-        justify-content: space-between;
-        padding: 5px 15px;
+        ${Style.GH1}
         ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
       `}
     >
-      <div
-        className={css`
-          display: flex;
-          align-items: center;
-        `}
-      >
+      <div className={Style.GH2}>
         {name ? (
           <>
-            <img
-              className={css`
-                width: 23px;
-                height: 23px;
-              `}
-              src={image}
-            />
+            <img className={Style.GH3} src={image} />
             <p
               className={css`
                 ${Style.cstyy3}
-                margin-left:6px;
+                ${Style.GH4}
               `}
             >
               {name}
@@ -75,32 +62,23 @@ const LabelTab = ({
   return (
     <div
       className={css`
-        display: flex;
-        justify-content: space-between;
-        padding: 11px 15px;
+        ${Style.GH5}
         ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
       `}
     >
-      <div
-        className={css`
-          display: flex;
-          align-items: center;
-        `}
-      >
+      <div className={Style.GH6}>
         {name ? (
           <>
             <div
               className={css`
-                width: 15px;
-                height: 15px;
-                border-radius: 15px;
+                ${Style.GH7}
                 background-color: ${image};
               `}
             ></div>
             <p
               className={css`
                 ${Style.cstyy3}
-                margin-left:6px;
+                ${Style.GH8}
               `}
             >
               {name}
@@ -149,55 +127,11 @@ export default () => {
         <div className={Style.g1sk1}>
           <div className={Style.g2}>
             <p className={Style.gglb}>Prospect Conversion</p>
-            <button
-              className={css`
-                border: 1px solid #e1e4e8;
-                box-sizing: border-box;
-                border-radius: 2px;
-                width: 138px;
-                height: 40px;
-                margin-right: 11px;
-                background-color: white;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              `}
-            >
+            <button className={Style.GH9}>
               <Icon icon='label' />
-              <p
-                className={css`
-                  margin: 0px 4px;
-                  letter-spacing: -0.07em;
-
-                  color: #586069;
-                  font-weight: bold;
-                  font-size: 15px;
-                  line-height: 18px;
-                `}
-              >
-                Tags
-              </p>
-              <div
-                className={css`
-                  width: 24px;
-                  height: 15px;
-                  background: #e8e9eb;
-                  border-radius: 7px;
-                `}
-              >
-                <p
-                  className={css`
-                    align-items: center;
-                    letter-spacing: -0.07em;
-                    font-weight: bold;
-                    font-size: 12px;
-                    line-height: 14px;
-                    color: #586069;
-                  `}
-                >
-                  41
-                </p>
+              <p className={Style.GH10}>Tags</p>
+              <div className={Style.GH11}>
+                <p className={Style.GH12}>41</p>
               </div>
             </button>
           </div>
@@ -207,30 +141,9 @@ export default () => {
               <p className={Style.cstyy1}>Prospect Conversion</p>
               <Dropdown title='Date Range' />
             </div>
-            <div
-              className={css`
-                border: 1px solid #e1e4e8;
-                box-sizing: border-box;
-                border-radius: 0px;
-                border-top: 0px;
-                padding-top: 31px;
-                overflow: auto;
-              `}
-            >
-              <div
-                className={css`
-                  width: 777px;
-                `}
-              >
-                <div
-                  className={css`
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    position: relative;
-                    left: 47px;
-                  `}
-                >
+            <div className={Style.GH13}>
+              <div className={Style.GH14}>
+                <div className={Style.GH15}>
                   <div>
                     <div className={Style.jdasfn}>
                       <Icon icon='oval' color='#4e4c5a' />
@@ -241,9 +154,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.jdasfn}
-                        position: relative;
-                        right: 19px;
-                        z-index: -1;
+                        ${Style.GH16}
                       `}
                     >
                       <Icon icon='oval' color='#b5af9f' />
@@ -254,9 +165,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.jdasfn}
-                        position: relative;
-                        right: 33px;
-                        z-index: -2;
+                        ${Style.GH17}
                       `}
                     >
                       <Icon icon='oval' color='#acd1c0' />
@@ -269,9 +178,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.jdasfn}
-                        position: relative;
-                        right: 50px;
-                        z-index: -3;
+                        ${Style.GH19}
                       `}
                     >
                       <Icon icon='oval' color='#d9d9d9' />
@@ -282,9 +189,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.jdasfn}
-                        position: relative;
-                        right: 69px;
-                        z-index: -4;
+                        ${Style.GH19}
                       `}
                     >
                       <Icon icon='oval' color='#d9d9d9' />
@@ -295,16 +200,14 @@ export default () => {
                     <div
                       className={css`
                         ${Style.jdasfn}
-                        position: relative;
-                        top: 10px;
-                        right: 90px;
-                        z-index: -5;
+                        ${Style.GH20}
                       `}
                     >
                       <Icon icon='crrl' color='#a9d2c2' />
                       <p
                         className={css`
-                          ${Style.jdasfn1} top:40px
+                          ${Style.jdasfn1}
+                          top:40px;
                         `}
                       >
                         Prospects
@@ -313,28 +216,13 @@ export default () => {
                   </div>
                 </div>
 
-                <div
-                  className={css`
-                    border-bottom: 1px dashed #8b8880;
-                    padding: 5px 0px;
-                    margin: 0px 40px;
-                  `}
-                >
-                  <div
-                    className={css`
-                      display: flex;
-                    `}
-                  >
-                    <div
-                      className={css`
-                        width: 55px;
-                      `}
-                    ></div>
+                <div className={Style.GH21}>
+                  <div className={Style.GH22}>
+                    <div className={Style.GH23}></div>
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 93px;
-                        text-align: center;
+                        ${Style.GH24}
                       `}
                     >
                       156
@@ -342,8 +230,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 125px;
-                        text-align: center;
+                        ${Style.GH25}
                       `}
                     >
                       70
@@ -351,8 +238,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 116px;
-                        text-align: center;
+                        ${Style.GH26}
                       `}
                     >
                       51
@@ -360,8 +246,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 114px;
-                        text-align: center;
+                        ${Style.GH27}
                       `}
                     >
                       30
@@ -369,8 +254,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 114px;
-                        text-align: center;
+                        ${Style.GH28}
                       `}
                     >
                       22
@@ -378,29 +262,18 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 102px;
-                        text-align: center;
+                        ${Style.GH29}
                       `}
                     >
                       3
                     </div>
                   </div>
                 </div>
-                <div
-                  className={css`
-                    border-bottom: 1px dashed #8b8880;
-                    padding: 5px 0px;
-                    margin: 0px 40px;
-                  `}
-                >
-                  <div
-                    className={css`
-                      display: flex;
-                    `}
-                  >
+                <div className={Style.GH30}>
+                  <div className={Style.GH31}>
                     <div
                       className={css`
-                        width: 55px;
+                        ${Style.GH32}
                         ${Style.fontSasf}
                       `}
                     >
@@ -409,8 +282,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 93px;
-                        text-align: center;
+                        ${Style.GH24}
                       `}
                     >
                       +18
@@ -418,8 +290,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 125px;
-                        text-align: center;
+                        ${Style.GH25}
                       `}
                     >
                       +6
@@ -427,8 +298,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 116px;
-                        text-align: center;
+                        ${Style.GH26}
                       `}
                     >
                       +13
@@ -436,8 +306,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 114px;
-                        text-align: center;
+                        ${Style.GH27}
                       `}
                     >
                       0
@@ -445,8 +314,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 114px;
-                        text-align: center;
+                        ${Style.GH27}
                       `}
                     >
                       +1
@@ -454,37 +322,25 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 102px;
-                        text-align: center;
+                        ${Style.GH29}
                       `}
                     >
                       0
                     </div>
                   </div>
                 </div>
-                <div
-                  className={css`
-                    border-bottom: 1px dashed #8b8880;
-                    padding: 5px 0px;
-                    margin: 0px 40px;
-                  `}
-                >
-                  <div
-                    className={css`
-                      display: flex;
-                    `}
-                  >
+                <div className={Style.GH30}>
+                  <div className={Style.GH22}>
                     <div
                       className={css`
-                        width: 55px;
+                        ${Style.GH23}
                         ${Style.fontSasf}
                       `}
                     ></div>
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 93px;
-                        text-align: center;
+                        ${Style.GH24}
                       `}
                     >
                       +13%
@@ -492,8 +348,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 125px;
-                        text-align: center;
+                        ${Style.GH25}
                       `}
                     >
                       +9%
@@ -501,8 +356,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 116px;
-                        text-align: center;
+                        ${Style.GH26}
                       `}
                     >
                       +34%
@@ -510,8 +364,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 114px;
-                        text-align: center;
+                        ${Style.GH27}
                       `}
                     >
                       -
@@ -519,8 +372,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 114px;
-                        text-align: center;
+                        ${Style.GH27}
                       `}
                     >
                       +5%
@@ -528,8 +380,7 @@ export default () => {
                     <div
                       className={css`
                         ${Style.fontSasf}
-                        width: 102px;
-                        text-align: center;
+                        ${Style.GH29}
                       `}
                     >
                       -
@@ -539,17 +390,11 @@ export default () => {
                 <p
                   className={css`
                     ${Style.fontSasf}
-                    margin-top:10px;
-                    text-align: left;
-                    margin-left: 35px;
+                    ${Style.GH33}
                   `}
                 >
                   Current campaign:{' '}
-                  <span
-                    className={css`
-                      font-weight: 600;
-                    `}
-                  >
+                  <span className={Style.GH34}>
                     activing prospects and collecting Investment Preferences
                   </span>
                 </p>
@@ -564,27 +409,9 @@ export default () => {
               </p>
               <Dropdown title='Date Range' />
             </div>
-            <div
-              className={css`
-                border: 1px solid #e1e4e8;
-                box-sizing: border-box;
-                border-radius: 0px;
-                border-top: 0px;
-                padding-top: 31px;
-                overflow: auto;
-              `}
-            >
-              <div
-                className={css`
-                  width: 777px;
-                `}
-              >
-                <div
-                  className={css`
-                    margin-left: 35px;
-                    display: flex;
-                  `}
-                >
+            <div className={Style.GH13}>
+              <div className={Style.GH14}>
+                <div className={Style.GH37}>
                   <div className={Style.ljaskdjfe}>
                     <div className={Style.dsjfafid}>6</div>
                     <div className={Style.klhfasdklf}>BD Partners</div>
@@ -619,33 +446,20 @@ export default () => {
                 <p
                   className={css`
                     ${Style.fontSasf}
-                    text-align: left;
-                    margin-left: 35px;
+                    ${Style.GH35}
                   `}
                 >
                   User numbers Included in{' '}
-                  <span
-                    className={css`
-                      font-style: italic;
-                    `}
-                  >
-                    Lead Conversion
-                  </span>
+                  <span className={Style.GH36}>Lead Conversion</span>
                 </p>
                 <p
                   className={css`
                     ${Style.fontSasf}
-                    margin-top:10px;
-                    text-align: left;
-                    margin-left: 35px;
+                    ${Style.GH33}
                   `}
                 >
                   Current campaign:{' '}
-                  <span
-                    className={css`
-                      font-weight: 600;
-                    `}
-                  >
+                  <span className={Style.GH34}>
                     introducing prospects to IANUA and talking to new BDPs
                   </span>
                 </p>
@@ -659,6 +473,185 @@ export default () => {
 };
 
 const Style = {
+  GH1: css`
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+  `,
+  GH2: css`
+    display: flex;
+    align-items: center;
+  `,
+  GH3: css`
+    width: 23px;
+    height: 23px;
+  `,
+  GH4: css`
+    margin-left: 6px;
+  `,
+  GH5: css`
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 15px;
+  `,
+  GH6: css`
+    display: flex;
+    align-items: center;
+  `,
+  GH7: css`
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+  `,
+  GH8: css`
+    margin-left: 6px;
+  `,
+  GH9: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 138px;
+    height: 40px;
+    margin-right: 11px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `,
+  GH10: css`
+    margin: 0px 4px;
+    letter-spacing: -0.07em;
+
+    color: #586069;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+  `,
+  GH11: css`
+    width: 24px;
+    height: 15px;
+    background: #e8e9eb;
+    border-radius: 7px;
+  `,
+  GH12: css`
+    align-items: center;
+    letter-spacing: -0.07em;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #586069;
+  `,
+  GH13: css`
+    border: 1px solid #e1e4e8;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-top: 0px;
+    padding-top: 31px;
+    overflow: auto;
+  `,
+  GH14: css`
+    width: 777px;
+  `,
+  GH15: css`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 47px;
+  `,
+  GH16: css`
+    position: relative;
+    right: 19px;
+    z-index: -1;
+  `,
+  GH17: css`
+    position: relative;
+    right: 33px;
+    z-index: -2;
+  `,
+  GH18: css`
+    position: relative;
+    right: 50px;
+    z-index: -3;
+  `,
+  GH19: css`
+    position: relative;
+    right: 69px;
+    z-index: -4;
+  `,
+  GH20: css`
+    position: relative;
+    top: 10px;
+    right: 90px;
+    z-index: -5;
+  `,
+  GH21: css`
+    border-bottom: 1px dashed #8b8880;
+    padding: 5px 0px;
+    margin: 0px 40px;
+  `,
+  GH22: css`
+    display: flex;
+  `,
+  GH23: css`
+    width: 55px;
+  `,
+  GH24: css`
+    width: 93px;
+    text-align: center;
+  `,
+
+  GH25: css`
+    width: 125px;
+    text-align: center;
+  `,
+  GH26: css`
+    width: 116px;
+    text-align: center;
+  `,
+  GH27: css`
+    width: 114px;
+    text-align: center;
+  `,
+  GH28: css`
+    width: 114px;
+    text-align: center;
+  `,
+  GH29: css`
+    width: 102px;
+    text-align: center;
+  `,
+  GH30: css`
+    border-bottom: 1px dashed #8b8880;
+    padding: 5px 0px;
+    margin: 0px 40px;
+  `,
+  GH31: css`
+    display: flex;
+  `,
+  GH32: css`
+    width: 55px;
+  `,
+  GH33: css`
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 35px;
+  `,
+  GH34: css`
+    font-weight: 600;
+  `,
+  GH35: css`
+    text-align: left;
+    margin-left: 35px;
+  `,
+  GH36: css`
+    font-style: italic;
+  `,
+  GH37: css`
+    margin-left: 35px;
+    display: flex;
+  `,
   g2: css`
     max-width: 1079px;
     display: flex;
