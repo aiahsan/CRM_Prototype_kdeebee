@@ -163,7 +163,7 @@ export default function RCom() {
                   </div>
                 </div>
                 {Activites.map((x, i) => (
-                  <div className={Style.g25}>
+                  <div className={Style.g25} key={i}>
                     <Activity
                       color='#8EB6E6'
                       title={x.title}

@@ -46,8 +46,9 @@ export default function RCom() {
               </div>
             </div>
 
-            {Array.from({ length: 4 }, () => (
+            {Array.from({ length: 4 }, (x, i) => (
               <ViewBox
+                key={i}
                 image={avt}
                 title='Project Fluid'
                 subtitle='Equity Investment in a Biotech Start-Up'

@@ -221,6 +221,7 @@ export default function RCom() {
                       <tbody>
                         {List.map((x, i) => (
                           <tr
+                            key={i}
                             className={css`
                               border-bottom: 1px solid #e1e4e8;
                             `}

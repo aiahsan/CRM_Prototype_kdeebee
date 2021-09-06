@@ -338,8 +338,8 @@ export default function RCom() {
                       <p className={Style.p14a}>WhatsApp</p>
                     </div>
                   </div>
-                  {notifiactions.map((x) => (
-                    <div className={`d-flex ${Style.p17a}`}>
+                  {notifiactions.map((x, i) => (
+                    <div key={i} className={`d-flex ${Style.p17a}`}>
                       <div className={Style.p16a}>
                         <p className={Style.p14a}>{x}</p>
                       </div>
@@ -401,8 +401,8 @@ export default function RCom() {
                       <p className={Style.p14a}>WhatsApp</p>
                     </div>
                   </div>
-                  {notifiactions.map((x) => (
-                    <div className={`d-flex ${Style.p17a}`}>
+                  {notifiactions.map((x, i) => (
+                    <div key={i} className={`d-flex ${Style.p17a}`}>
                       <div className={Style.p16a}>
                         <p className={Style.p14a}>{x}</p>
                       </div>

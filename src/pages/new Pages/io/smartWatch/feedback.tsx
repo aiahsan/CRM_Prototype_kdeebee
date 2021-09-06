@@ -177,7 +177,7 @@ export default function RCom() {
                     </thead>
                     <tbody>
                       {List.map((x, i) => (
-                        <tr className={Style.GH8}>
+                        <tr className={Style.GH8} key={i}>
                           <td
                             className={css`
                               ${x.profile == undefined

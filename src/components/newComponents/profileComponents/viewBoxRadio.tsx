@@ -18,6 +18,7 @@ const ViewBox = (props: RadioBoxProps) => {
         <div className={Style.p13}>
           {values.map((x, i) => (
             <ViewRadioBoxText
+              key={i}
               key1={x.key1}
               key2={x.key2}
               type={type}

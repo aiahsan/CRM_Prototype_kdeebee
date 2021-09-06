@@ -97,7 +97,7 @@ export default (props: Props) => {
           fill='none'
           xmlns='http://www.w3.org/2000/svg'
         >
-          <line y1='1.5' x2='10' y2='1.5' stroke='#586069' stroke-width='3' />
+          <line y1='1.5' x2='10' y2='1.5' stroke='#586069' strokeWidth='3' />
         </svg>
       );
     }
