@@ -427,7 +427,7 @@ const Style = {
     color: #586069;
   `,
   sp12: css`
-    max-width: 293px;
+    max-width: 345px;
     width: 100%;
     display: flex;
     justify-content: space-between;

@@ -212,12 +212,17 @@ tspan {
   width: 100%;
   padding-left: 16px;
 }
+.dropdown .dropdown-item svg {
+  margin-right: 6px;
+}
 .dropdown .dropdown-item {
   padding: 11px 11px 11px 24px !important;
   border-bottom: 1px solid #e1e4e8;
   font-family: Lucida Grande;
   font-size: 12px;
   line-height: 14px;
+  display: flex;
+  align-items: center;
 }
 .flex-between p {
   margin: 0px;
@@ -226,9 +231,11 @@ tspan {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .dropdown-menu.show {
   padding: 0px;
+  border-bottom: 0px;
 }
 .fwb {
   font-weight: bold;
@@ -236,4 +243,29 @@ tspan {
 .dpd-child {
   max-height: 365px;
   overflow: auto;
+}
+
+.dpd-child::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.dpd-child::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.dpd-child::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.dpd-child::-webkit-scrollbar-thumb:hover {
+  background: #c1c1c1;
+}
+.dpd-check-tick {
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
 }

@@ -7,6 +7,7 @@ interface Props {
   items?: {
     id: number;
     title: string;
+    checked?: Boolean;
   }[];
   hasFilter?: Boolean;
   placeholder?: string;
@@ -49,7 +50,16 @@ export default function RCom(props: Props) {
             {props.items
               ? props.items.map((x, i) => (
                   <Dropdown.Item href='#/action-1' key={i}>
-                    {x.title}
+                    {x.checked != undefined ? (
+                      x.checked == true ? (
+                        <Icon icon='checksort' />
+                      ) : (
+                        <div className='dpd-check-tick'></div>
+                      )
+                    ) : (
+                      <></>
+                    )}{' '}
+                    <label className='m-0'>{x.title}</label>
                   </Dropdown.Item>
                 ))
               : null}

@@ -37,11 +37,45 @@ export default function RCom() {
                 <p className={Style.ps11}>41 Opportunities</p>
               </div>
               <div className={Style.ps12}>
-                <Dropdown title='Currency' />
+                <Dropdown
+                  heading='Filter by currency'
+                  items={[
+                    { id: 0, title: 'Pound Sterling' },
+                    { id: 1, title: 'Euro' },
+                    { id: 2, title: 'US Dollar' },
+                    { id: 3, title: 'Swiss Franc' },
+                    { id: 4, title: 'Canadian Dollar' },
+                    { id: 5, title: 'Norwegian Krone' },
+                    { id: 6, title: `Swedish Krona` },
+                    { id: 7, title: 'Danish Krone' },
+                    { id: 8, title: 'Australian Dollar' },
+                    { id: 9, title: 'Yuan Renminbi' },
+                  ]}
+                  hasFilter={true}
+                  placeholder='Filter currencies'
+                  title='Filter currencies'
+                />
                 <Dropdown title='Sector' />
                 <Dropdown title='Target IRR' />
                 <Dropdown title='Geography' />
-                <Dropdown title='Sort' />
+                <Dropdown
+                  title='Sort'
+                  heading='Sort by'
+                  items={[
+                    { id: 0, title: 'Newest', checked: true },
+                    { id: 1, title: 'Oldest', checked: false },
+                    {
+                      id: 2,
+                      title: 'Min. Exp. IRR: Low to High',
+                      checked: false,
+                    },
+                    {
+                      id: 3,
+                      title: 'Min. Exp. IRR: High to Low ',
+                      checked: false,
+                    },
+                  ]}
+                />
               </div>
             </div>
 
@@ -122,7 +156,7 @@ const Style = {
   `,
 
   ps12: css`
-    max-width: 439px;
+    max-width: 509px;
     width: 100%;
     display: flex;
     justify-content: space-between;

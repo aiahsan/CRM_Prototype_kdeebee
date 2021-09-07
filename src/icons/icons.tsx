@@ -12,6 +12,24 @@ export default (props: Props) => {
     case '': {
       return <></>;
     }
+    case 'checksort': {
+      return (
+        <>
+          <svg
+            width='9'
+            height='7'
+            viewBox='0 0 9 7'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              d='M-7.62939e-06 3.78716L3.08199 6.87504L8.99999 0.962878L8.15037 0.125L3.08199 5.1875L0.837853 2.94338L-7.62939e-06 3.78716Z'
+              fill='#25292E'
+            />
+          </svg>
+        </>
+      );
+    }
     case 'drpcan': {
       return (
         <svg
