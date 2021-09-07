@@ -114,7 +114,6 @@ export default function RCom() {
                       status={x.status}
                       tag={x.tag}
                       value={x.value}
-                      type={0}
                       onClick={() => history.push('/smartwatch/investor')}
                     />
                   </div>
@@ -148,7 +147,7 @@ const Style = {
     }
   `,
   GH2: css`
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: -0.1em;
@@ -296,7 +295,7 @@ const Style = {
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
-    padding: 2px 13px;
+    padding: 4px 13px;
   `,
 
   g5: css`

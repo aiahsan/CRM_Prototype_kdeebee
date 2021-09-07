@@ -27,7 +27,7 @@ export default function RCom() {
       <NavBar />
     </>
   ) : (
-    <div className={`d-flex justify-content-between ${Style.kdasfnase3w}`}>
+    <div className={`d-flex justify-content-between navA ${Style.kdasfnase3w}`}>
       <div className={Style.asdvisasdans}>
         <img src={logo} alt='' />
         <input

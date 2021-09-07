@@ -205,7 +205,7 @@ const Style = {
     align-items: center;
     max-width: 728px;
     width: 100%;
-
+    padding: 3px 0px;
     @media (max-width: 320px) {
       flex-direction: column;
       align-items: flex-start;
@@ -311,7 +311,7 @@ const Style = {
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
-    padding: 2px 13px;
+    padding: 4px 13px;
   `,
 
   g5: css`

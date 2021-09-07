@@ -164,7 +164,7 @@ h6 {
 
 tspan {
   font-weight: bold;
-  font-size: 9.5px;
+  font-size: 8.3px;
   line-height: 11px;
   display: flex;
   align-items: center;
@@ -268,4 +268,18 @@ tspan {
   width: 9px;
   height: 9px;
   margin-right: 6px;
+}
+.navA a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+input {
+  text-transform: capitalize;
+}
+input::placeholder,
+input {
+  position: relative;
+  top: 1px;
+  text-transform: capitalize;
+  margin-bottom: 3px;
 }

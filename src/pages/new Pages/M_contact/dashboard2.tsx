@@ -680,7 +680,7 @@ const Style = {
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
-    padding: 2px 13px;
+    padding: 4px 13px;
   `,
 
   g5: css`
