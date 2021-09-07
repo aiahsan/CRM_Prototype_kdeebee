@@ -94,11 +94,11 @@ export default function RCom() {
                 opportunity?
               </p>
               <div className={Style.GH3}>
-                <div className='d-flex align-items-center'>
+                <div className='d-flex align-items-center mb-3'>
                   <input type='radio' />
                   <h2 className={`ml-1 ${Style.cst1}`}>Yes</h2>
                 </div>
-                <div className='d-flex align-items-center'>
+                <div className='d-flex align-items-center mb-3'>
                   <input type='radio' />
                   <h2 className={`ml-1 ${Style.cst1}`}>No</h2>
                 </div>
@@ -313,11 +313,10 @@ const Style = {
     font-weight: bold;
     font-size: 14px;
     line-height: 126.02%;
-
+    margin-bottom: 0px;
     letter-spacing: -0.05em;
 
     color: #000000;
-    margin-bottom: 5px;
   `,
   cst3: css`
     background: linear-gradient(180deg, #fafbfc 0%, #f9fafb 100%);

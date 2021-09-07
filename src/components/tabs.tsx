@@ -87,7 +87,7 @@ const Style = {
   GH1: css`
     display: flex;
     cursor: pointer;
-    width: 151px;
+    min-width: 151px;
     height: 40px;
     align-items: center;
     justify-content: center;
@@ -141,5 +141,7 @@ const Style = {
     border-top: 3px solid #b6af9d;
     border-left: 1px solid #e1e4e8;
     border-right: 1px solid #e1e4e8;
+    border-bottom: 0px;
+    padding: 0px 26px;
   `,
 };

@@ -88,7 +88,9 @@ export default function RCom() {
           </p>
         </div>
 
-        <div className={`d-flex ml-2 align-items-center ${Style.ps14}`}>
+        <div
+          className={`d-flex ml-2 align-items-center ${Style.ps14} ${Style.ps10}`}
+        >
           <Icon icon='dollar' />
           <p
             className={css`
@@ -188,7 +190,7 @@ const Style = {
     margin-bottom: 22px;
   `,
   ps10: css`
-    border: 1px solid #e1e4e8;
+    border-bottom: 1px solid #e1e4e8;
   `,
   ps11: css`
     margin-top: 17.51px;
@@ -211,6 +213,6 @@ const Style = {
 
   ps14: css`
     margin-top: 10px;
-    margin-bottom: 22px;
+    padding-bottom: 26px;
   `,
 };

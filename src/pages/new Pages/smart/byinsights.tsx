@@ -287,6 +287,7 @@ const Style = {
   GH6: css`
     width: 79px;
     padding: 0px 11.5px;
+    text-align: center;
   `,
   GH7: css`
     width: 67px;

@@ -77,6 +77,7 @@ const Style = {
     border-top: 3px solid #b6af9d;
     border-left: 1px solid #e1e4e8;
     border-right: 1px solid #e1e4e8;
+    border-bottom: 0px;
   `,
   tab1: css`
     display: flex;
