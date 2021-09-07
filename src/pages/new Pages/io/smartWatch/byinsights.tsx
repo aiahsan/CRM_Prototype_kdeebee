@@ -313,7 +313,6 @@ const Style = {
   `,
   g14: css`
     margin-top: 24px;
-    margin-left: 29.04px;
     @media (max-width: 590px) {
       margin-left: 0px;
     }

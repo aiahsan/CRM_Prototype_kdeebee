@@ -60,9 +60,7 @@ const Style = {
       justify-content: center;
     }
   `,
-  g2: css`
-    margin-top: 24px;
-  `,
+  g2: css``,
   g3: css`
     border: 1px solid #e1e4e8;
     margin-top: 24px;
