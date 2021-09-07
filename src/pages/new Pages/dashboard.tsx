@@ -44,9 +44,68 @@ export default function RCom() {
                 <p className={Style.sp11}>IO Activity Summary</p>
               </div>
               <div className={Style.sp12}>
-                <Dropdown title='Actor' />
-                <Dropdown title='Opportunity' />
-                <Dropdown title='Activity Type' />
+                <Dropdown
+                  heading='Filter by activity type'
+                  title='Actor'
+                  items={[
+                    { id: 0, title: 'BD Partner' },
+                    { id: 1, title: 'Corporate Member' },
+                    { id: 2, title: 'IANUA Team' },
+                    { id: 3, title: 'Investor' },
+                  ]}
+                />
+                <Dropdown
+                  heading='Filter by opportunity'
+                  items={[
+                    { id: 0, title: 'Project Anchor' },
+                    { id: 1, title: 'Project Apollo' },
+                    { id: 2, title: 'Project Emerald' },
+                    { id: 3, title: 'Project Fluid' },
+                    { id: 4, title: 'Project Marlow' },
+                    { id: 5, title: 'Project Nova Log' },
+                    { id: 6, title: 'Project Ocean' },
+                    { id: 7, title: 'Project South Wind Farm' },
+                    { id: 8, title: 'Project Terrawatt 1' },
+                    { id: 9, title: 'Project Anchor' },
+                    { id: 10, title: 'Project Apollo' },
+                    { id: 11, title: 'Project Emerald' },
+                    { id: 12, title: 'Project Fluid' },
+                    { id: 13, title: 'Project Marlow' },
+                    { id: 14, title: 'Project Nova Log' },
+                    { id: 15, title: 'Project Ocean' },
+                    { id: 16, title: 'Project South Wind Farm' },
+                    { id: 17, title: 'Project Terrawatt 1' },
+                  ]}
+                  title='Opportunity'
+                  hasFilter={true}
+                  placeholder='Filter opportunities'
+                />
+                <Dropdown
+                  heading='Filter by opportunity'
+                  items={[
+                    { id: 0, title: 'Activate KC Access' },
+                    { id: 1, title: 'Add callnotes' },
+                    { id: 2, title: 'Add Investment Preferences' },
+                    { id: 3, title: 'Add contact to CRM' },
+                    { id: 4, title: 'Add to Watchlist' },
+                    { id: 5, title: 'Approve access to IO' },
+                    { id: 6, title: `Change contact's capacity` },
+                    { id: 7, title: 'Complete generic NDA' },
+                    { id: 8, title: 'Complete IANUA Contract' },
+                    { id: 9, title: 'Complete IO specific NDA' },
+                    { id: 10, title: 'Complete KYC Questionnaire' },
+                    { id: 11, title: 'Complete Onboarding Interview' },
+                    { id: 12, title: 'Project Fluid' },
+                    { id: 13, title: 'Project Marlow' },
+                    { id: 14, title: 'Project Nova Log' },
+                    { id: 15, title: 'Project Ocean' },
+                    { id: 16, title: 'Project South Wind Farm' },
+                    { id: 17, title: 'Project Terrawatt 1' },
+                  ]}
+                  hasFilter={true}
+                  placeholder='Filter by activity type'
+                  title='Filter activity types'
+                />
               </div>
             </div>
 
