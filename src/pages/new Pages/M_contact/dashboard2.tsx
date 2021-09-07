@@ -97,7 +97,7 @@ export default function RCom() {
       <TopBar />
       <Breadcrumb
         list={['Contacts', 'Dashboard', 'Outstanding Queries']}
-        activeIndex={1}
+        activeIndex={2}
       />
       <Tabs activeTab={0} />
       <div></div>
@@ -512,7 +512,7 @@ const Style = {
     height: 40px;
     margin-right: 11px;
     background-color: white;
-
+    margin-right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -657,8 +657,11 @@ const Style = {
     align-items: center;
     border-bottom: 1px solid #e1e4e8;
     margin: auto;
-    margin-top: 23px;
-    padding: 20px;
+    margin-top: 0px;
+    padding: 15px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
   `,
   g3: css`
     font-size: 24px;
@@ -689,6 +692,7 @@ const Style = {
   `,
   sp3: css`
     margin-top: 25px;
+    margin-left: 79px;
   `,
   g1sk1: css`
     margin-left: 29px;
@@ -713,7 +717,7 @@ const Style = {
     line-height: 37px;
 
     letter-spacing: -0.05em;
-
+    margin:0px;
     color: #000000;
   `,
   cstyy2: css`
