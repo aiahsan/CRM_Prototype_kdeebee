@@ -42,7 +42,7 @@ const Style = {
     justify-content: flex-start;
     align-items: center;
     width: 560px;
-
+    height: 34px;
     @media (max-width: 982px) {
       width: 100%;
     }

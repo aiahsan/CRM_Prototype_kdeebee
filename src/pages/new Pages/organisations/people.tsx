@@ -158,7 +158,7 @@ const Style = {
     box-sizing: border-box;
     border-radius: 2px;
     width: 138px;
-    height: 40px;
+    height: 34px;
     margin-right: 11px;
     background-color: white;
 
@@ -330,6 +330,7 @@ const Style = {
     align-items: center;
     max-width: 458px;
     width: 100%;
+    height: 34px;
 
     @media (max-width: 320px) {
       flex-direction: column;

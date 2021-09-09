@@ -305,7 +305,7 @@ const Style = {
     box-sizing: border-box;
     border-radius: 2px;
     width: 138px;
-    height: 40px;
+    height: 36px;
     margin-right: 11px;
     background-color: white;
 
@@ -338,7 +338,7 @@ const Style = {
   `,
   GH6: css`
     width: 111px;
-    height: 34px;
+    height: 36px;
     background: #b6af9d;
     border: 1px solid #b6af9d;
     box-sizing: border-box;

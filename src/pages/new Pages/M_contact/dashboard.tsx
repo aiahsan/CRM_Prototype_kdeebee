@@ -399,7 +399,7 @@ const Style = {
     margin-right: 5px;
   `,
   sp3: css`
-    margin-top: 25px;
+    margin-top: 24px;
     margin-left: 45px;
   `,
   g1sk1: css`

@@ -23,7 +23,7 @@ const Profile = () => {
         <ProfileBar />
         <div>
           <div className={Style.g1}>
-            <div className={Style.g2}>
+            <div>
               <div className={Style.g3}>
                 <div className={Style.g4}>
                   <div className={Style.g5}>
