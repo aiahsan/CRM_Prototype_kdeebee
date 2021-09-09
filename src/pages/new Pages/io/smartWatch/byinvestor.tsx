@@ -167,7 +167,6 @@ const Style = {
     display: flex;
   `,
   g14: css`
-    margin-top: 24px;
     @media (max-width: 425px) {
       margin-left: 0px;
     }

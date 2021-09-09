@@ -300,7 +300,8 @@ const Style = {
   `,
   GH9: css`
     width: 97.5px;
-    padding: 0px 14px 0px 10.5px;
+    padding: 0px 10px 0px 10.5px;
+    box-sizing: content-box;
   `,
   GH10: css`
     border-bottom: 1px solid #e1e4e8;

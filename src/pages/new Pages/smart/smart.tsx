@@ -150,7 +150,7 @@ const Style = {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: -0.1em;
+
     color: #ffffff;
     margin: 0px;
     padding: 0px;
