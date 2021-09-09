@@ -368,8 +368,8 @@ const Style = {
     align-items: center;
     border-bottom: 1px solid #e1e4e8;
     margin: auto;
-    margin-top: 23px;
-    padding-bottom: 25px;
+    margin-top: 26px;
+    padding-bottom: 20px;
   `,
   g3: css`
     font-size: 24px;
@@ -403,8 +403,12 @@ const Style = {
     margin-left: 45px;
   `,
   g1sk1: css`
-    margin-left: 29px;
+    margin-left: 28px;
     width: 100%;
+    min-width: 728px;
+    @media (max-width: 1134px) {
+      min-width: initial;
+    }
     @media (max-width: 768px) {
       margin-left: 2%;
       width: 98%;
@@ -434,7 +438,7 @@ const Style = {
     box-sizing: border-box;
     border-radius: 5px 5px 0px 0px;
     padding: 11px 8px;
-    margin-top: 36px;
+    margin-top: 25px;
   `,
   cstyy1: css`
     font-weight: bold;

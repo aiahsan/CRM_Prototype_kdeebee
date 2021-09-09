@@ -187,10 +187,10 @@ export default function RCom() {
                     <div
                       className={css`
                         ${Style.jdasfn}
-                        ${Style.GH19}
+                        ${Style.GHs19}
                       `}
                     >
-                      <Icon icon='oval' color='#d9d9d9' />
+                      <Icon icon='oval' color='#939594' />
                       <p className={Style.jdasfn1}>Contracted Members</p>
                     </div>
                   </div>
@@ -208,7 +208,7 @@ export default function RCom() {
                           top:40px;
                         `}
                       >
-                        Prospects
+                        Transacted
                       </p>
                     </div>
                   </div>
@@ -575,14 +575,19 @@ const Style = {
   `,
   GH19: css`
     position: relative;
-    right: 69px;
+    right: 60px;
     z-index: -4;
+  `,
+  GHs19: css`
+    position: relative;
+    right: 71px;
+    z-index: -5;
   `,
   GH20: css`
     position: relative;
     top: 10px;
     right: 90px;
-    z-index: -5;
+    z-index: -6;
   `,
   GH21: css`
     border-bottom: 1px dashed #8b8880;
@@ -695,8 +700,10 @@ const Style = {
     margin-left: 79px;
   `,
   g1sk1: css`
-    margin-left: 29px;
+    margin-left: 28px;
     width: 100%;
+    overflow-x: auto;
+    max-width: 728px;
     @media (max-width: 768px) {
       margin-left: 2%;
       width: 98%;
@@ -717,7 +724,7 @@ const Style = {
     line-height: 37px;
 
     letter-spacing: -0.05em;
-    margin:0px;
+    margin: 0px;
     color: #000000;
   `,
   cstyy2: css`

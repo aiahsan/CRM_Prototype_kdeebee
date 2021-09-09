@@ -120,6 +120,10 @@ const Style = {
     align-items: center;
     justify-content: center;
     margin-left: 28px;
+    @media (max-width: 1010px) {
+      min-width: initial;
+      margin-left: 16px;
+    }
   `,
   GH2: css`
     margin: 0px 4px;
