@@ -305,7 +305,7 @@ const Style = {
     display: flex;
     justify-content: center;
     margin-left: 35%;
-    @media (max-width: 425pxpx) {
+    @media (max-width: 425px) {
       margin-left: 0%;
     }
   `,

@@ -80,6 +80,10 @@ const Style = {
     height: 40px;
     align-items: center;
     justify-content: center;
+    @media (max-width: 768px) {
+      min-width: initial;
+      margin-right: 20px;
+    }
   `,
   GH2: css`
     margin: 0px 4px;
@@ -124,6 +128,9 @@ const Style = {
   `,
   GH6: css`
     display: flex;
+    @media (max-width: 632px) {
+      justify-content: space-between;
+    }
   `,
   GH7: css`
     background-color: white;

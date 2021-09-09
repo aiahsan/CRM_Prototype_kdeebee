@@ -34,7 +34,7 @@ export default function RCom(props: TimeLineItemProps) {
   return (
     <div className={Style.p5}>
       <div className={Style.p6}>
-        <div className='d-flex'>
+        <div className={Style.GH6}>
           <Tab
             isActive={props.activeTab == 0 ? true : false}
             icon='chain'
@@ -85,6 +85,10 @@ const Style = {
     height: 40px;
     align-items: center;
     justify-content: center;
+    @media (max-width: 768px) {
+      min-width: initial;
+      margin-right: 20px;
+    }
   `,
   p3: css`
     margin: 0px 4px;
@@ -127,5 +131,11 @@ const Style = {
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
+  `,
+  GH6: css`
+    display: flex;
+    @media (max-width: 632px) {
+      justify-content: space-between;
+    }
   `,
 };

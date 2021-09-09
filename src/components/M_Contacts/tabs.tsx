@@ -139,7 +139,7 @@ const Style = {
     }
   `,
   GH4: css`
-    @media (max-width: 425pxpx) {
+    @media (max-width: 425px) {
       display: none;
     }
     margin: 0px;
