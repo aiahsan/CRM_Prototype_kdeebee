@@ -16,7 +16,10 @@ export default function RCom() {
     if (obj) {
       obj.isactive = !obj.isactive;
     }
-
+    const filted = activeeventkey.filter((x) => x.id !== id);
+    filted.forEach((x) => {
+      x.isactive = false;
+    });
     setactiveeventkey([...activeeventkey]);
   };
 
@@ -144,6 +147,7 @@ export default function RCom() {
                   value2: 'lucy@granger.me',
                   value1Active: true,
                   value2Active: true,
+                  hasrelative: false,
                 },
               ]}
             />
@@ -508,6 +512,7 @@ const Style = {
   c2: css`
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
   `,
   c3: css`
     font-family: Lucida Grande;
@@ -517,7 +522,7 @@ const Style = {
     line-height: 19px;
     margin: 0px;
     margin-right: 7.45px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
   `,
 
   c4: css`
@@ -533,7 +538,7 @@ const Style = {
 
   p1a: css`
     display: flex;
-    padding: 16px 16px 0px 16px;
+    padding: 28px 16px 0px 16px;
     margin-bottom: 50px;
   `,
 
@@ -562,7 +567,6 @@ const Style = {
   p11a: css`
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 23px;
 
     @media (max-width: 639px) {
       margin: 23px 0px;

@@ -12,7 +12,11 @@ const ViewBoxText = (props: BoxTextProps) => {
     value1Active,
     value2Active,
     variant,
+    hasrelative,
   } = props;
+
+  console.log(hasrelative);
+
   const isMobile = useMediaQuery({
     query: '(max-width: 535px)',
   });
@@ -135,7 +139,17 @@ ${variant
             ${Style.c9}
           `}
         >
-          <div className={Style.c10}>
+          <div
+            className={css`
+              ${Style.c10}
+              ${hasrelative != undefined || hasrelative == true
+                ? css`
+                    position: relative;
+                    left: 24px;
+                  `
+                : ''}
+            `}
+          >
             <p
               className={css`
                 ${Style.c1}
@@ -181,6 +195,10 @@ ${variant
 const Style = {
   c8: css`
     border-bottom: 1px solid #e1e4e8;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   `,
   c7: css`
     width: 109px;

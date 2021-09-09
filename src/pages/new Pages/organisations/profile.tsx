@@ -193,12 +193,11 @@ const Style = {
   `,
   GH3: css`
     display: flex;
-    padding: 16px 16px 0px 16px;
+    padding: 28px 16px 0px 16px;
   `,
   GH4: css`
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 23px;
     width: 100%;
 
     @media (max-width: 534px) {

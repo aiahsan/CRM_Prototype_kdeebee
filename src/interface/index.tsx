@@ -24,6 +24,7 @@ export interface BoxTextProps {
   value2Active: boolean;
   isLast?: boolean;
   variant?: boolean;
+  hasrelative?: boolean;
 }
 
 export interface DirectoryBoxProps {

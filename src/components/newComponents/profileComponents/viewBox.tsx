@@ -28,6 +28,7 @@ const ViewBox = (props: BoxProps) => {
               value2={x.value2}
               isLast={i == values.length ? true : false}
               variant={variant}
+              hasrelative={x.hasrelative}
             />
           ))}
         </div>
@@ -40,7 +41,7 @@ export default ViewBox;
 const Style = {
   p1: css`
     display: flex;
-    padding: 16px 16px 0px 16px;
+    padding: 28px 16px 0px 16px;
   `,
 
   p27: css`
@@ -69,7 +70,6 @@ const Style = {
   p11: css`
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 23px;
 
     @media (max-width: 639px) {
       margin: 23px 0px;

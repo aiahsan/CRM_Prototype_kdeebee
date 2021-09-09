@@ -16,7 +16,10 @@ export default function RCom() {
     if (obj) {
       obj.isactive = !obj.isactive;
     }
-
+    const filted = activeeventkey.filter((x) => x.id !== id);
+    filted.forEach((x) => {
+      x.isactive = false;
+    });
     setactiveeventkey([...activeeventkey]);
   };
 
