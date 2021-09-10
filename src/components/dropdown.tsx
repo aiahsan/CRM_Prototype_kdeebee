@@ -31,7 +31,7 @@ export default function RCom(props: Props) {
 
         <Dropdown.Menu>
           {props.heading ? (
-            <Dropdown.Item>
+            <Dropdown.Item className='no-hover'>
               {' '}
               <div className='flex-between'>
                 <p className='fwb'>{props.heading}</p>
@@ -49,7 +49,16 @@ export default function RCom(props: Props) {
           <div className='dpd-child'>
             {props.items
               ? props.items.map((x, i) => (
-                  <Dropdown.Item href='#/action-1' key={i}>
+                  <Dropdown.Item
+                    href='#/action-1'
+                    key={i}
+                    style={{
+                      borderBottom:
+                        props.items && props.items.length <= i + 1
+                          ? '0px '
+                          : '1px solid #e1e4e8',
+                    }}
+                  >
                     {x.checked != undefined ? (
                       x.checked == true ? (
                         <Icon icon='checksort' />

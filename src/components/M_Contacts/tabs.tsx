@@ -109,7 +109,7 @@ const Style = {
     border-left: 1px solid #e1e4e8;
     border-right: 1px solid #e1e4e8;
     border-bottom: 0px;
-    padding: 0px 26px;
+    padding: 0px 28px;
   `,
   GH1: css`
     display: flex;
@@ -119,10 +119,9 @@ const Style = {
     height: 40px;
     align-items: center;
     justify-content: center;
-    margin-left: 28px;
+    padding: 0px 28px;
     @media (max-width: 1010px) {
       min-width: initial;
-      margin-left: 16px;
     }
   `,
   GH2: css`

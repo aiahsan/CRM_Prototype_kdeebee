@@ -183,9 +183,14 @@ tspan {
 .dropdown-menu.show {
   width: 224px !important;
 }
-.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:hover {
+  background-color: #f2f2f2;
+}
 .dropdown .dropdown-item:active {
   background-color: #adc1e5;
+}
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:active {
   color: black;
   font-weight: bold !important;
 }
@@ -235,10 +240,9 @@ tspan {
 }
 .dropdown-menu.show {
   padding: 0px;
-  border-bottom: 0px;
 }
 .fwb {
-  font-weight: bold;
+  font-weight: 700;
 }
 .dpd-child {
   max-height: 365px;
@@ -308,4 +312,11 @@ input {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #8d8980;
+}
+.no-hover:hover {
+  background-color: transparent !important;
+  cursor: default !important;
+}
+.dropdown .no-hover {
+  padding: 11px 12px !important;
 }

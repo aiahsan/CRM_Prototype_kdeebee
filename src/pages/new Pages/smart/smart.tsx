@@ -132,7 +132,7 @@ export default function RCom() {
 
 const Style = {
   GH1: css`
-    width: 143px;
+    width: 159px;
     height: 34px;
     background: #b6af9d;
     border: 1px solid #b6af9d;
@@ -190,6 +190,7 @@ const Style = {
     justify-content: flex-start;
     align-items: center;
     max-width: 728px;
+    height: 34px;
     @media (max-width: 901px) {
       max-width: 540px;
     }
