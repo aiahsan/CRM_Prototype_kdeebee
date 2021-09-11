@@ -5,6 +5,7 @@ import { Dropdown } from 'react-bootstrap';
 import avt from '../images/image 10.png';
 import { useMediaQuery } from 'react-responsive';
 import NavBar from '../components/navbar';
+import { theme } from '../styles/theme';
 interface MenuTextProps {
   title: String;
   path: string;
@@ -70,18 +71,18 @@ export default function RCom() {
 
 export const Style = {
   jkasdfasklf: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
     margin: 0px;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: ${theme.colorWhite};
     cursor: pointer;
     &:hover {
-      colo: white;
+      color: ${theme.colorWhite};
     }
   `,
   dropCss: css`
@@ -89,7 +90,7 @@ export const Style = {
     border: transparent !important;
   `,
   kdasfnase3w: css`
-    background: #b6af9d;
+    background: ${theme.colorGrey};
     padding: 14px 29.5px;
     height: 64px;
   `,
@@ -100,7 +101,7 @@ export const Style = {
     width: 100%;
   `,
   anksdvajewe: css`
-    border: 1px solid #ffffff;
+    border: 1px solid ${theme.colorWhite};
     background-color: transparent;
     box-sizing: border-box;
     border-radius: 5px;
@@ -110,9 +111,9 @@ export const Style = {
       padding: 5px 14px;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
+      font-size: ${theme.fontSize14};
       line-height: 16px;
-      color: #ffffff;
+      color: ${theme.colorWhite};
     }
   `,
   kandvseriwe: css`

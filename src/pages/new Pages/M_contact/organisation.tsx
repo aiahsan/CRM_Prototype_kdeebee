@@ -9,6 +9,8 @@ import avt from '../../../images/img1big.png';
 import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
 import { useHistory } from 'react-router-dom';
+import { theme } from '../../../styles/theme';
+
 export default function RCom() {
   const history = useHistory();
   return (
@@ -33,7 +35,7 @@ export default function RCom() {
             </div>
             <div className={Style.GH1}>
               <button className={Style.GH2}>
-                <Icon icon='org' color='white' />
+                <Icon icon='org' color={theme.colorWhite} />
                 <p className={Style.GH3}>Add Organisation</p>
               </button>
             </div>
@@ -173,8 +175,8 @@ const Style = {
   GH2: css`
     width: 143px;
     height: 34px;
-    background: #b6af9d;
-    border: 1px solid #b6af9d;
+    background: ${theme.colorGrey};
+    border: 1px solid ${theme.colorGrey};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -183,10 +185,10 @@ const Style = {
   `,
   GH3: css`
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     letter-spacing: -0.1em;
-    color: #ffffff;
+    color: ${theme.colorWhite};
     margin: 0px;
     padding: 0px;
     margin-left: 4.25px;
@@ -230,7 +232,7 @@ const Style = {
   GH9: css`
     background: #fafbfc;
 
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -247,7 +249,7 @@ const Style = {
 
   GH10: css`
     padding: 8px 9.5px 8px 17px;
-    border-right: 1px solid #e1e4e8;
+    border-right: 1px solid ${theme.colorWhite3};
     @media (max-width: 320px) {
       border: none;
     }
@@ -262,7 +264,7 @@ const Style = {
     margin-left: 10px;
   `,
   GH13: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 980px;
     border-radius: 3px;
@@ -275,7 +277,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     background: #f6f8fa;
     flex-wrap: wrap;
   `,
@@ -290,14 +292,14 @@ const Style = {
   GH17: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH18: css`
     max-width: 115px;
@@ -306,6 +308,6 @@ const Style = {
     justify-content: space-between;
   `,
   GH19: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
 };

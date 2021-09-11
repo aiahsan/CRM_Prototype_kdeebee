@@ -5,6 +5,7 @@ import Tabs from '../../../../components/M_Contacts/tabs';
 import { css } from '@emotion/css';
 import Icon from '../../../../icons/icons';
 import avt from '../../../../images/image 10a.png';
+import { theme } from '../../../../styles/theme';
 
 const Header = ({ title, desc }: { title: string; desc?: string }) => (
   <div className={Style.alloc8}>
@@ -335,16 +336,16 @@ const Style = {
     background: linear-gradient(180deg, #f9fafb 0%, #eff3f6 100%);
     border: 1px solid #c4c8cc;
     border-radius: 2px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     text-align: center;
     letter-spacing: -1px;
     width: 56px;
     height: 32px;
-    color: #444d56;
+    color: ${theme.colorBlue};
   `,
   GH3: css`
     background: linear-gradient(180deg, #a1d1a6 0%, #a1d1a6 100%);
@@ -353,27 +354,27 @@ const Style = {
     border-radius: 2px;
     width: 56px;
     height: 32px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     align-items: center;
     text-align: center;
     letter-spacing: -0.1em;
 
-    color: #e7f3e9;
+    color: ${theme.colorWhite1};
   `,
   TextInputp: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     align-items: center;
     text-align: right;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     margin: 0px;
   `,
   TextInput: css`
@@ -384,15 +385,15 @@ const Style = {
     height: 18px;
     width: 140px;
     &::placeholder {
-      font-family: Lucida Grande;
+      font-family: ${theme.fontFamilyMain}
       font-style: normal;
       font-weight: normal;
-      font-size: 12px;
+      font-size: ${theme.fontSize12};
       line-height: 14px;
       display: flex;
       align-items: center;
       padding-left: 8px;
-      color: #aeb2b8;
+      color: ${theme.colorGrey3};
     }
   `,
   alloc1: css`
@@ -402,13 +403,13 @@ const Style = {
     margin: auto;
   `,
   alloc2: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 29px;
+    font-size: ${theme.fontSize29};
     line-height: 37px;
     letter-spacing: -0.05em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin-top: 25px;
     margin-bottom: 31.7px;
 
@@ -418,7 +419,7 @@ const Style = {
   `,
   alloc3: css`
     height: 0.1px;
-    background-color: #e1e4e8;
+    background-color: ${theme.colorWhite3};
   `,
   alloc4: css`
     display: flex;
@@ -454,32 +455,32 @@ const Style = {
     align-items: center;
     padding-left: 29px;
     border-radius: 3px 3px 0px 0px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     border-bottom: 0px;
   `,
   alloc9: css`
     margin: 0px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
   `,
   allsd: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     padding: 16px 56px 18px 56px;
   `,
   allsd1: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 22px;
     letter-spacing: -0.03em;
 
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   allsd2: css`
     font-weight: bold;
@@ -490,7 +491,7 @@ const Style = {
   allsd4: css`
     height: 55px;
     width: 1px;
-    background-color: #e1e4e8;
+    background-color: ${theme.colorWhite3};
     position: absolute;
     top: 19px;
     @media (max-width: 1024px) {
@@ -557,7 +558,7 @@ const Style = {
     align-items: center;
   `,
   ssncakser1: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     padding: 16px 56px 18px 56px;
 
     @media (max-width: 1024px) {
@@ -566,10 +567,10 @@ const Style = {
   `,
   ssncakser: css`
     margin: 0px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
@@ -580,15 +581,15 @@ const Style = {
     max-width: 332px;
     font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 15px;
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
 
-    color: #c6cbd1;
+    color: ${theme.colorGrey2};
     padding: 5px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     margin: 17px 0px;

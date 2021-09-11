@@ -2,6 +2,7 @@ import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import ViewBoxText from './viewBoxText';
 import { BoxProps } from '../../../interface';
+import { theme } from '../../../styles/theme';
 const ViewBox = (props: BoxProps) => {
   const { title, values, variant } = props;
 
@@ -54,15 +55,15 @@ const Style = {
   `,
 
   p3: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
 
     margin: 0px;
   `,

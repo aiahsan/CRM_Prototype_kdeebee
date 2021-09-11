@@ -9,6 +9,7 @@ import ActivitySub from '../../../components/dashboard/expanded/activitysub';
 import avt from '../../../images/1.png';
 import Pagination from '../../../components/pagination';
 import LeftBar from '../../../components/newComponents/io/leftBar';
+import { theme } from '../../../styles/theme';
 
 export default function RCom() {
   return (
@@ -266,23 +267,23 @@ const Style = {
     margin-left: 3%;
   `,
   GH16: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
   BaseHighlightText: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     align-items: center;
     letter-spacing: -0.08em;
-    color: #5b626a;
+    color: ${theme.colorGrey8};
     margin: 0px;
     margin-left: 6px;
   `,
@@ -297,7 +298,7 @@ const Style = {
   `,
 
   GH8: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 728px;
     border-radius: 3px;
@@ -315,7 +316,7 @@ const Style = {
   `,
   GH5: css`
     padding: 8px 9.5px 8px 17px;
-    border-right: 1px solid #e1e4e8;
+    border-right: 1px solid ${theme.colorWhite3};
 
     @media (max-width: 534px) {
       border: none;
@@ -324,7 +325,7 @@ const Style = {
   GH4: css`
     background: #fafbfc;
 
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -354,7 +355,7 @@ const Style = {
   `,
 
   GH13: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   GH17: css`
     margin-left: 59px;
@@ -366,7 +367,7 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     @media (max-width: 534px) {
       flex-wrap: wrap;
     }
@@ -379,14 +380,14 @@ const Style = {
   GH11: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH12: css`
     max-width: 175px;

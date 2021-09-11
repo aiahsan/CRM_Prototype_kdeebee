@@ -6,6 +6,7 @@ import Icon from '../../../icons/icons';
 import Linechart from '../../../components/linechart';
 import { useHistory } from 'react-router-dom';
 import SideMenu from '../../../components/sidemenu';
+import { theme } from '../../../styles/theme';
 
 const AssingTab = ({
   name,
@@ -22,7 +23,9 @@ const AssingTab = ({
     <div
       className={css`
         ${Style.GH1}
-        ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
+        ${isLast != true
+          ? `border-bottom: 1px solid ${theme.colorWhite3};`
+          : ''}
       `}
     >
       <div className={Style.GH2}>
@@ -61,7 +64,9 @@ const LabelTab = ({
     <div
       className={css`
         ${Style.GH5}
-        ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
+        ${isLast != true
+          ? `border-bottom: 1px solid ${theme.colorWhite3};`
+          : ''}
       `}
     >
       <div className={Style.GH2}>
@@ -259,13 +264,13 @@ const Style = {
     border-radius: 15px;
   `,
   GH7: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     width: 138px;
     height: 40px;
     margin-right: 11px;
-    background-color: white;
+    background-color: ${theme.colorWhite};
 
     display: flex;
     align-items: center;
@@ -275,9 +280,9 @@ const Style = {
     margin: 0px 4px;
     letter-spacing: -0.07em;
 
-    color: #586069;
+    color: ${theme.colorGrey1};
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
   `,
   GH9: css`
@@ -290,19 +295,19 @@ const Style = {
     align-items: center;
     letter-spacing: -0.07em;
     font-weight: bold;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH11: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 0px;
     border-top: 0px;
     padding-top: 31px;
   `,
   GH12: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 0px 0px 5px 5px;
     justify-content: center;
@@ -315,22 +320,22 @@ const Style = {
   GH13: css`
     margin: 0px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 126%;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   GH14: css`
     margin: 0px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 126%;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #798087;
+    color: ${theme.colorGrey7};
   `,
   GH15: css`
     @media (max-width: 425px) {
@@ -342,7 +347,7 @@ const Style = {
     width: 100%;
   `,
   GH17: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 0px 0px 5px 5px;
     max-width: 347px;
@@ -355,7 +360,7 @@ const Style = {
     }
   `,
   GH19: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 0px 0px 5px 5px;
     max-width: 347px;
@@ -366,7 +371,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     margin: auto;
     margin-top: 26px;
     padding-bottom: 20px;
@@ -375,21 +380,21 @@ const Style = {
     font-size: 24px;
     line-height: 126.02%;
     letter-spacing: -0.05em;
-    color: #000000;
+    color: ${theme.colorBlack};
     padding-bottom: 12px;
     margin: 0px;
   `,
   g4: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
-    background: white;
+    background: ${theme.colorWhite};
     align-items: center;
     letter-spacing: -0.07em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
     padding: 4px 13px;
   `,
@@ -425,16 +430,16 @@ const Style = {
     }
   `,
   gglb: css`
-    font-size: 29px;
+    font-size: ${theme.fontSize29};
     line-height: 37px;
 
     letter-spacing: -0.05em;
     margin: 0px;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   cstyy2: css`
     background: #f6f8fa;
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 5px 5px 0px 0px;
     padding: 11px 8px;
@@ -442,20 +447,20 @@ const Style = {
   `,
   cstyy1: css`
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     margin: 0px;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   cstyy3: css`
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     letter-spacing: -0.01em;
-    color: #25292e;
+    color: ${theme.colorBlack2};
     margin: 0px;
   `,
 };

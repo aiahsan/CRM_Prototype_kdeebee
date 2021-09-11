@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import logo from '../images/fav.png';
-
+import { theme } from '../styles/theme';
 export default function RCom() {
   return (
     <div className={Style.GH2}>
@@ -66,17 +66,17 @@ export default function RCom() {
 
 const Style = {
   GH1: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     letter-spacing: -0.08em;
-    color: #ffffff;
+    color: ${theme.colorWhite};
   `,
   GH2: css`
     padding-top: 29px;
-    background-color: #4e4b5b;
+    background-color: ${theme.colorBlack3};
     min-height: 210px;
     margin-top: 229px;
   `,

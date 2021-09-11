@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMediaQuery } from 'react-responsive';
 import { BoxTextProps } from '../../../interface';
-
+import { theme } from '../../../styles/theme';
 const ViewBoxText = (props: BoxTextProps) => {
   const {
     key1,
@@ -29,7 +29,7 @@ const ViewBoxText = (props: BoxTextProps) => {
         justify-content: center;
         border-bottom:${
           props.isLast && props.isLast == true && !isMobile
-            ? '1px solid #e1e4e8'
+            ? `1px solid ${theme.colorWhite3}`
             : '0px'
         }}
         @media (max-width: 535px) {
@@ -83,7 +83,9 @@ const ViewBoxText = (props: BoxTextProps) => {
          display: ${variant ? 'block' : 'flex'};
 
         border-bottom:${
-          props.isLast && props.isLast == true ? '1px solid #e1e4e8' : '0px'
+          props.isLast && props.isLast == true
+            ? `1px solid ${theme.colorWhite3}`
+            : '0px'
         }}
         @media (max-width: 535px) {
           justify-content:space-between;
@@ -161,7 +163,7 @@ ${variant
             <p
               className={css`
                 ${Style.c1}
-                ${value1Active == true ? 'color:#1269D3' : ''}
+                ${value1Active == true ? `color:${theme.colorBlue1}` : ''}
               `}
             >
               {value1}
@@ -181,7 +183,9 @@ ${variant
               className={css`
                 ${Style.c1}
                 ${Style.c14}
-                       ${value2Active == true ? 'color:#1269D3' : ''}
+                       ${value2Active == true
+                  ? `color:${theme.colorBlue1}`
+                  : ''}
               `}
             >
               {value2}
@@ -194,7 +198,7 @@ ${variant
 };
 const Style = {
   c8: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     height: 24px;
     display: flex;
     justify-content: center;
@@ -209,7 +213,7 @@ const Style = {
   c5: css`
     display: flex;
     padding: 6px 0px;
-    border-top: 1px solid #e1e4e8;
+    border-top: 1px solid ${theme.colorWhite3};
   `,
 
   c4: css`
@@ -260,16 +264,16 @@ const Style = {
   `,
 
   c1: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     text-align: right;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     margin: 0px;
   `,
 };

@@ -2,6 +2,7 @@ import Dropdown from '../../dropdown';
 import Icon from '../../../icons/icons';
 import { css } from '@emotion/css';
 import { useHistory } from 'react-router-dom';
+import { theme } from '../../../styles/theme';
 const SearchBar = ({ variant }: { variant?: number }) => {
   const history = useHistory();
   return (
@@ -35,7 +36,7 @@ const Style = {
   p1: css`
     background: #fafbfc;
 
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -58,7 +59,7 @@ const Style = {
   `,
   p2: css`
     padding: 8px 9.5px 8px 17px;
-    border-right: 1px solid #e1e4e8;
+    border-right: 1px solid ${theme.colorWhite3};
   `,
   p3: css`
     padding-left: 10px;
@@ -78,17 +79,17 @@ const Style = {
   p6: css`
     height: 34px;
     right: 0px;
-    background: #b6af9d;
-    border: 1px solid #b6af9d;
+    background: ${theme.colorGrey};
+    border: 1px solid ${theme.colorGrey};
     border-radius: 2px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     align-items: center;
     letter-spacing: -0.1em;
-    color: #ffffff;
+    color: ${theme.colorWhite};
     margin-left: 49px;
 
     @media (max-width: 983px) {

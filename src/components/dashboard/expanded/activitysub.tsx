@@ -1,5 +1,6 @@
 import Icon from '../../../icons/icons';
 import { css } from '@emotion/css';
+import { theme } from '../../../styles/theme';
 interface Props {
   icon: string;
   title: string;
@@ -48,16 +49,16 @@ const Style = {
   `,
   GH2: css`
     margin-left: 10px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH3: css`
-    color: #1269d3;
+    color: ${theme.colorBlue1};
   `,
   GH4: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 15px;
     align-items: center;
     letter-spacing: 0.01em;

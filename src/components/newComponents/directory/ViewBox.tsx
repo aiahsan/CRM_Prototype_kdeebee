@@ -1,6 +1,7 @@
 import { css } from '@emotion/css';
 import { DirectoryBoxProps } from '../../../interface';
 import ViewBoxText from './ViewBoxText';
+import { theme } from '../../../styles/theme';
 const ViewBox = (props: DirectoryBoxProps) => {
   const { title, image, subtitle } = props;
 
@@ -63,7 +64,7 @@ const Style = {
   ps1: css`
     display: flex;
     padding: 16px 0px 16px 16px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     cursor: pointer;
     @media (max-width: 881px) {
       overflow: scroll;
@@ -78,27 +79,27 @@ const Style = {
     display: flex;
   `,
   ps5: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: ${theme.fontSize20};
     line-height: 24px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin: 0px;
   `,
   ps6: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     margin: 0px;
   `,
   PS7: css`

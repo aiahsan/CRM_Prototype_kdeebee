@@ -9,6 +9,8 @@ import avt from '../../../images/1.png';
 import UserImg from '../../../images/User.png';
 import Pagination from '../../../components/pagination';
 import { useHistory } from 'react-router-dom';
+import { theme } from '../../../styles/theme';
+
 export default () => {
   const history = useHistory();
   return (
@@ -173,18 +175,18 @@ export default () => {
 
 const Style = {
   hajksdghks: css`
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
+    background: ${theme.colorWhite};
+    border: 1px solid ${theme.colorWhite3};
     padding: 10px 0px 11px 9.12px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     letter-spacing: -0.03em;
-    color: #000000;
+    color: ${theme.colorBlack};
     width: 224px;
-    border-bottom: 0.5px solid #e1e4e8;
+    border-bottom: 0.5px solid ${theme.colorWhite3};
     cursor: pointer;
   `,
 
@@ -216,7 +218,7 @@ const Style = {
   GH14: css`
     background: #fafbfc;
 
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -233,7 +235,7 @@ const Style = {
 
   GH15: css`
     padding: 8px 9.5px 8px 17px;
-    border-right: 1px solid #e1e4e8;
+    border-right: 1px solid ${theme.colorWhite3};
     @media (max-width: 320px) {
       border: none;
     }
@@ -248,7 +250,7 @@ const Style = {
     margin-left: 10px;
   `,
   GH18: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 980px;
     border-radius: 3px;
@@ -261,7 +263,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     background: #f6f8fa;
     flex-wrap: wrap;
   `,
@@ -276,14 +278,14 @@ const Style = {
   GH22: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH23: css`
     max-width: 185px;
@@ -292,7 +294,7 @@ const Style = {
     justify-content: space-between;
   `,
   GH24: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   GH1: css`
     display: flex;
@@ -301,13 +303,13 @@ const Style = {
     }
   `,
   GH2: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     width: 138px;
     height: 36px;
     margin-right: 11px;
-    background-color: white;
+    background-color: ${theme.colorWhite};
 
     display: flex;
     align-items: center;
@@ -317,9 +319,9 @@ const Style = {
     margin: 0px 4px;
     letter-spacing: -0.07em;
 
-    color: #586069;
+    color: ${theme.colorGrey1};
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
   `,
   GH4: css`
@@ -332,15 +334,15 @@ const Style = {
     align-items: center;
     letter-spacing: -0.07em;
     font-weight: bold;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH6: css`
     width: 111px;
     height: 36px;
-    background: #b6af9d;
-    border: 1px solid #b6af9d;
+    background: ${theme.colorGrey};
+    border: 1px solid ${theme.colorGrey};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -349,10 +351,10 @@ const Style = {
   `,
   GH7: css`
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     letter-spacing: -0.1em;
-    color: #ffffff;
+    color: ${theme.colorWhite};
     margin: 0px;
     padding: 0px;
     margin-left: 4.25px;

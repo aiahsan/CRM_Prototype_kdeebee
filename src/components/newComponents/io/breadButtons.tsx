@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import { useHistory } from 'react-router-dom';
-
+import { theme } from '../../../styles/theme';
 export default function RCom({ active }: { active: number }) {
   const history = useHistory();
 
@@ -21,14 +21,17 @@ export default function RCom({ active }: { active: number }) {
             : css`
                 ${Style.g8}
                 ${Style.g9}
-                background-color: white;
+                background-color: ${theme.colorWhite};
               `
         }
 
     `}
       >
         <div className={Style.g10}>
-          <Icon icon='userb1' color={active == 0 ? 'white' : 'black'} />
+          <Icon
+            icon='userb1'
+            color={active == 0 ? `${theme.colorWhite}` : `${theme.colorBlack}`}
+          />
         </div>
         <span className={Style.g15}> By Investor</span>
       </button>
@@ -41,7 +44,10 @@ export default function RCom({ active }: { active: number }) {
        `}
       >
         <div className={Style.g10}>
-          <Icon icon='filterb1' color={active == 1 ? 'white' : 'black'} />
+          <Icon
+            icon='filterb1'
+            color={active == 1 ? `${theme.colorWhite}` : `${theme.colorBlack}`}
+          />
         </div>
         <span className={Style.g15}> By Parameter</span>
       </button>
@@ -54,7 +60,10 @@ export default function RCom({ active }: { active: number }) {
        `}
       >
         <div className={Style.g10}>
-          <Icon icon='eyeb1' color={active == 2 ? 'white' : 'black'} />
+          <Icon
+            icon='eyeb1'
+            color={active == 2 ? `${theme.colorWhite}` : `${theme.colorBlack}`}
+          />
         </div>
         <span className={Style.g15}> Insight</span>
       </button>
@@ -69,7 +78,10 @@ export default function RCom({ active }: { active: number }) {
        `}
       >
         <div className={Style.g10}>
-          <Icon icon='pencilb1' color={active == 3 ? 'white' : 'black'} />
+          <Icon
+            icon='pencilb1'
+            color={active == 3 ? `${theme.colorWhite}` : `${theme.colorBlack}`}
+          />
         </div>
         <span className={Style.g15}>Feedback</span>
       </button>
@@ -91,25 +103,25 @@ const Style = {
     }
   `,
   g7: css`
-    background: #b6af9d;
-    border: 1px solid #b6af9d;
-    color: #ffffff;
+    background: ${theme.colorGrey};
+    border: 1px solid ${theme.colorGrey};
+    color: ${theme.colorWhite};
   `,
   g9: css`
     border-radius: 4px 0px 0px 4px;
   `,
 
   g11: css`
-    background-color: white;
+    background-color: ${theme.colorWhite};
     border-left: none;
   `,
   g8: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
 
     padding: 9px 16px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;

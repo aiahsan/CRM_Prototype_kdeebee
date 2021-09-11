@@ -3,6 +3,7 @@ import { Card, Accordion, Button } from 'react-bootstrap';
 import ViewBox from './viewBox';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
+import { theme } from '../../../styles/theme';
 import ViewBoxRadio from './viewBoxRadio';
 import InvestorprofileBar from './investorProfile/investorprofileBar';
 export default function RCom() {
@@ -449,10 +450,10 @@ const Style = {
     align-items: center;
   `,
   c3: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     margin: 0px;
     margin-right: 7.45px;
@@ -460,13 +461,13 @@ const Style = {
   `,
 
   c4: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     max-width: 558px;
   `,
 
@@ -486,15 +487,15 @@ const Style = {
   `,
 
   p3a: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     margin: 0px;
   `,
 
@@ -535,7 +536,7 @@ const Style = {
 
   p14a: css`
     margin: 0px;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
@@ -553,7 +554,7 @@ const Style = {
   `,
   p17a: css`
     padding: 4px 0px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   p18a: css`
     position: relative;

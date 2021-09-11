@@ -1,6 +1,7 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../images/fav.png';
 import { Style } from '../components/topBar';
+import { theme } from '../styles/theme';
 
 export default function RCom() {
   return (

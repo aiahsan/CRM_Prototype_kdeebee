@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Accordion, Button } from 'react-bootstrap';
 import ViewBox from '../profileComponents/viewBox';
 import { css } from '@emotion/css';
+import { theme } from '../../../styles/theme';
 import Icon from '../../../icons/icons';
 export default function RCom() {
   const [activeeventkey, setactiveeventkey] = React.useState([
@@ -252,10 +253,10 @@ const Style = {
     align-items: center;
   `,
   c3: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     margin: 0px;
     margin-right: 7.45px;
@@ -264,11 +265,11 @@ const Style = {
 
   c4: css`
     font-weight: normal;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 15px;
     text-align: justify;
     letter-spacing: -0.06em;
     max-width: 616px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
 };

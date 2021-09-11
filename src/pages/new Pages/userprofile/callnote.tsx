@@ -2,6 +2,7 @@ import Breadcrumb from '../../../components/crumbread';
 import TopBar from '../../../components/topBar';
 import Icon from '../../../icons/icons';
 import { css } from '@emotion/css';
+import { theme } from '../../../styles/theme';
 
 export default function RCom() {
   return (
@@ -171,14 +172,14 @@ const Style = {
     font-size: 24px;
     line-height: 126.02%;
     letter-spacing: -0.05em;
-    color: #000000;
+    color: ${theme.colorBlack};
     padding-bottom: 12px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   p3: css`
     display: flex;
     padding-bottom: 25px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     @media (max-width: 768px) {
       flex-direction: column;
     }
@@ -188,17 +189,17 @@ const Style = {
   `,
   p5: css`
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 126.02%;
     letter-spacing: -0.05em;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   p6: css`
     width: 100%;
     max-width: 550px;
     font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 15px;
     display: flex;
     align-items: center;
@@ -206,16 +207,16 @@ const Style = {
 
     color: #c6cbd1;
     padding: 5px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
   `,
 
   p8: css`
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 126.02%;
     letter-spacing: -0.05em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin: 0px;
     margin-left: 11px;
   `,
@@ -232,18 +233,18 @@ const Style = {
     min-width: 224px;
   `,
   p12: css`
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     letter-spacing: -0.02em;
-    color: #596068;
+    color: ${theme.colorGrey1};
     padding-top: 10px;
     padding-bottom: 17px;
     margin-bottom: 0px;
   `,
   p13: css`
-    color: #1269d3;
+    color: ${theme.colorBlue1};
   `,
   p14: css`
     margin-top: 23px;
@@ -255,28 +256,28 @@ const Style = {
     border: 1px solid #c4c8cc;
     box-sizing: border-box;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     letter-spacing: -1px;
     font-weight: bold;
-    color: #444d56;
+    color: ${theme.colorBlue};
     margin-right: 9px;
     padding: 8px 13px;
   `,
   p16: css`
-    background: #b6af9d;
-    border: 1px solid #b6af9d;
+    background: ${theme.colorGrey};
+    border: 1px solid ${theme.colorGrey};
     box-sizing: border-box;
     border-radius: 2px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     letter-spacing: -0.1em;
-    color: #ffffff;
+    color: ${theme.colorWhite};
     padding: 8px 13px;
   `,
   p17: css`
@@ -303,10 +304,10 @@ const Style = {
   p21: css`
     margin-left: 10px;
     margin-bottom: 0px;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 15px;
     letter-spacing: -0.05em;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
   `,
   p22: css`
     margin: 0px 5px;

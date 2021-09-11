@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/css';
-
+import { theme } from '../../../styles/theme';
 import { PieChart, Pie, Label, Cell } from 'recharts';
 
 function NormalPieChart({ value }: { value: number }) {
@@ -22,9 +22,9 @@ function NormalPieChart({ value }: { value: number }) {
         <Pie data={data} dataKey='value' innerRadius={12}>
           {data.map((entry, index) => {
             if (index === 1) {
-              return <Cell key={`cell-${index}`} fill='#E1E4E8' />;
+              return <Cell key={`cell-${index}`} fill={theme.colorWhite3} />;
             }
-            return <Cell key={`cell-${index}`} fill='#B6AF9D' />;
+            return <Cell key={`cell-${index}`} fill={theme.colorGrey} />;
           })}
           <Label
             value={data[0].value}

@@ -1,6 +1,7 @@
 import { Dropdown } from 'react-bootstrap';
 import Icon from '../icons/icons';
 import { css } from '@emotion/css';
+import { theme } from '../styles/theme';
 interface Props {
   title: String;
   heading?: String;
@@ -56,7 +57,7 @@ export default function RCom(props: Props) {
                       borderBottom:
                         props.items && props.items.length <= i + 1
                           ? '0px '
-                          : '1px solid #e1e4e8',
+                          : `1px solid ${theme.colorWhite3}`,
                     }}
                   >
                     {x.checked != undefined ? (
@@ -85,17 +86,17 @@ const Style = {
     border: transparent !important;
   `,
   GH2: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal !important;
     font-weight: bold !important;
-    font-size: 15px !important;
+    font-size: ${theme.fontSize15} !important;
     line-height: 18px !important;
 
     display: flex !important;
     align-items: center !important;
     letter-spacing: -1px !important;
 
-    color: #444d56 !important;
+    color: ${theme.colorBlue} !important;
     padding: 0px !important;
     &::after {
       border: none !important;

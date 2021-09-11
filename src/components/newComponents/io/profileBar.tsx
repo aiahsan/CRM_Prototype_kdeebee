@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-
+import { theme } from '../../../styles/theme';
 import { profileProps } from '../../../interface';
 export default function RCom(props: profileProps) {
   const { img, title, LastActive, type } = props;
@@ -32,18 +32,18 @@ const Style = {
   GH6: css`
     margin: 0px;
     margin-top: -12px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: ${theme.fontSize11};
     line-height: 13px;
     letter-spacing: -0.03em;
-    color: #5b636b;
+    color: ${theme.colorGrey9};
     margin-bottom: 11px;
   `,
 
   GH4: css`
-font-family: Lucida Grande;
+font-family: ${theme.fontFamilyMain}
         font-style: normal;
         line-height: 18px;
         align-items: center;
@@ -68,6 +68,6 @@ font-family: Lucida Grande;
   `,
   GH5: css`
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
   `,
 };

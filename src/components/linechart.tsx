@@ -8,6 +8,9 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import { css } from '@emotion/css';
+
+import { theme } from '../styles/theme';
+
 const data = [
   {
     name: '02/10',

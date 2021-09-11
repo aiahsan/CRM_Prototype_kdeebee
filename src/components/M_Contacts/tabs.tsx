@@ -1,7 +1,7 @@
 import Icon from '../../icons/icons';
 import { css } from '@emotion/css';
 import { useHistory } from 'react-router-dom';
-
+import { theme } from '../../styles/theme';
 interface Propos {
   activeTab: number;
 }
@@ -28,7 +28,9 @@ const Tab = (props: TabProps) => {
       <p
         className={css`
           ${Style.GH2}
-          ${isActive ? 'color: #000000;' : 'color: #586069;'}
+          ${isActive
+            ? `color: ${theme.colorBlack};`
+            : `color: ${theme.colorGrey1};`}
         `}
       >
         {title}
@@ -96,18 +98,18 @@ const Style = {
   `,
 
   GH5: css`
-    background: #f2f2f2;
+    background: ${theme.colorWhite2};
 
     height: 64px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     align-items: flex-end;
     display: flex;
   `,
   GH3: css`
-    background-color: white;
-    border-top: 3px solid #b6af9d;
-    border-left: 1px solid #e1e4e8;
-    border-right: 1px solid #e1e4e8;
+    background-color: ${theme.colorWhite};
+    border-top: 3px solid ${theme.colorGrey};
+    border-left: 1px solid ${theme.colorWhite3};
+    border-right: 1px solid ${theme.colorWhite3};
     border-bottom: 0px;
     padding: 0px 28px;
   `,
@@ -126,10 +128,10 @@ const Style = {
   `,
   GH2: css`
     margin: 0px 4px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
     letter-spacing: -0.07em;
 
@@ -145,11 +147,11 @@ const Style = {
     background: #e8e9eb;
     width: 24px;
     height: 15px;
-    color: #586069;
-    font-family: Lucida Grande;
+    color: ${theme.colorGrey1};
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     border-radius: 7px;
     padding-left: 4px;

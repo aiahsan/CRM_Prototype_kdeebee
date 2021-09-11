@@ -6,6 +6,7 @@ import Icon from '../../../icons/icons';
 import { useHistory } from 'react-router-dom';
 import SideMenu from '../../../components/sidemenu';
 import Dropdown from '../../../components/dropdown';
+import { theme } from '../../../styles/theme';
 
 const AssingTab = ({
   name,
@@ -22,7 +23,9 @@ const AssingTab = ({
     <div
       className={css`
         ${Style.GH1}
-        ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
+        ${isLast != true
+          ? `border-bottom: 1px solid ${theme.colorWhite3};`
+          : ''}
       `}
     >
       <div className={Style.GH2}>
@@ -61,7 +64,7 @@ const LabelTab = ({
     <div
       className={css`
         ${Style.GH5}
-        ${isLast != true ? 'border-bottom: 1px solid #e1e4e8;' : ''}
+        ${isLast != true ? `border-bottom: 1px solid;` : ''}
       `}
     >
       <div className={Style.GH6}>
@@ -505,13 +508,13 @@ const Style = {
     margin-left: 6px;
   `,
   GH9: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     width: 138px;
     height: 40px;
     margin-right: 11px;
-    background-color: white;
+    background-color: ${theme.colorWhite};
     margin-right: 0px;
     display: flex;
     align-items: center;
@@ -521,9 +524,9 @@ const Style = {
     margin: 0px 4px;
     letter-spacing: -0.07em;
 
-    color: #586069;
+    color: ${theme.colorGrey1};
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
   `,
   GH11: css`
@@ -536,12 +539,12 @@ const Style = {
     align-items: center;
     letter-spacing: -0.07em;
     font-weight: bold;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH13: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 0px;
     border-top: 0px;
@@ -660,7 +663,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     margin: auto;
     margin-top: 0px;
     padding: 15px;
@@ -672,21 +675,21 @@ const Style = {
     font-size: 24px;
     line-height: 126.02%;
     letter-spacing: -0.05em;
-    color: #000000;
+    color: ${theme.colorBlack};
     padding-bottom: 12px;
     margin: 0px;
   `,
   g4: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
-    background: white;
+    background: ${theme.colorWhite};
     align-items: center;
     letter-spacing: -0.07em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
     padding: 4px 13px;
   `,
@@ -720,16 +723,16 @@ const Style = {
     }
   `,
   gglb: css`
-    font-size: 29px;
+    font-size: ${theme.fontSize29};
     line-height: 37px;
 
     letter-spacing: -0.05em;
     margin: 0px;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   cstyy2: css`
     background: #f6f8fa;
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 5px 5px 0px 0px;
     padding: 11px 8px;
@@ -739,20 +742,20 @@ const Style = {
   `,
   cstyy1: css`
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     margin: 0px;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   cstyy3: css`
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     letter-spacing: -0.01em;
-    color: #25292e;
+    color: ${theme.colorBlack2};
     margin: 0px;
   `,
   jdasfn: css`
@@ -771,13 +774,13 @@ const Style = {
     text-align: center;
   `,
   fontSasf: css`
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     font-weight: 700;
-    color: #837f76;
+    color: ${theme.colorGrey6};
   `,
   ljaskdjfe: css`
     width: 115px;
-    background-color: #f2f2f2;
+    background-color: ${theme.colorWhite2};
     border-radius: 15px;
     text-align: center;
     margin-right: 10px;
@@ -786,24 +789,24 @@ const Style = {
   dsjfafid: css`
     padding: 23px 0px;
     font-weight: 600;
-    font-size: 28px;
-    color: #828282;
+    font-size: ${theme.fontSize28};
+    color: ${theme.colorGrey5};
   `,
   klhfasdklf: css`
-    background-color: #b6af9c;
+    background-color: ${theme.colorGrey4};
     padding: 12px;
-    color: white;
+    color: ${theme.colorWhite};
     font-weight: 500;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
   `,
   fajsdfnlkf: css`
     margin-top: 2px;
-    background-color: #b6af9c;
-    color: white;
+    background-color: ${theme.colorGrey4};
+    color: ${theme.colorWhite};
     font-weight: 500;
     padding: 8px 0px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
   `,
 };

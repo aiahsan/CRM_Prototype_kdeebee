@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { useMediaQuery } from 'react-responsive';
 import { RadioBoxTextProps } from '../../../interface';
-
+import { theme } from '../../../styles/theme';
 const ViewBoxText = (props: RadioBoxTextProps) => {
   const { key1, key2, isLast, type } = props;
   const isMobile = useMediaQuery({
@@ -13,7 +13,7 @@ const ViewBoxText = (props: RadioBoxTextProps) => {
         <div>
           <div
             className={`d-flex ${css`
-              border-bottom: 1px solid #e1e4e8;
+              border-bottom: 1px solid ${theme.colorWhite3};
               margin-bottom: 10px;
               padding-bottom: 5px;
             `}`}
@@ -23,7 +23,7 @@ const ViewBoxText = (props: RadioBoxTextProps) => {
           </div>
           <div
             className={`d-flex ${css`
-              border-bottom: 1px solid #e1e4e8;
+              border-bottom: 1px solid ${theme.colorWhite3};
               margin-bottom: 5px;
               padding-bottom: 5px;
             `}`}
@@ -37,7 +37,9 @@ const ViewBoxText = (props: RadioBoxTextProps) => {
   ) : (
     <div
       className={css`
-        ${isLast == false ? 'border-bottom: 1px solid #e1e4e8;' : ''}
+        ${isLast == false
+          ? `border-bottom: 1px solid ${theme.colorWhite3};`
+          : ''}
         ${Style.s1}
       `}
     >
@@ -75,7 +77,7 @@ const Style = {
   s4: css`
     margin: 0px;
     margin-left: 8px;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;

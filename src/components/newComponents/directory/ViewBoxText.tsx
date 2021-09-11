@@ -1,7 +1,7 @@
 import { DirectoryBoxTextProps } from '../../../interface';
 import { useMediaQuery } from 'react-responsive';
 import { css } from '@emotion/css';
-
+import { theme } from '../../../styles/theme';
 const ViewBoxText = (props: DirectoryBoxTextProps) => {
   const { key1, key2, value1, value2 } = props;
   const isMobile = useMediaQuery({
@@ -13,7 +13,9 @@ const ViewBoxText = (props: DirectoryBoxTextProps) => {
         className={css`
             ${Style.ps1}
       border-bottom:${
-        props.isLast && props.isLast == true ? '1px solid #e1e4e8' : '0px'
+        props.isLast && props.isLast == true
+          ? `1px solid ${theme.colorWhite3}`
+          : '0px'
       }}
       `}
       >
@@ -41,7 +43,9 @@ const ViewBoxText = (props: DirectoryBoxTextProps) => {
         className={css`
         ${Style.ps1}
       border-bottom:${
-        props.isLast && props.isLast == true ? '1px solid #e1e4e8' : '0px'
+        props.isLast && props.isLast == true
+          ? `1px solid ${theme.colorWhite3}`
+          : '0px'
       }}
       `}
       >
@@ -71,7 +75,9 @@ const ViewBoxText = (props: DirectoryBoxTextProps) => {
       className={css`
       ${Style.ps4}
       border-bottom:${
-        props.isLast && props.isLast == true ? '1px solid #e1e4e8' : '0px'
+        props.isLast && props.isLast == true
+          ? `1px solid ${theme.colorWhite3}`
+          : '0px'
       }}
       `}
     >
@@ -125,26 +131,26 @@ const Style = {
   ps1: css`
     display: flex;
     padding: 6px 0px;
-    border-top: 1px solid #e1e4e8;
+    border-top: 1px solid ${theme.colorWhite3};
   `,
   ps2: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     text-align: right;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     margin: 0px;
   `,
 
   ps4: css`
     margin-left: 56px;
-    border-top: 1px solid #e1e4e8;
-    border-bottom: 1px solid #e1e4e8;
+    border-top: 1px solid ${theme.colorWhite3};
+    border-bottom: 1px solid ${theme.colorWhite3};
     min-width: 588px;
   `,
   ps5: css`

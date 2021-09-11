@@ -5,6 +5,7 @@ import { css } from '@emotion/css';
 import ProfileBar from '../../../components/newComponents/organisations/profileBar';
 import Icon from '../../../icons/icons';
 import ViewBox from '../../../components/newComponents/profileComponents/viewBox';
+import { theme } from '../../../styles/theme';
 
 const Profile = () => {
   return (
@@ -125,7 +126,7 @@ const Profile = () => {
                           <p
                             className={css`
                               ${Style.cs6}
-                              color:#1269D3
+                              color:${theme.colorBlue1}
                             `}
                           >
                             https://www.linkedin.com/company/blu-family-office/
@@ -144,7 +145,7 @@ const Profile = () => {
                           <p
                             className={css`
                               ${Style.cs6}
-                              color:#1269D3
+                              color:${theme.colorBlue1}
                             `}
                           >
                             https://twitter.com/BluFamilyOffice
@@ -163,7 +164,7 @@ const Profile = () => {
                           <p
                             className={css`
                               ${Style.cs6}
-                              color:#1269D3
+                              color:${theme.colorBlue1}
                             `}
                           >
                             https://www.facebook.com/BluFamilyOffice/{' '}
@@ -208,7 +209,7 @@ const Style = {
   GH5: css`
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     @media (max-width: 534px) {
       flex-direction: column;
     }
@@ -216,7 +217,7 @@ const Style = {
   GH6: css`
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     @media (max-width: 534px) {
       flex-direction: column;
     }
@@ -224,7 +225,7 @@ const Style = {
   GH7: css`
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     @media (max-width: 534px) {
       flex-direction: column;
     }
@@ -264,7 +265,7 @@ const Style = {
     margin-top: 24px;
   `,
   g3: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 728px;
     border-radius: 3px;
@@ -278,7 +279,7 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
 
     @media (max-width: 534px) {
       flex-wrap: wrap;
@@ -292,14 +293,14 @@ const Style = {
   g6: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   prfcst33: css`
     margin-left: 54px;
@@ -320,38 +321,38 @@ const Style = {
   c2: css`
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     padding-bottom: 11px;
     margin-bottom: 5px;
   `,
   c3: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     margin: 0px;
     margin-right: 7.45px;
   `,
 
   c4: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     max-width: 558px;
   `,
   cs6: css`
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     text-align: right;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     margin: 0px;
     padding: 7px 0px;
 

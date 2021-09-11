@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import Icon from '../../icons/icons';
-
+import { theme } from '../../styles/theme';
 export default function RCom() {
   return (
     <div className={Style.GH1}>
@@ -15,7 +15,7 @@ export default function RCom() {
 
 const Style = {
   GH1: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     width: 56px;
     display: flex;
     border-radius: 4px;

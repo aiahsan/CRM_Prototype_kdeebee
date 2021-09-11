@@ -5,6 +5,7 @@ import { css } from '@emotion/css';
 import ProfileBar from '../../../components/newComponents/profileComponents/profileBar';
 import Icon from '../../../icons/icons';
 import Accordian from '../../../components/newComponents/profileComponents/accordian';
+import { theme } from '../../../styles/theme';
 
 const Profile = () => {
   return (
@@ -72,7 +73,7 @@ const Style = {
     margin-top: 24px;
   `,
   g3: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 728px;
     border-radius: 3px;
@@ -94,7 +95,7 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
 
     @media (max-width: 534px) {
       flex-wrap: wrap;
@@ -108,14 +109,14 @@ const Style = {
   g6: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
 };
 export default Profile;

@@ -7,6 +7,7 @@ import Icon from '../../../icons/icons';
 import SideMenu from '../../../components/sidemenu';
 import ReactQuill from 'react-quill';
 import { useHistory } from 'react-router-dom';
+import { theme } from '../../../styles/theme';
 
 import 'react-quill/dist/quill.snow.css';
 
@@ -136,7 +137,7 @@ export default function RCom() {
 
 const Style = {
   GH1: css`
-    color: #1269d3;
+    color: ${theme.colorBlue1};
   `,
   GH2: css`
     overflow: auto;
@@ -178,7 +179,7 @@ const Style = {
   g16: css`
     background: #fafbfc;
 
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -204,7 +205,7 @@ const Style = {
     margin-left: 10px;
   `,
   g19: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 728px;
     border-radius: 3px;
@@ -217,7 +218,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     background: #f6f8fa;
     flex-wrap: wrap;
   `,
@@ -232,14 +233,14 @@ const Style = {
   g23: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   g24: css`
     max-width: 225px;
@@ -248,7 +249,7 @@ const Style = {
     justify-content: space-between;
   `,
   g25: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   g1: css`
     max-width: 979px;
@@ -270,7 +271,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     margin: auto;
     margin-top: 23px;
   `,
@@ -278,21 +279,21 @@ const Style = {
     font-size: 24px;
     line-height: 126.02%;
     letter-spacing: -0.05em;
-    color: #000000;
+    color: ${theme.colorBlack};
     padding-bottom: 12px;
     margin: 0px;
   `,
   g4: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
-    background: white;
+    background: ${theme.colorWhite};
     align-items: center;
     letter-spacing: -0.07em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
     line-height: 18px;
     padding: 4px 13px;
   `,
@@ -303,22 +304,22 @@ const Style = {
   `,
   cst2: css`
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 126.02%;
 
     letter-spacing: -0.05em;
 
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-bottom: 22px;
   `,
   cst1: css`
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 126.02%;
 
     letter-spacing: -0.05em;
 
-    color: #000000;
+    color: ${theme.colorBlack};
     margin-bottom: 5px;
   `,
   cst3: css`
@@ -326,11 +327,11 @@ const Style = {
     border: 1px solid #e1e4e7;
     box-sizing: border-box;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin-bottom: 27px;
     height: 20px;
     width: 560px;
@@ -341,16 +342,16 @@ const Style = {
   align-items: center;
   padding-bottom: 18px;
   margin-bottom: 23px;
-  border-bottom: 1px solid #e1e4e8;
+  border-bottom: 1px solid ${theme.colorWhite3};
 }
   `,
   cst4: css`
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     margin: 0px;
-    color: #000000;
+    color: ${theme.colorBlack};
     max-width: 728px;
   `,
   p14: css`
@@ -363,28 +364,28 @@ const Style = {
     border: 1px solid #c4c8cc;
     box-sizing: border-box;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     letter-spacing: -1px;
     font-weight: bold;
-    color: #444d56;
+    color: ${theme.colorBlue};
     margin-right: 9px;
     padding: 8px 13px;
   `,
   p16: css`
-    background: #b6af9d;
-    border: 1px solid #b6af9d;
+    background: ${theme.colorGrey};
+    border: 1px solid ${theme.colorGrey};
     box-sizing: border-box;
     border-radius: 2px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     letter-spacing: -0.1em;
-    color: #ffffff;
+    color: ${theme.colorWhite};
     padding: 8px 13px;
   `,
 };

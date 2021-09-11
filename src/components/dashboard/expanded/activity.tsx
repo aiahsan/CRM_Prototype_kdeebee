@@ -1,4 +1,5 @@
 import { css } from '@emotion/css';
+import { theme } from '../../../styles/theme';
 interface Props {
   image: string;
   title: string;
@@ -72,12 +73,12 @@ const Style = {
     display: flex;
   `,
   GH9: css`
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
 
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH7: css`
-    color: #1269d3;
+    color: ${theme.colorBlue1};
   `,
   GH2: css`
     width: 32px;
@@ -87,10 +88,10 @@ const Style = {
   `,
   GH5: css`
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
   `,
   GH4: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     line-height: 18px;
     align-items: center;

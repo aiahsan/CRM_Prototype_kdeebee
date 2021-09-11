@@ -1,7 +1,7 @@
 import avt1 from '../../../images/pc1.png';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
-
+import { theme } from '../../../styles/theme';
 export default function RCom() {
   return (
     <div className={Style.ps1}>
@@ -107,14 +107,14 @@ export default function RCom() {
 
 const Style = {
   ps8: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     align-items: center;
     letter-spacing: -0.08em;
-    color: #5b626a;
+    color: ${theme.colorGrey8};
     margin: 0px;
     margin-left: 6px;
   `,
@@ -154,33 +154,33 @@ const Style = {
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.16));
   `,
   ps3: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: ${theme.fontSize25};
     line-height: 29px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin: 0px;
     margin-top: 22px;
   `,
   ps4: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin: 22px 0px;
   `,
   ps5: css`
     height: 0.1px;
-    background-color: #e1e4e8;
+    background-color: ${theme.colorWhite3};
   `,
   ps7: css`
     margin-top: 22px;
@@ -190,22 +190,22 @@ const Style = {
     margin-bottom: 22px;
   `,
   ps10: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   ps11: css`
     margin-top: 17.51px;
     margin-bottom: 18.49px;
   `,
   ps12: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   ps13: css`
     margin-top: 10px;

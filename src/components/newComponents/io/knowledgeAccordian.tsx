@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Accordion, Button } from 'react-bootstrap';
 import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
+import { theme } from '../../../styles/theme';
 export default function RCom() {
   const [activeeventkey, setactiveeventkey] = React.useState([
     { id: 0, isactive: true },
@@ -106,31 +107,31 @@ const Style = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     margin: 25px 9% 0px 9%;
     padding: 0px 27px;
     height: 52px;
   `,
   cs2: css`
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     display: flex;
     align-items: center;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     margin: 0px;
   `,
   cs3: css`
-    background: #ffffff;
+    background: ${theme.colorWhite};
     border: 1px solid #dce0e4;
     box-sizing: border-box;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
-    color: #586069;
+    color: ${theme.colorGrey1};
     padding: 6px;
   `,
 };

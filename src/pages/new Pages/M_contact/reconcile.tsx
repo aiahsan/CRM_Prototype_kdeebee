@@ -7,6 +7,8 @@ import Icon from '../../../icons/icons';
 import Activity from '../../../components/M_Contacts/activity';
 import Pagination from '../../../components/pagination';
 import { useHistory } from 'react-router-dom';
+import { theme } from '../../../styles/theme';
+
 export default () => {
   const history = useHistory();
   return (
@@ -219,7 +221,7 @@ const Style = {
   `,
 
   GH9: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 980px;
     border-radius: 3px;
@@ -232,7 +234,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     background: #f6f8fa;
     flex-wrap: wrap;
   `,
@@ -245,14 +247,14 @@ const Style = {
   GH12: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   GH6: css`
     max-width: 115px;
@@ -261,7 +263,7 @@ const Style = {
     justify-content: space-between;
   `,
   GH5: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     display: flex;
     justify-content: space-between;
     padding-right: 12px;
@@ -270,7 +272,7 @@ const Style = {
   GH4: css`
     width: 111px;
     height: 34px;
-    background: white;
+    background: ${theme.colorWhite};
     border: 1px solid #dce0e4;
     box-sizing: border-box;
     border-radius: 2px;
@@ -279,7 +281,7 @@ const Style = {
     justify-content: center;
   `,
   GH3: css`
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     letter-spacing: -0.1em;
     color: #202528;

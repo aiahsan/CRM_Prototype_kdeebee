@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-
+import { theme } from '../../styles/theme';
 interface Props {
   image?: string;
   title: string;
@@ -86,21 +86,21 @@ const Style = {
   aksdfjlsdfjsd: css`
     margin: 0px;
     margin-top: -12px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: ${theme.fontSize11};
     line-height: 13px;
     letter-spacing: -0.03em;
-    color: #5b636b;
+    color: ${theme.colorGrey9};
     margin-bottom: 11px;
   `,
   jvbjsddasf: css`
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     height: 20px;
     background: #b7d950;
     border-radius: 20px;
-    color: #000000;
+    color: ${theme.colorBlack};
     font-weight: bold;
     padding: 0px 10px;
     margin-left: 7px;
@@ -111,7 +111,7 @@ const Style = {
   `,
 
   GH9: css`
-font-family: Lucida Grande;
+font-family: ${theme.fontFamilyMain}
         font-style: normal;
         line-height: 18px;
         align-items: center;
@@ -137,18 +137,18 @@ font-family: Lucida Grande;
   `,
   GH6: css`
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
   `,
   GH7: css`
     font-weight: bold;
-    font-size: 15px;
+    font-size: ${theme.fontSize15};
   `,
   GH8: css`
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     height: 20px;
     background: rgba(142, 182, 230, 0.75);
     border-radius: 20px;
-    color: #000000;
+    color: ${theme.colorBlack};
     font-weight: bold;
     padding: 0px 10px;
     margin-left: 15px;

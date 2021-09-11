@@ -9,6 +9,8 @@ import ActivitySub from '../../components/dashboard/expanded/activitysub';
 import avt from '../../images/1.png';
 import Pagination from '../../components/pagination';
 import SideMenu from '../../components/sidemenu';
+import { theme } from '../../styles/theme';
+
 export default function RCom() {
   return (
     <>
@@ -310,20 +312,19 @@ const Style = {
     }
   `,
   sp1: css`
-    background: #ffffff;
-    border-top: 1px solid #e1e4e8;
-    border-left: 1px solid #e1e4e8;
-    border-right: 1px solid #e1e4e8;
+    background: ${theme.colorWhite};
+    border-top: 1px solid ${theme.colorWhite3};
+    border-left: 1px solid ${theme.colorWhite3};
+    border-right: 1px solid ${theme.colorWhite3};
     padding: 10px 0px 11px 9.12px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: ${theme.fontSize14};
     line-height: 16px;
     letter-spacing: -0.03em;
-    color: #000000;
+    color: ${theme.colorBlack};
     width: 224px;
-    // border-bottom: 0.5px solid #e1e4e8;
     cursor: pointer;
     @media (max-width: 768px) {
       width: 98%;
@@ -355,7 +356,7 @@ const Style = {
   sp5: css`
     background: #fafbfc;
 
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
@@ -378,7 +379,7 @@ const Style = {
   `,
   sp6: css`
     padding: 8px 9.5px 8px 17px;
-    border-right: 1px solid #e1e4e8;
+    border-right: 1px solid ${theme.colorWhite3};
   `,
   sp7: css`
     padding-left: 10px;
@@ -389,7 +390,7 @@ const Style = {
     margin-left: 10px;
   `,
   sp8: css`
-    border: 1px solid #e1e4e8;
+    border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 728px;
     border-radius: 3px;
@@ -402,7 +403,7 @@ const Style = {
     justify-content: space-between;
     padding: 14px 5px 14px 19.15px;
     background: #f6f8fa;
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
     @media (max-width: 535px) {
       flex-direction: column;
       justify-content: flex-start;
@@ -417,14 +418,14 @@ const Style = {
   sp11: css`
     margin: 0px;
 
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     letter-spacing: -0.06em;
     margin-left: 7.5px;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   sp12: css`
     max-width: 345px;
@@ -437,7 +438,7 @@ const Style = {
     }
   `,
   sp13: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   sp14: css`
     margin-left: 59px;
@@ -445,16 +446,16 @@ const Style = {
     margin-bottom: 15px;
   `,
   sp15: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
   sp16: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   sp17: css`
     margin-left: 59px;
@@ -462,25 +463,25 @@ const Style = {
     margin-bottom: 15px;
   `,
   sp18: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
   sp19: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
   sp20: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   sp21: css`
     margin-left: 59px;
@@ -488,16 +489,16 @@ const Style = {
     margin-bottom: 15px;
   `,
   sp22: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
   sp23: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   sp24: css`
     margin-left: 59px;
@@ -505,16 +506,16 @@ const Style = {
     margin-bottom: 15px;
   `,
   sp25: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
   sp26: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   sp27: css`
     margin-left: 59px;
@@ -522,16 +523,16 @@ const Style = {
     margin-bottom: 15px;
   `,
   sp28: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
   sp29: css`
-    border-bottom: 1px solid #e1e4e8;
+    border-bottom: 1px solid ${theme.colorWhite3};
   `,
   sp30: css`
     margin-left: 59px;
@@ -539,12 +540,12 @@ const Style = {
     margin-bottom: 15px;
   `,
   sp31: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
-    color: #1269d3;
+    color: ${theme.colorBlue1};
     margin-top: 7px;
   `,
 };

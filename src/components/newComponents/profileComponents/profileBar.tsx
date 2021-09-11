@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import Icon from '../../../icons/icons';
 import image14 from '../../../images/image14.png';
 import rothschild from '../../../images/Rothschild.png';
-
+import { theme } from '../../../styles/theme';
 const ProfileBar = () => {
   return (
     <div className={Style.p1}>
@@ -114,15 +114,15 @@ const ProfileBar = () => {
 
 const Style = {
   p10: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin-top: 17px;
     margin-bottom: 26px;
   `,
@@ -139,7 +139,7 @@ const Style = {
     height: 24px;
   `,
   p12: css`
-    background: #b6af9d;
+    background: ${theme.colorGrey};
     border-radius: 3px;
     width: 89px;
     height: 16px;
@@ -150,7 +150,7 @@ const Style = {
   `,
   p14: css`
     width: 40px;
-    background: #4e4b5b;
+    background: ${theme.colorBlack3};
     height: 40px;
     border-radius: 40px;
     position: absolute;
@@ -158,28 +158,28 @@ const Style = {
     top: -29px;
   `,
   p15: css`
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: -0.07em;
-    color: #ffffff;
+    color: ${theme.colorWhite};
     position: relative;
     top: 8px;
     left: 5px;
   `,
 
   p16: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
   `,
   p18: css`
     display: flex;
@@ -191,24 +191,24 @@ const Style = {
     margin: 7px;
   `,
   p20: css`
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.08em;
-    color: #5b626a;
+    color: ${theme.colorGrey8};
     margin: 0px;
   `,
 
   p8: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     align-items: center;
     letter-spacing: -0.08em;
-    color: #5b626a;
+    color: ${theme.colorGrey8};
     margin: 0px;
     margin-left: 6px;
   `,
@@ -241,15 +241,15 @@ const Style = {
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.16));
   `,
   p3: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: ${theme.fontSize25};
     line-height: 29px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin: 0px;
     margin-top: 22px;
     margin-bottom: 22px;
@@ -257,7 +257,7 @@ const Style = {
 
   p4: css`
     height: 0.1px;
-    background-color: #e1e4e8;
+    background-color: ${theme.colorWhite3};
   `,
 
   p5: css`
@@ -265,15 +265,15 @@ const Style = {
     margin-bottom: 18.49px;
   `,
   p6: css`
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.07em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin-bottom: 18px;
   `,
   p7: css`

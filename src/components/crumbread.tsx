@@ -1,5 +1,7 @@
 import { css } from '@emotion/css';
 import Icon from '../icons/icons';
+import { theme } from '../styles/theme';
+
 interface Props {
   list: Array<string>;
   activeIndex: number;
@@ -13,7 +15,9 @@ const Crum = (props: CrumProps) => {
     <p
       className={css`
         ${Style.GH1}
-        ${props.isActive ? 'color: #B6AF9D;' : 'color: #FFFFFF;'}
+        ${props.isActive
+          ? `color: ${theme.colorGrey};`
+          : `color: ${theme.colorWhite};`}
       `}
     >
       {props.title}
@@ -44,10 +48,10 @@ export default function RCom(props: Props) {
 const Style = {
   GH1: css`
     margin: 0px;
-    font-family: Lucida Grande;
+    font-family: ${theme.fontFamilyMain};
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: ${theme.fontSize12};
     line-height: 14px;
     display: flex;
     align-items: center;
@@ -55,7 +59,7 @@ const Style = {
   `,
   GH2: css`
     height: 32px;
-    background: #4e4b5b;
+    background: ${theme.colorBlack3};
     padding: 8px 30.52px 10px 30.52px;
     display: flex;
   `,

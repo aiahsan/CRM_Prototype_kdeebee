@@ -1,6 +1,6 @@
 import Icon from '../../../../icons/icons';
 import { css } from '@emotion/css';
-
+import { theme } from '../../../../styles/theme';
 export default function RCom({
   title,
   items,
@@ -38,12 +38,12 @@ const Style = {
   ps2: css`
     margin: 0px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: ${theme.fontSize16};
     line-height: 19px;
     display: flex;
     align-items: center;
     letter-spacing: -0.06em;
-    color: #586069;
+    color: ${theme.colorGrey1};
   `,
   ps3: css`
     display: flex;
@@ -59,7 +59,7 @@ const Style = {
     border-radius: 18px;
     padding: 8.5px 12px;
     height: 100%;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 15px;
     letter-spacing: -0.03em;
     @media (max-width: 556px) {
@@ -67,17 +67,17 @@ const Style = {
     }
   `,
   ps5: css`
-    border: 2px solid #e1e4e8;
+    border: 2px solid ${theme.colorWhite3};
     box-sizing: border-box;
     border-radius: 18px;
     padding: 5.5px 12px;
-    font-size: 13px;
+    font-size: ${theme.fontSize13};
     line-height: 15px;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: -0.03em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin-right: 8px;
     @media (max-width: 556px) {
       margin-bottom: 10px;
@@ -93,12 +93,12 @@ const Style = {
     margin-left: 4px;
   `,
   ps8: css`
-    font-size: 11px;
+    font-size: ${theme.fontSize11};
     line-height: 13px;
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
-    color: #000000;
+    color: ${theme.colorBlack};
     margin-left: 4px;
     margin-bottom: 0px;
     margin-right: 4px;
