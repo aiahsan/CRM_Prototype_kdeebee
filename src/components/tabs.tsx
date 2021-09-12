@@ -152,6 +152,6 @@ const Style = {
     border-left: 1px solid ${theme.colorWhite3};
     border-right: 1px solid ${theme.colorWhite3};
     border-bottom: 0px;
-    padding: 0px 26px;
+    padding-bottom: 3px;
   `,
 };

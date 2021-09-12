@@ -111,7 +111,7 @@ const Style = {
     border-left: 1px solid ${theme.colorWhite3};
     border-right: 1px solid ${theme.colorWhite3};
     border-bottom: 0px;
-    padding: 0px 28px;
+    padding-bottom: 3px;
   `,
   GH1: css`
     display: flex;
@@ -134,7 +134,7 @@ const Style = {
     font-size: ${theme.fontSize15};
     line-height: 18px;
     letter-spacing: -0.07em;
-
+    
     @media (max-width: 768px) {
       display: none;
     }
