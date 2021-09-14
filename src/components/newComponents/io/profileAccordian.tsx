@@ -80,6 +80,7 @@ export default function RCom() {
                   value2Active: false,
                 },
               ]}
+              isOverflow={true}
             />
 
             <div className={Style.c1}>

@@ -4,7 +4,7 @@ import ViewRadioBoxText from './viewBoxRadioText';
 import { RadioBoxProps } from '../../../interface';
 import { theme } from '../../../styles/theme';
 const ViewBox = (props: RadioBoxProps) => {
-  const { title, values, type } = props;
+  const { title, values, type, isOverflow } = props;
 
   return (
     <div className={Style.p1}>
@@ -16,7 +16,15 @@ const ViewBox = (props: RadioBoxProps) => {
           </div>
         </div>
 
-        <div className={Style.p13}>
+        <div
+          className={`
+          no-scroll 
+            ${
+              isOverflow != undefined && isOverflow == true
+                ? Style.p14
+                : Style.p13
+            }`}
+        >
           {values.map((x, i) => (
             <ViewRadioBoxText
               key={i}
@@ -80,6 +88,27 @@ const Style = {
     @media (max-width: 1440px) {
       max-width: 900px;
       overflow: auto;
+    }
+    @media (max-width: 820px) {
+      max-width: 650px;
+    }
+    @media (max-width: 639px) {
+      max-width: 525px;
+    }
+
+    @media (max-width: 556px) {
+      max-width: 425px;
+    }
+    @media (max-width: 556px) {
+      max-width: 100%;
+    }
+  `,
+  p14: css`
+    margin-top: 11px;
+
+    @media (max-width: 1640px) {
+      max-width: 625px !important;
+      overflow: auto !important;
     }
     @media (max-width: 820px) {
       max-width: 650px;

@@ -122,6 +122,8 @@ const Style = {
     align-items: center;
     justify-content: center;
     padding: 0px 28px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     @media (max-width: 1010px) {
       min-width: initial;
     }

@@ -2,11 +2,13 @@ export interface BoxProps {
   title: string;
   values: BoxTextProps[];
   variant?: boolean;
+  isOverflow?: boolean;
 }
 export interface RadioBoxProps {
   title: string;
   values: RadioBoxTextProps[];
   type: number;
+  isOverflow?: boolean;
 }
 export interface RadioBoxTextProps {
   key1: string;

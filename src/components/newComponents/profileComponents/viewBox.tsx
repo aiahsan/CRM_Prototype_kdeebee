@@ -4,11 +4,11 @@ import ViewBoxText from './viewBoxText';
 import { BoxProps } from '../../../interface';
 import { theme } from '../../../styles/theme';
 const ViewBox = (props: BoxProps) => {
-  const { title, values, variant } = props;
+  const { title, values, variant, isOverflow } = props;
 
   return (
-    <div className={Style.p1}>
-      <div className={Style.p11}>
+    <div className={`${Style.p1}`}>
+      <div className={` ${Style.p11}`}>
         <div className={Style.p12}>
           <p className={Style.p3}>{title}</p>
           <div className={Style.p28}>
@@ -16,7 +16,15 @@ const ViewBox = (props: BoxProps) => {
           </div>
         </div>
 
-        <div className={Style.p13}>
+        <div
+          className={`
+          no-scroll 
+            ${
+              isOverflow != undefined && isOverflow == true
+                ? Style.p14
+                : Style.p13
+            }`}
+        >
           {values.map((x, i) => (
             <ViewBoxText
               value1Active={x.value1Active}
@@ -89,6 +97,27 @@ const Style = {
     @media (max-width: 1440px) {
       max-width: 900px;
       overflow: auto;
+    }
+    @media (max-width: 820px) {
+      max-width: 650px;
+    }
+    @media (max-width: 639px) {
+      max-width: 525px;
+    }
+
+    @media (max-width: 556px) {
+      max-width: 425px;
+    }
+    @media (max-width: 556px) {
+      max-width: 100%;
+    }
+  `,
+  p14: css`
+    margin-top: 11px;
+
+    @media (max-width: 1640px) {
+      max-width: 625px !important;
+      overflow: auto !important;
     }
     @media (max-width: 820px) {
       max-width: 650px;

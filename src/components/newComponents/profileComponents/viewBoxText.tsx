@@ -264,7 +264,6 @@ const Style = {
   `,
 
   c1: css`
-    font-family: ${theme.fontFamilyMain}
     font-style: normal;
     font-weight: normal;
     font-size: ${theme.fontSize12};

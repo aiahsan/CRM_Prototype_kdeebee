@@ -83,9 +83,11 @@ export default function RCom() {
                   value2Active: true,
                 },
               ]}
+              isOverflow={true}
             />
 
             <ViewBox
+              isOverflow={true}
               title='Address Information'
               values={[
                 {
@@ -108,6 +110,7 @@ export default function RCom() {
             />
 
             <ViewBox
+              isOverflow={true}
               title='Compliance Information'
               values={[
                 {
@@ -130,6 +133,7 @@ export default function RCom() {
             />
 
             <ViewBox
+              isOverflow={true}
               title='Additional Links'
               variant={true}
               values={[
@@ -148,7 +152,6 @@ export default function RCom() {
                   value2: 'lucy@granger.me',
                   value1Active: true,
                   value2Active: true,
-                  hasrelative: false,
                 },
               ]}
             />
@@ -218,6 +221,7 @@ export default function RCom() {
           <>
             <ViewBox
               title='Account Management'
+              isOverflow={true}
               values={[
                 {
                   key1: 'Introducer',
@@ -256,6 +260,7 @@ export default function RCom() {
 
             <ViewBoxRadio
               title='Account Capacity'
+              isOverflow={true}
               values={[
                 {
                   key1: 'BD Partner',
@@ -282,6 +287,7 @@ export default function RCom() {
             />
             <ViewBoxRadio
               title='Investor Industry'
+              isOverflow={true}
               values={[
                 {
                   key1: 'Asset Manager',
@@ -312,6 +318,7 @@ export default function RCom() {
             />
 
             <ViewBoxRadio
+              isOverflow={true}
               title='Account Milestones'
               values={[
                 {

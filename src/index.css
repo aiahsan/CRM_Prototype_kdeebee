@@ -324,3 +324,7 @@ input {
 .mx-728 {
   max-width: 728px;
 }
+
+.no-scroll::-webkit-scrollbar {
+  display: none !important;
+}

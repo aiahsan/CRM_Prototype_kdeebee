@@ -124,7 +124,7 @@ const Style = {
     display: flex;
   `,
   GH5: css`
-    max-width: 728px;
+    max-width: 980px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
