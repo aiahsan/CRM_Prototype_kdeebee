@@ -23,7 +23,7 @@ export default function RCom() {
 
       <div className={Style.GH1}>
         <LeftBar />
-        <div className='w-100'>
+        <div className='w-100 mx-728'>
           <div className={Style.GH2}>
             <div className={Style.GH3}>
               <div className={Style.GH4}>
@@ -257,7 +257,7 @@ export default function RCom() {
 
 const Style = {
   GH18: css`
-    max-width: 978.98px;
+    max-width: 728px;
     margin: auto;
     margin-top: 32px;
   `,
@@ -301,6 +301,7 @@ const Style = {
     border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 728px;
+    max-width: 728px;
     border-radius: 3px;
     @media (max-width: 768px) {
       min-width: 100%;
@@ -347,7 +348,7 @@ const Style = {
     }
   `,
   GH2: css`
-    max-width: 978.98px;
+    max-width: 728px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;

@@ -91,7 +91,7 @@ const Style = {
     display: flex;
   `,
   GH6: css`
-    max-width: 978.98px;
+    max-width: 978.97px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;

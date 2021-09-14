@@ -162,7 +162,7 @@ const Style = {
     }
   `,
   p1: css`
-          max-width: 970px;
+          max-width: 980px;
           margin: auto;
           margin-top: 25px;
       }

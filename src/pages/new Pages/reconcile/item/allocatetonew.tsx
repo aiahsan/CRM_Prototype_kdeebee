@@ -397,7 +397,7 @@ const Style = {
     }
   `,
   alloc1: css`
-    max-width: 930.98px;
+    max-width: 930px;
     margin-bottom: -1px;
     width: 100%;
     margin: auto;

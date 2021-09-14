@@ -162,7 +162,7 @@ export default function RCom() {
 
 const Style = {
   g13: css`
-    max-width: 978.98px;
+    max-width: 728px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -216,6 +216,7 @@ const Style = {
     border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
     min-width: 728px;
+    max-width: 728px;
     border-radius: 3px;
 
     @media (max-width: 1024px) {

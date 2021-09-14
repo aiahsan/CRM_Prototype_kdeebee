@@ -659,7 +659,7 @@ const Style = {
     display: flex;
   `,
   g2: css`
-    max-width: 1079px;
+    max-width: 980px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -699,8 +699,7 @@ const Style = {
     margin-right: 5px;
   `,
   sp3: css`
-    margin-top: 25px;
-    margin-left: 79px;
+    margin-top: 24px;
   `,
   g1sk1: css`
     margin-left: 28px;
@@ -714,7 +713,7 @@ const Style = {
     }
   `,
   g1: css`
-    max-width: 1079px;
+    max-width: 978.97px;
     margin: auto;
 
     display: flex;

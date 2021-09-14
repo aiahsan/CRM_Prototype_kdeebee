@@ -79,7 +79,7 @@ export default function RCom() {
 
 const Style = {
   ps13: css`
-    max-width: 978.98px;
+    max-width: 728px;
     margin: auto;
     margin-top: 32px;
   `,
@@ -132,7 +132,7 @@ const Style = {
   ps8: css`
     border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
-    min-width: 980px;
+    min-width: 981px;
     border-radius: 3px;
     @media (max-width: 768px) {
       min-width: 98%;
@@ -194,7 +194,7 @@ const Style = {
     }
   `,
   ps1: css`
-    max-width: 980px;
+    max-width: 981px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;

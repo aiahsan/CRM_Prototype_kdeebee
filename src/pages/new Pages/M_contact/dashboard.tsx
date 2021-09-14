@@ -367,7 +367,7 @@ const Style = {
     border-top: 1px;
   `,
   g2: css`
-    max-width: 1010px;
+    max-width: 980px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -404,8 +404,11 @@ const Style = {
     margin-right: 5px;
   `,
   sp3: css`
-    margin-top: 24px;
-    margin-left: 45px;
+    margin: 24px auto;
+
+    @media (max-width: 1230px) {
+      margin-left: 0px;
+    }
   `,
   g1sk1: css`
     margin-left: 28px;
@@ -421,7 +424,7 @@ const Style = {
     }
   `,
   g1: css`
-    max-width: 1010px;
+    max-width: 978.97px;
     margin: auto;
 
     display: flex;

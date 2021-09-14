@@ -171,7 +171,7 @@ const Style = {
     margin-top: 25px;
   `,
   g13: css`
-    max-width: 978.98px;
+    max-width: 728px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -268,7 +268,7 @@ const Style = {
     border-bottom: 1px solid ${theme.colorWhite3};
   `,
   g1: css`
-    max-width: 979px;
+    max-width: 981px;
     margin: auto;
     display: flex;
     justify-content: space-between;

@@ -320,3 +320,7 @@ input {
 .dropdown .no-hover {
   padding: 11px 12px !important;
 }
+
+.mx-728 {
+  max-width: 728px;
+}

@@ -158,14 +158,13 @@ const Style = {
     margin-left: 4.25px;
   `,
   g13: css`
-    max-width: 978.98px;
+    max-width: 981px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
   `,
   g14: css`
     margin-top: 24px;
-    margin-left: 29.04px;
     @media (max-width: 425px) {
       margin-left: 0px;
     }
@@ -174,7 +173,7 @@ const Style = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 980px;
+    max-width: 981px;
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
@@ -215,7 +214,7 @@ const Style = {
   g19: css`
     border: 1px solid ${theme.colorWhite3};
     margin-top: 24px;
-    max-width: 980px;
+    max-width: 981px;
     border-radius: 3px;
 
     @media (max-width: 1024px) {
@@ -257,7 +256,7 @@ const Style = {
     border-bottom: 1px solid ${theme.colorWhite3};
   `,
   g1: css`
-    max-width: 980px;
+    max-width: 981px;
     margin: auto;
     width: 100% @media (max-width: 1024px) {
       flex-direction: column;
@@ -270,7 +269,7 @@ const Style = {
     margin-top: 25px;
   `,
   g2: css`
-    max-width: 980px;
+    max-width: 981px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -148,7 +148,7 @@ const Style = {
     margin-top: 25px;
   `,
   g13: css`
-    max-width: 978.98px;
+    max-width: 728px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;

@@ -213,7 +213,7 @@ const Style = {
     margin-left: 4.25px;
   `,
   GH8: css`
-    max-width: 978.98px;
+    max-width: 728px;
     margin: auto;
     margin-top: 32px;
   `,
@@ -243,7 +243,7 @@ const Style = {
   `,
 
   g1: css`
-    max-width: 978.98px;
+    max-width: 728px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -296,7 +296,7 @@ const Style = {
   `,
 
   GH10: css`
-    max-width: 978.98px;
+    max-width: 728px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
@@ -304,7 +304,7 @@ const Style = {
   `,
   GH11: css`
     margin-top: 24px;
-    margin-left: 29.04px;
+    margin-left: 0px;
     @media (max-width: 425px) {
       margin-left: 0px;
     }

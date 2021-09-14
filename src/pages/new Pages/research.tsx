@@ -63,7 +63,7 @@ export default function RCom() {
 
 const Style = {
   ps13: css`
-    max-width: 978.98px;
+    max-width: 728px;
     margin: auto;
     margin-top: 32px;
   `,

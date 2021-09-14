@@ -200,13 +200,13 @@ const Style = {
     margin-left: 3%;
   `,
   GH1: css`
-    max-width: 978.98px;
+    max-width: 980px;
     margin: auto;
     margin-top: 32px;
   `,
 
   GH11: css`
-    max-width: 978.98px;
+    max-width: 980px;
     width: 100%;
     margin: auto;
     margin-bottom: -1px;
